@@ -1,0 +1,121 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+  
+}
+
+div {
+    word-spacing: 5.5px;
+    
+}
+
+header {
+    background-color: rgb(71, 199, 221);
+    text-align: center;
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/038/935/389/large/raoni-dorim-mountains-night-highress.jpg?1624474759');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 50vh;
+}
+#mario{
+    background-color: rgb(71, 199, 221);
+    text-align: center;
+    background-image: url('https://wallpapercave.com/wp/wp2866545.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 120vh;
+}
+#sonic{
+    background-color: rgb(71, 199, 221);
+    text-align: center;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4fc5745f-92e2-440a-81b7-24ffa8336162/d9a47xo-465c990c-2e40-4d51-9348-9f5c48dfcc4a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRmYzU3NDVmLTkyZTItNDQwYS04MWI3LTI0ZmZhODMzNjE2MlwvZDlhNDd4by00NjVjOTkwYy0yZTQwLTRkNTEtOTM0OC05ZjVjNDhkZmNjNGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.eXngwKUEB79q0JYpBF2eRMXZDN0vB-YH8W5-XuQwFVg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 120vh;
+    color: antiquewhite;
+}
+#pac{
+    background-color: rgb(71, 199, 221);
+    text-align: center;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo53pT7adUy4lyJtbzhgm3r1q6_JSB2dyw4Q&s');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 120vh;
+    color: antiquewhite;
+}
+#rayman{
+    background-color: rgb(71, 199, 221);
+    text-align: center;
+    background-image: url('https://raymanpc.com/forum/storage/9018/c2a021767f69578a877554715e5c9ce4');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 120vh;
+    color: antiquewhite;
+}
+#dk{
+    background-color: rgb(71, 199, 221);
+    text-align: center;
+    background-image: url('https://pbs.twimg.com/media/D_r_LSwXYAEGe6Z.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 120vh;
+    color: antiquewhite;
+}
+#spyro{
+    background-color: rgb(71, 199, 221);
+    text-align: center;
+    background-image: url('https://i.redd.it/qtmerc63i0s41.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 120vh;
+    
+}
+#crash{
+    background-color: rgb(71, 199, 221);
+    text-align: center;
+    background-image: url('https://wallpapercave.com/wp/wp12743907.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    height: 120vh;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p{
+font-style:italic;  
+}

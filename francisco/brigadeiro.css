@@ -1,0 +1,46 @@
+/* Estilo para o título principal */
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilo para os links de navegação */
+.link-section a {
+    display: block;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Estilo para os links de navegação quando passa o mouse */
+.link-section a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para os títulos secundários */
+h2 { text-align: center;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+/* Estilo para as imagens */
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo para os parágrafos */
+p {
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* Estilo para o fundo da página */
+body {
+    background-color: orange;
+}

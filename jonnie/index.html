@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilogia Como Treinar o Seu Dragão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.icegif.com/wp-content/uploads/2024/01/icegif-194.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        header {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            text-align: center;
+            color: #fff;
+        }
+        header .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: auto;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #DAA520;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: rgba(28,28,28);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255,99,71);
+        }
+        section {
+            display: none;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #F4A460;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(178,34,34);
+        }
+        section.active {
+            display: block;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .image-link {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .image-link img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 5px solid #fff; /* Adiciona uma moldura branca */
+        }
+        .instagram-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* Adicionando estilo para o botão de controle de música */
+        #playPauseBtn {
+            position: fixed;
+            top: 06%;
+            right: 70px;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        /* CSS para o botão Voltar ao Topo */
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #000;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        #backToTopBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="#" class="logo" onclick="showSection('intro')">Logo Como Treinar o Seu Dragão</a>
+        <div class="parallax"></div>
+        <img src="imagens/logo_httyd.png" alt="Logo Como Treinar o Seu Dragão" class="logo">
+
+        
+
+        <button id="playPauseBtn" onclick="toggleAudio()">
+            <div class="parallax"></div>
+           <img id="audioImg" src="https://pluspng.com/img-png/pause-button-png-pause-button-transparent-google-search-512.png"height="42" width="42" alt="Play">
+        </button>
+    </header>
+    <nav>
+        
+        <a onclick="showSection('filme1')">Como Treinar o Seu Dragão (2010)</a>
+        <a onclick="showSection('filme2')">Como Treinar o Seu Dragão 2 (2014)</a>
+        <a onclick="showSection('filme3')">Como Treinar o Seu Dragão 3 (2019)</a>
+    </nav>
+
+    <div class="container">
+        <section id="intro" class="active">
+            <h2>Seja bem vindo ó caro Cavaleiro de Dragão</h2>
+            <p>No vasto mundo da animação cinematográfica, poucas sagas conseguiram capturar a imaginação e o coração do público como "Como Treinar o seu Dragão". Essa trilogia épica nos transporta para um reino de aventuras, amizades improváveis e, é claro, a majestosa relação entre humanos e dragões. Então, ó nobre aventureiro, permita-me guiá-lo através das três emocionantes jornadas que compõem essa saga incomparável.</p>
+        </section>
+
+        <section id="filme1">
+            <h2>Como Treinar o Seu Dragão (2010)</h2>
+            <p>O primeiro filme da trilogia é ambientado na ilha de Berk, onde jovens vikings são treinados para caçar dragões. Soluço é um adolescente inteligente, mas desajeitado, que luta para ganhar a aprovação de seu pai, Stoico, o chefe da aldeia. Durante um ataque de dragões, Soluço captura um raro Fúria da Noite, mas não consegue matá-lo. Em vez disso, ele liberta o dragão, apelidado de Banguela, e forma um vínculo inesperado com ele. Juntos, eles descobrem que os dragões não são os monstros que todos pensavam, mas seres inteligentes e amigáveis que apenas se defendem dos ataques dos vikings. Soluço e Banguela trabalham juntos para mudar a forma como sua tribo vê os dragões, levando a uma coexistência pacífica entre humanos e dragões.</p>
+
+            <p>Segue o trailer ao tocar na imagem</p>  
+            <p></p>
+
+            <a href="https://www.youtube.com/watch?v=uv1V9BOb2M8" target="_blank" class="image-link">
+                <img src="https://i.pinimg.com/564x/42/45/a1/4245a1e61cf92ed85faeb733b942858f.jpg" alt="Como Treinar o Seu Dragão">
+                <a href="#top">
+            </a>
+        </section>
+        <section id="filme2">
+            <h2>Como Treinar o Seu Dragão 2 (2014)</h2>
+            <p>No segundo filme, cinco anos se passaram desde que os vikings e dragões de Berk se tornaram aliados. Soluço e Banguela exploram novos territórios e descobrem uma caverna secreta cheia de dragões selvagens liderados por uma misteriosa Cavaleira do Dragão, que é revelada como a mãe de Soluço, Valka, que desapareceu há muitos anos. Enquanto isso, um novo vilão, Drago Bludvist, planeja capturar todos os dragões e usá-los para conquistar o mundo. Soluço, Valka, Banguela e os habitantes de Berk devem unir forças para proteger seus dragões e impedir Drago. O filme explora temas de família, lealdade e o crescimento de Soluço como líder e protetor de seu povo e dos dragões.</p>
+
+            <p>Segue o trailer ao tocar na imagem</p>
+
+            <a href="https://www.youtube.com/watch?v=VUoCQFNoRMc" target="_blank" class="image-link">
+                <img src="https://i.pinimg.com/564x/e8/fa/3d/e8fa3d5e17b72e9ae9bba321753e5087.jpg" alt="Como Treinar o Seu Dragão 2">
+                <a href="#top">
+            </a>
+        </section>
+        <section id="filme3">
+            <h2>Como Treinar o Seu Dragão 3 (2019)</h2>
+            <p>O terceiro e último filme da trilogia mostra Soluço e Banguela enfrentando o maior desafio de suas vidas. Quando eles descobrem a existência de um lugar mítico chamado Mundo Oculto, que pode ser o verdadeiro lar dos dragões, Soluço se vê diante de uma difícil decisão: proteger os dragões do perigo ou deixá-los encontrar seu verdadeiro lar. Ao mesmo tempo, um novo inimigo, Grimmel, um caçador de dragões implacável, surge com planos de capturar Banguela. Durante essa jornada, Banguela encontra uma companheira, uma Fúria da Luz, e juntos, eles descobrem mais sobre sua espécie. O filme culmina com Soluço e Banguela tomando decisões que definirão o futuro de ambos os mundos, humano e dragão, para sempre. É uma história emocionante sobre amadurecimento, sacrifício e a força dos laços de amizade.</p>
+
+            <p>Segue o trailer ao tocar na imagem</p>
+
+            <a href="https://www.youtube.com/watch?v=VS4owMPt7sg" target="_blank" class="image-link">
+                <img src="https://i.pinimg.com/564x/25/94/22/259422bf9df79dca0baba62f75dfb586.jpg" alt="Como Treinar o Seu Dragão 3">
+            <a href="#top">
+            </a>
+        </section>
+
+        <section id="musica">
+            <h2>Música</h2>
+            <audio autoplay loop>
+                <source src="imagens/test_drive2.mp3" type="audio/mp3">
+            </audio>
+        </section>
+    </div>
+
+    <!-- Botão Voltar ao Topo -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao topo">↑</button>
+
+    <!-- Script para controlar a reprodução e pausa da música -->
+    <script>
+        var audio = document.querySelector('audio');
+        var playPauseBtn = document.getElementById('playPauseBtn');
+        var audioImg = document.getElementById('audioImg');
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                audioImg.src = "https://pluspng.com/img-png/pause-button-png-pause-button-transparent-google-search-512.png"; // Ícone de pausa
+            } else {
+                audio.pause();
+                audioImg.src = "https://www.pngall.com/wp-content/uploads/5/Play-Button-PNG-Picture.png"; // Ícone de play
+            }
+        }
+
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Quando o usuário rolar 20px para baixo a partir do topo do documento, mostre o botão
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("backToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("backToTopBtn").style.display = "none";
+            }
+        }
+
+        // Quando o usuário clicar no botão, role para o topo do documento
+        function topFunction() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+    </script>
+</body>
+</html>
