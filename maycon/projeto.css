@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #000000;
+    padding-top: 60px; /* Ajuste conforme necessário para compensar a altura do nav */
+}
+
+nav {
+    width: 100%;
+    background: linear-gradient(90deg, #3eb0b4, #095669);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 10px 10px;
+    position: fixed; /* Fixa a navegação */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Mantém a navegação acima de outros conteúdos */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.car-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.car {
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, z-index 0.3s;
+}
+
+.car img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car:hover, .car:focus-within {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.desc-content {
+    position: absolute;
+    top: 0;
+    left: 220px; 
+    width: 300px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+    visibility: hidden;
+}
+
+.car:hover .desc-content, .car:focus-within .desc-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.desc-content h2 {
+    margin-top: 0;
+}
+
+.iframe-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 550px; 
+    width: 400px;
+    border-radius: 10px;
+}
+
+.car:hover .iframe-container, .car:focus-within .iframe-container {
+    display: block;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .car-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .car {
+        margin: 10px;
+    }
+    .desc-content {
+        left: 0;
+        top: 220px; 
+    }
+    .car:hover, .car:focus-within {
+        transform: scale(1.1);
+    }
+    .iframe-container {
+        left: 0;
+        top: 440px; 
+    }
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #175d5f; /* Borda Branca */
+    background-color: rgb(21, 129, 129);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+    background-color: #314449;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400; /* Corrigido para "font-weight" */
+    font-style: normal; /* Corrigido para "font-style" */
+}
+
+h1 {
+    animation: fadeInSlideUp 2s ease-out;
+    margin-top: 20px;
+    color: #2c8b8b; /* Opcional: Adiciona cor ao texto */
+    text-align: center; /* Opcional: Centraliza o texto */
+    font-family: "Audiowide", sans-serif; /* Aplica a fonte ao h1 */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.thank-you {
+    margin-left: 10px; /* Adicione espaço entre o GIF e o link conforme necessário */
+    padding: 10px 20px; /* Espaçamento interno para o link */
+    border: 2px solid #175d5f; /* Borda Branca */
+    background-color: rgb(21, 129, 129); /* Fundo verde meio azul */
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remover sublinhado */
+    border-radius: 10px; /* Bordas arredondadas */
+    opacity: 0;
+    animation: slideIn 4s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px); /* Desloca o texto para a esquerda */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Volta à posição original */
+    }
+}
+
+.h3{
+    color: #2c8b8b;
+}
