@@ -1,0 +1,122 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fdd9e8;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: #ff6f91; /* Tom de rosa */
+    color:white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navegação */
+nav {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6f91; /* Tom de rosa */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d46079; /* Tom de rosa mais escuro */
+}
+
+/* Conteúdo Principal */
+main {
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main section h2 {
+    color: #ff6f91; /* Tom de rosa */
+    margin-bottom: 10px;
+}
+
+main section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+main section a {
+    text-decoration: none;
+    color: #ff6f91; /* Tom de rosa */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+main section a:hover {
+    color: #d46079; /* Tom de rosa mais escuro */
+}
+
+main section img.center {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Frases Impactantes */
+main section#titulo4 .quote {
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+    padding-left: 1rem;
+    border-left: 4px solid #ff6f91; /* Tom de rosa */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff6f91; /* Tom de rosa */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #d46079; /* Tom de rosa mais escuro */
+}

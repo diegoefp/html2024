@@ -1,0 +1,42 @@
+body{
+  background-color: #2987D9;
+  color: #f8f8f2;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
+.menu ul li {
+  display: inline;
+  margin: 0 10px;
+}
+.menu a{
+  
+  text-decoration: none;
+  color: #ffff;
+
+}
+
+.personagem a{
+  text-decoration: none;
+  color: #ffff;
+
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #f8adda;
+  color: white; 
+  border-radius: 5px; 
+}
+
+
+
+
+
+
