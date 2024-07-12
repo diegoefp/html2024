@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Corinthians FC</title>
+    <link rel="stylesheet" href="teste.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.meutimao.com.br/fotos-do-corinthians/w941/2017/09/24/a_torcida_compareceu_no_treino_na_arena_w.jpg');
+            background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            /* Adicione outros estilos conforme necessário */
+        }
+        header {
+            background-color: rgb(235, 227, 227);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0f0e0e;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #f7f3f3;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            border: 2px solid black;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: white; /* Adicionando uma cor de fundo sólida */
+        }
+        footer {
+            background-color: #070606;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Estilos para as imagens dos jogadores */
+        .jogador-foto {
+            width: 100px; /* Defina a largura da imagem */
+            height: auto; /* Altura automática para manter a proporção */
+            border-radius: 50%; /* Para fazer as imagens parecerem redondas */
+            margin-bottom: 10px; /* Adiciona um espaço entre as imagens */
+        }
+        .jogador-nome {
+            font-weight: bold; /* Deixa o nome do jogador em negrito */
+        }
+        /* Estilos para as figuras dos jogadores */
+        figure {
+            display: inline-block; /* Faz com que as figuras fiquem em linha horizontal */
+            margin: 0 10px; /* Adiciona um espaço entre as figuras */
+        }
+    </style>
+</head>
+<body>
+    <!-- Áudio de fundo -->
+    <audio autoplay loop>
+        <source src="https://youtu.be/BHwm5K7jso8?si=-ANtTavJyKEHAhsv" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <header>
+        <h1>Corinthians FC</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="goleiro.html">Elenco</a>
+        <a href="HistoriaCorinthians.html">História</a>
+        <a href="Estadio.html">Estádio</a>
+        <a href="https://www.instagram.com/corinthians/">Contato</a>
+        <a href="https://www.shoptimao.com.br/?cpn=131891672&utm_content=654780639054&utm_term=www%20shoptimao&gad_source=1&gclid=EAIaIQobChMI2O7c0IblhQMVEUBIAB0jqAxwEAAYASAAEgLOHfD_BwE">Loja</a>
+    </nav>
+    <section id="home">
+        <h2>Bem-vindo ao site do Corinthians FC</h2>
+        <p>Este é o site oficial do Corinthians FC, um dos maiores clubes de futebol do Brasil.</p>
+    </section>
+    <section id="squad">
+        <h2>Elenco</h2>
+        <figure>
+            <img class="jogador-foto" src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/04/27/1936475291-gljyjvbw4aex-yq.jpg" alt="Foto do Jogador 1">
+            <figcaption class="jogador-nome">Cassio</figcaption>
+        </figure>
+        <figure>
+            <img class="jogador-foto" src="https://cdn.meutimao.com.br/_upload/noticia/2022/08/18/yuri-alberto-foi-um-dos-centros-das-atencoes-do-g9.jpg" alt="Foto do Jogador 2">
+            <figcaption class="jogador-nome">Yuri Albento</figcaption>
+        </figure>
+        <figure>
+            <img class="jogador-foto" src="https://conteudo.imguol.com.br/c/esporte/74/2024/03/13/rodrigo-garro-meia-do-corinthians-1710346508271_v2_450x450.jpg" alt="Foto do Jogador 3">
+            <figcaption class="jogador-nome">R.Garro</figcaption>
+        </figure>
+        <!-- Adicione mais figuras conforme necessário -->
+        <p>Aqui você encontrará informações sobre o elenco atual do Corinthians.</p>
+    </section>
+    <section id="history">
+        <h2>História</h2>
+        <p>Conheça a história gloriosa do Corinthians FC desde sua fundação até os dias atuais.</p>
+    </section>
+    <section id="stadium">
+        <h2>Estádio</h2>
+        <p>Saiba mais sobre o estádio oficial do Corinthians, a Arena Corinthians.</p>
+    </section>
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações sobre o Corinthians FC.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Corinthians FC. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

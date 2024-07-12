@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estádio do Corinthians FC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Downloads/FundoDESTADIO.jpg'); /* Adicione a URL da sua imagem aqui */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        nav {
+            background-color: #000;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 100px 20px 40px;
+            text-align: justify;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-top: -40px;
+            position: relative;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #000;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #444;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            margin: 0 auto 30px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .slick-prev,
+        .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            font-size: 24px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .slick-prev {
+            left: 20px;
+        }
+        .slick-next {
+            right: 20px;
+        }
+        .slick-prev:hover,
+        .slick-next:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estádio do Corinthians FC</h1>
+    </header>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <a href="teste.html">Inicio</a>
+        <a href="HistoriaCorinthians.html">Historia</a>
+        <a href="goleiro.html">Elenco</a>
+    </nav>
+
+    <section id="home">
+        <button class="slick-prev">&#10094;</button>
+        <button class="slick-next">&#10095;</button>
+        <div style="text-align: center;">
+            <video width="600" height="400" controls style="display: inline-block;">
+                <source src="neo.mp4" type="Video/mp4">
+            </video>
+        </div>
+        <h2>Arena Corinthians</h2>
+        <p>A Arena Corinthians, conhecida como Itaquerão, é um estádio multiuso localizado em São Paulo, Brasil. Foi inaugurado em 2014 e é a casa do Sport Club Corinthians Paulista.</p>
+        <p>Com uma capacidade para cerca de 49.000 espectadores, o estádio sediou a partida de abertura da Copa do Mundo FIFA de 2014 e diversos jogos do Corinthians, além de eventos culturais e esportivos.</p>
+        <p>A construção da Arena Corinthians foi uma das sedes mais modernas da Copa do Mundo FIFA de 2014 e se tornou um dos principais pontos turísticos da cidade de São Paulo.</p>
+        <p>O estádio é um dos mais modernos do país e tem sido palco de inúmeros eventos esportivos e culturais desde a sua inauguração.</p>
+    </section>
+
+    <!-- Outras seções do site -->
+
+    <footer>
+        <p>&copy; 2024 Corinthians FC. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+            $('.slick-prev').click(function(){
+                $('.slider').slick('slickPrev');
+            });
+            $('.slick-next').click(function(){
+                $('.slider').slick('slickNext');
+            });
+        });
+    </script>
+</body>
+</html>

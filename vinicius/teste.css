@@ -1,0 +1,177 @@
+/* Reset de estilos */
+/* Estilos para o menu */
+nav {
+    background-image: url('');
+    background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+/* Estilos para o menu */
+header {
+    background-image: url('https://pbs.twimg.com/media/Es-wc1dXEAAIMv3.jpg:large');
+    background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e6e6;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #000;
+    color: #eee3e3;
+    padding: 20px 0;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+/* Estilos do banner */
+.banner {
+    background-image: url('caminho_para_imagem.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* Estilos do conteúdo */
+.content {
+    margin-top: 20px;
+}
+
+.article {
+    background-color: #ebe7e7;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(3, 3, 3, 0.1);
+}
+
+.article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.article a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #000;
+    color: #130e0e;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.jogador {
+    margin: 10px;
+    text-align: center;
+}
+
+.jogador img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.jogador p {
+    margin-top: 10px;
+    font-weight: bold;
+}

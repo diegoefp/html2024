@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSEU INTERATIVO</title>
+    <style>
+         body {           
+             text-align: center;
+            font-size: 20px;
+        }
+
+        header{
+            font-family:cursive;
+            font-size: 14px;
+        }
+        header h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+        }
+
+        /*img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    ****/
+    #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            display: none;
+        }
+    </style>
+</head>
+<body  bgcolor="#87CEFA" text="#000000" link="#1842DB" vlink="#1842DB" ">
+    <h1 align="Center"> O que é? </h1>
+    <p align="Center"> Um museu interativo é aquele em que os visitantes podem <i>participar das atrações em vez de apenas admirá-las</i>.
+           Dessa maneira, ele traz uma experiência imersiva, permitindo que os visitadores entendam o conceito de cada obra.<br>
+           Chegou ao Brasil uma exposição que faz o visitante  se sentir dentro das obras de um gênio da pintura.</p>
+
+
+    <h1 align="Center" > Onde?</h1>
+    <p align="Center"> Depois de ser vista por mais 10 milhões de pessoas em diversos países,a Exposição<br>
+        “Beyond Van Gogh” chega ao Brasil: a partir do dia 17 de março ela poderá<br>
+        visitada em São Paulo, no MorumbiShopping, e a partir de 21 de julho em Brasília.</p>
+    </p>
+    <a target="_blank" href="https://www.lightland.com.br/"><p>--Veja nosso site oficial--</p></a>
+    <img  width="600px" height="300px" src="https://i.em.com.br/U4ERTE8JFnTQ9vIMN7yRYRH1BT8=/750x0/smart/imgsapp.em.com.br/app/noticia_127983242361/2023/07/15/1520552/exposicao-de-van-gogh_1_70240.jpg">
+    <img  width="600px" height="300px" src="https://ohoje.com/public/imagens/fotos/amp/2022/09/13-PRINCIPAL-15-scaled.jpg">
+    
+    <hr/>
+    <iframe width="740" height="360" src="https://www.youtube.com/embed/mK2Zbt2vtvs" title="Van Gogh &amp; Impressionistas - Lightland Produções" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <a target="_blank" href="https://www.instagram.com/vangogheimpressionistas/"><p>--siga nossas redes sociais--</p></a>
+    <hr/>
+
+    <p>Qual o valor dos ingressos?</p>
+    <p> R$60 inteira / R$30 meia-entrada</p>
+
+    <p>Horários:</p>
+    <p>Ingressos das 10:00hrs
+    <p> <s>ingressos das 13:00hrs</s> esgotado!</p>
+    <p> <s>ingressos das 15:00hrs</s> esgotado!</p>
+    
+    
+    <a href="#" id="back-to-top">↑</a>
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+
+    <a href="index.html">pagina inicial</a>
+</body>
+</html>

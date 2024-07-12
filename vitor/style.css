@@ -1,0 +1,49 @@
+body, html {
+  height: 90%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+body{
+  background-color: rgb(17, 19, 36);
+  
+}
+.parallax {
+  /* imagem dos omiaranha */
+  background-image: url('img/spider-man_sem_volta_para_casa.jpg');
+
+  /* altura especifica */
+  height: 800px;
+
+  /* cria efeito parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titulo, .sintese, .titulo1, .titulo2, .titulo3 {
+  margin-top: 20px;
+  text-align: center; /* centraliza o texto */
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-container {
+  text-align: center;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(255, 51, 0);
+}
+.msctema{
+  color: white;
+  align-items: center;
+}
