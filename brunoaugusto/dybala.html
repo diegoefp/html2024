@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dybala - Carreira</title>
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Branco */
+    color: #ffffff; /* Preto */
+}
+
+
+header {
+    background-color: #000000; /* Preto */
+    color: #ffffff; /* Branco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-left: 220px; /* Adicionando margem para evitar a sobreposição com a barra lateral */
+}
+
+
+.year-container {
+    display: flex;
+    align-items: center;
+    margin: 10px auto; /* Centralizando horizontalmente */
+    background-color: #1D72B8; /* Azul Claro (Seleção Argentina) */
+    border: 1px solid #ffffff; /* Branco */
+    border-radius: 24px;
+    height: 220px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 600px; /* Ajustando a largura do contêiner */
+}
+
+
+.year-container:hover {
+    transform: scale(1.25);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.year-card {
+    padding: 30px;
+    width: 320px; /* Diminuindo a largura do cartão */
+}
+
+
+.year-card h2 {
+    margin-top: 0;
+    color: #000000; /* Preto */
+    font-size: 1.5em;
+}
+
+
+.year-card ul {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+}
+
+
+.year-card ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+
+.year-card ul li strong {
+    color: #000000; /* Preto */
+}
+
+
+.year-image {
+    width: 220px; /* Diminuindo a largura da imagem */
+    height: 220px; /* Diminuindo a altura da imagem */
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+
+@media (max-width: 500px) {
+    .year-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+    .year-card {
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+
+    .year-image {
+        width: 20%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+}
+
+
+#cr7intro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    color: #000000; /* Preto */
+}
+
+
+#final {
+    font-size: 24px;
+    color: #000000; /* Preto */
+}
+
+
+#titulofinal {
+    color: #000000; /* Preto */
+}
+
+
+#golmarcante {
+    color: #000000; /* Preto */
+}
+
+
+#titulo {
+    color: #ffffff; /* Preto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1D72B8; /* Azul Claro (Seleção Argentina) */
+    color: #ffffff; /* Branco */
+    padding: 20px;
+    width: 200px;
+    border-radius: 12px;
+    height: 100%; /* Ajustando a altura para 100% */
+    z-index: 1000;
+    box-sizing: border-box; /* Adicionando box-sizing para incluir padding na largura total */
+    transition: left 0.3s ease; /* Adicionando transição suave */
+}
+
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+
+#sidebar ul li a {
+    color: #ffffff; /* Preto */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#sidebar ul li a:hover {
+    color: #000000; /* Branco */
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ffe600; /* Azul Claro */
+    max-width: 60%; /* Defina o valor desejado para a largura máxima */
+    margin: 0 auto; /* Centralizando horizontalmente */
+}
+
+
+main {
+    margin-left: 320px; /* Adicionando margem para evitar a sobreposição com a barra lateral */
+}
+
+
+#Introducao {
+    color: #000000; /* Preto */
+    font-size: 32px;
+    text-align: center;
+}
+
+
+#temporadas {
+    color: #000000; /* Preto */
+    font-size: 30px;
+    text-align: center;
+}
+#golmarcante{
+    text-align: center;
+}
+#hover-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    z-index: 999; /* Garantir que a área de hover esteja acima de outros elementos */
+    cursor: pointer;
+}
+#outcarreira{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1 href= "#top" id="titulo">ㅤCarreira de Paulo Dybala</h1>
+    </header>
+    <div id="hover-area"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#titulo">Introdução</a></li>
+            <li><a href="#temporadas">Temporadas</a></li>
+            <li><a href="#final">Conclusão</a></li>
+            <li id="outcarreira">OUTRAS CARREIRAS</li>
+            <li><a href="index.html">Carreira de Messi</a></li>
+            <li><a href="neymar.html">Carreira de Neymar</a></li>
+            <li><a href="reus.html">Carreira de Reus</a></li>
+            <li><a href="cristiano.html">Carreira de Cr7</a></li>
+            <li><a href="lewa.html">Carreira de Lewandowski</a></li>
+        </ul>
+    </div>
+    <main>
+
+
+        <section id="cr7-info">
+            <h1 id="Introducao">INTRODUÇÃO</h1>
+            <h1 id="cr7intro">
+                Paulo Dybala é um futebolista argentino nascido em 15 de novembro de 1993, na cidade de Laguna Larga, na província de Córdoba. Conhecido por sua habilidade técnica, criatividade e precisão nas finalizações, Dybala começou sua carreira profissional no Instituto de Córdoba antes de se transferir para o Palermo, da Itália, em 2012. Seu talento rapidamente chamou a atenção de grandes clubes europeus, e em 2015 ele se juntou à Juventus, onde se estabeleceu como um dos principais jogadores do time.</h1>
+            <h1 id="temporadas">TEMPORADAS</h1>
+           
+            <div class="year-container">
+                <img src="https://sportbuzz.uol.com.br/media/stories/altos-e-baixos-conturbada-trajetoria-de-paulo-dybala/assets/11.jpeg" alt="cr7 2012" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2012</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 3</li>
+                        <li><strong>Assistências:</strong> 2</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://img.bleacherreport.net/img/images/photos/003/330/356/hi-res-d6e43803c1234fef396e82d2e05320cc_crop_exact.jpg?w=1200&h=1200&q=75" alt="cr7 2013" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2013</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Série B</li>
+                        <li><strong>Gols:</strong> 5</li>
+                        <li><strong>Assistências:</strong> 3</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://golazoargentino.com/wp-content/uploads/2014/11/small_141102-213005_bass21114spo_042.jpg" alt="cr7 2014" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2014</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa da Itália</li>
+                        <li><strong>Gols:</strong>13 </li>
+                        <li><strong>Assistências:</strong> 5</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://i.ytimg.com/vi/CiQ8Hk2lxi4/maxresdefault.jpg" alt="cr7 2015" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2015</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa da Italia, Supercopa da Itália e Série A</li>
+                        <li><strong>Gols:</strong> 23</li>
+                        <li><strong>Assistências:</strong> 9</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://cdn.espn.com.br/image/wide/622_b27ac893-959e-3200-ab31-a78413ad8811.jpg" alt="cr7 2016" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2016</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa da Itália e Série A</li>
+                        <li><strong>Gols:</strong> 19</li>
+                        <li><strong>Assistências:</strong> 7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://prod-media.beinsports.com/image/1680417252317_acf69a96-ddc0-4db1-a215-4ed38c4176e7.jpg" alt="cr7 2017" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2017</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa da Itália e Série A</li>
+                        <li><strong>Gols:</strong> 26</li>
+                        <li><strong>Assistências:</strong> 11</li>
+                        <li>Que fotão em!</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2018/10/02/2432157-50541910-2560-1440.jpg" alt="cr7 2018" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2018</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Série A </li>
+                        <li><strong>Gols:</strong> 11</li>
+                        <li><strong>Assistências:</strong> 5</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://assets.goal.com/images/v3/blt7dcde62f654595b1/0a9464417541e78bfaaae4ee8cf71ea15b57eb85.jpg?auto=webp&format=pjpg&width=3840&quality=60" alt="cr7 2019" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2019</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong>  Série A</li>
+                        <li><strong>Gols:</strong> 18</li>
+                        <li><strong>Assistências:</strong> 14</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://cdn.conmebol.com/wp-content/uploads/2020/08/dybala-1024x678.jpeg" alt="cr7 2020" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2020</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Serie A, Supercopa da Itália e Copa da Itália</li>
+                        <li><strong>Gols:</strong> 8</li>
+                        <li><strong>Assistências:</strong> 4</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://icdn.psgtalk.com/wp-content/uploads/2021/04/paulo-dybala-juventus-v-genoa-serie-a-2021-1020x695.jpg" alt="cr7 2021" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2021</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa da Italia, Supercopa Italiana e Copa América</li>
+                        <li><strong>Gols:</strong> 19</li>
+                        <li><strong>Assistências:</strong> 11</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://media.asroma.com/prod/images/landscape_medium_fill/09715ad7bac0-gettyimages-1450215638fozxwi.jpg" alt="cr7 2022" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2022</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa do Mundo e Finalíssima</li>
+                        <li><strong>Gols:</strong> 14</li>
+                        <li><strong>Assistências:</strong> 7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://p2.trrsf.com/image/fget/cf/1200/1600/middle/images.terra.com/2023/07/10/1159763236-sevilla-fc-v-as-roma-uefa-europa-league-final-2022-23-1-2048x1365.jpg" alt="cr7 2023" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada 2023</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 12</li>
+                        <li><strong>Assistências:</strong> 6</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s2-oglobo.glbimg.com/neFk4_Hm_82q0-lQEfTnD6a2qwA=/0x0:8256x5504/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/C/X/9TeIntQuGF8QEgUsftrQ/106045087-romas-argentine-forward-21-paulo-dybala-celebrates-after-scoring-a-penalty-during-the-it.jpg" alt="cr7 2024" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2024</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 13</li>
+                        <li><strong>Assistências:</strong> 7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            </section>
+            <h1></h1>
+            <h1 id="titulofinal">CONCLUSÃO<br></h1><h1 id="final">Paulo Dybala é um futebolista argentino, nascido em 1993, conhecido por sua habilidade técnica e criatividade. Iniciou sua carreira no Instituto de Córdoba, passando pelo Palermo antes de brilhar na Juventus, onde conquistou vários títulos. Em 2022, transferiu-se para a Roma. Na seleção argentina, contribuiu para a vitória na Copa América de 2021. Dybala é reconhecido por seu talento e impacto contínuo no futebol europeu.</h1>
+           
+            <h1 id="golmarcante">GOL MARCANTE<br><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Er0l9YBCjzo" title="video"
+            frameborder="0" allow="accelerometer;clipboard-write;encrypted-media;gyroscope;picture-in-picture"allowfullscreen></iframe></h1>
+           
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var hoverArea = document.getElementById('hover-area');
+                    var sidebar = document.getElementById('sidebar');
+                    var mainContent = document.querySelector('main');
+       
+                sidebar.style.left = '0';
+
+
+                sidebar.addEventListener('mouseenter', function() {
+                sidebar.style.left = '0';
+                    mainContent.style.marginLeft = '200px';
+            });
+
+
+                sidebar.addEventListener('mouseleave', function() {
+                sidebar.style.left = '-180px'; // Ajuste o valor para o tamanho do pedaço da barra lateral a ser exibido
+                    mainContent.style.marginLeft = '0';
+            });
+
+
+            });
+</script>
+</main>
+</body>
+</html>
+
+
+

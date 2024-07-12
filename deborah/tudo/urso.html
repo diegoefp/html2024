@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ursos sem Curso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpaper.forfun.com/fetch/1c/1c4739fe608be215c4efd0042c6cd04f.jpeg');
+            background-size: cover; /* Garante que a imagem de fundo cubra toda a área do elemento */
+            background-position: center; /* Centraliza a imagem de fundo */
+            background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+             background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+ 
+
+
+        .header {
+    color: #333(0, 0, 0);
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0; /* Alinha o cabeçalho ao topo da página */
+    z-index: 999; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between; /* Adicionado */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Altura igual ao header */
+    width: 100%; /* Largura igual ao header */
+}
+
+.logo {
+    width: 120px;
+}
+
+.centralizado {
+    text-align: center;
+    flex: 1; /* Adicionado */
+}
+
+.centralizado a {
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    font-size: 25px; /* Tamanho da fonte */
+    margin: 0 15px; /* Espaçamento horizontal entre os links */
+    position: relative; /* Para posicionar o efeito sublinhado */
+}
+
+.centralizado a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px; /* Altura da linha sublinhada */
+    bottom: -3px; /* Distância do link */
+    left: 0;
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* Gradiente de cores do arco-íris */
+    background-size: 200% 2px; /* Tamanho do gradiente */
+    background-position: 100%; /* Iniciar o gradiente a partir da direita */
+    background-repeat: no-repeat; /* Não repetir o gradiente */
+    transition: background-position 0.3s ease, opacity 0.3s ease; /* Transição suave de cor e opacidade */
+    opacity: 0; /* Sublinhado inicialmente invisível */
+}
+
+.centralizado a:hover:after {
+    background-position: 0; /* Alterar a posição do gradiente para mostrar as cores ao passar o mouse */
+    opacity: 1; /* Tornar o sublinhado visível */
+}
+
+/*transição suave dos desenhos*/
+
+.personagens a img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.personagens a img:hover {
+    transform: scale(1.1);
+}
+
+#desenhos{
+    margin-top: 100px;
+}
+
+.nav-links {
+    display: flex; /* Alinha os links horizontalmente */
+    justify-content: center;
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Espaçamento entre os links */
+}
+
+
+
+
+
+        h1 {
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+        
+
+
+        }
+        h2 {
+            font-size: 2em;
+            color: #333;
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 2em;
+            color: #333;
+            margin-top: 0;
+
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+        }
+        img {
+            width: 100%; /* Ajusta o tamanho da imagem para cobrir todo o contêiner */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            float: right;
+        }
+        #desenho{
+            margin-top: 100px;
+        }
+
+.video{
+    display: flex;
+    align-items: center ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+   
+
+    </style>
+</head>
+<body>
+    <header>
+
+    <div class="header" id="header">
+    <div class="container-header">
+    <div >
+   <img class="logo" src="data:image/png;base64,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" alt="logo">
+    </div>
+   <nav  class="centralizado"><!--representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página -->
+       <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+        <li><a href="https://www.cnshop.com.br/">Loja</a></li>
+        <li><a href="https://www.cartoonnetwork.com.br/promo/programacao">Programação</a></li>
+        </ul>
+    </nav>
+    </div>  
+    </div>
+       
+    </header>
+    <main>
+        <h2 id="desenho">Ursos sem Curso</h2>
+        <p>"Ursos Sem Curso" é uma série animada do Cartoon Network que segue três ursos irmãos enquanto eles tentam se adaptar à vida na cidade. Com personalidades distintas, os ursos enfrentam situações engraçadas e interagem com diversos personagens enquanto buscam amizade, trabalho e comida. A série é elogiada por seu humor leve, animação vibrante e mensagens positivas sobre amizade e família.</p>
+    </main>
+
+    <div>
+     <img src="https://cn.i.cdn.ti-platform.com/cnlatam/content/833/showpage/escandalosos/ar/showpano.png?imwidth=1600" alt="img ursos" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+    </div>
+
+    <div>
+   
+     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/oLoC2OlpygQ"  frameborder="0" allowfullscreen></iframe>
+    </div>
+     </main>
+</body>
+</html>
+
+
+
+
+

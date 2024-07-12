@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos do Mario</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap">
+    <style>
+        /* Estilos CSS aqui */
+        body {
+            font-family: 'Baloo 2', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/png;base64,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"); /* Adiciona uma imagem de fundo */
+            background-size: cover; /* Garante que a imagem cubra todo o fundo */
+            background-repeat: no-repeat;
+            background-position: center; /* Centraliza a imagem no fundo */
+            overflow-x: hidden; /* Impede a rolagem horizontal */
+            background-attachment: fixed;
+        }
+
+        header {
+    background-color: #f44336;
+    color: #fff;
+    padding: 20px; /* Aumenta o padding */
+    text-align: center;
+    transition: background-color 0.5s ease; /* Suaviza a transição da cor de fundo */
+   
+    top: 0; /* Alinha o cabeçalho no topo */
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.5s ease, border-bottom-color 0.5s ease; /* Adiciona transição para a cor do texto e da borda */
+    border-bottom: 2px solid transparent; /* Adiciona uma borda transparente */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Muda a cor do texto ao passar o mouse */
+    border-bottom-color: #ffd700; /* Muda a cor da borda ao passar o mouse */
+}
+
+        section {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo branco semi-transparente */
+            margin: 20px auto; /* Centraliza as seções */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.1s ease;
+            max-width: 800px; /* Define a largura máxima das seções */
+            position: relative; /* Adiciona posição relativa para facilitar o posicionamento do botão */
+        }
+
+        section:hover {
+            transform: scale(1.0); /* Aumenta o tamanho da seção ao passar o mouse */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .imagem {
+            width: 100%;
+            display: block;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto; /* Centraliza a imagem */
+            max-width: 800px; /* Define a largura máxima da imagem */
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        button {
+            animation-duration: 5s;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        section h2 {
+            font-size: 24px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            
+            overflow: hidden; /* Oculta qualquer imagem que estiver fora do contêiner */
+        }
+
+        .carousel img {
+            width: 200px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: transform 0.5s ease; /* Adiciona uma transição suave de transformação */
+        }
+
+        .carousel img:hover {
+            transform: scale(1.08); /* Aumenta um pouco o tamanho da imagem ao passar o mouse */
+        }
+
+        .btn-next {
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-next:hover {
+            background-color: #ff8c00;
+        }
+
+        .btn-antes {
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: absolute; /* Posicionamento absoluto em relação à seção */
+            left: -40px; /* Posiciona o botão 40px à esquerda da seção */
+            top: 50%; /* Alinha o botão verticalmente ao centro da seção */
+            transform: translateY(-50%); /* Desloca o botão para cima 50% da altura da seção */
+        }
+
+        .btn-antes:hover {
+            background-color: #ff8c00;
+        }
+
+        .section-wrapper {
+            display: flex;
+            justify-content: space-between; /* Alinha os itens em cada extremidade */
+            align-items: center; /* Alinha os itens verticalmente */
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative; /* Adiciona posição relativa para facilitar o posicionamento do botão */
+            
+        }
+
+        #game-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .imagem {
+            transition: transform 0.3s;
+            transform: scale(1.1);
+        }
+        button {
+    background-color: #0000008d; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Preenchimento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem externa */
+    cursor: pointer; /* Cursor ao passar por cima */
+    border-radius: 40px; /* Borda arredondada */
+    transition-duration: 0.4s; /* Duração da transição */
+    
+}
+
+button:hover {
+    background-color: #0b0b0b; /* Mudança de cor ao passar o mouse */
+}
+#txt1:hover{
+    transform: scale(1.03);
+}
+   #txt1{
+    background-color: rgba(255, 255, 255, 0.9); /* Adiciona um fundo branco semi-transparente */
+    padding: 20px; /* Adiciona um espaço interno ao redor do texto */
+    border-radius: 15px; /* Aumenta o raio da borda */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais suave */
+    width: 80%;
+    margin: 20px auto; /* Centraliza o texto horizontalmente */
+
+    align-items: center; /* Centraliza verticalmente */
+    transition: transform 0.8s ease; /* Suaviza a transição de escala */
+    display: flex;
+  flex-direction: row; /* Define a direção dos itens flexíveis para horizontal (da esquerda para a direita) */
+   /* Alinha os itens verticalmente ao centro */
+  display: flex;
+
+   /* Alinha os itens horizontalmente ao centro */
+  text-align: center; /* Centraliza o texto */
+ 
+  flex-direction: column; /* Define a direção dos itens flexíveis para vertical (de cima para baixo) */
+   } 
+   .titulo {
+  margin-bottom: 20px; /* Adiciona espaçamento entre o título e a imagem */
+}
+
+.imgg {
+  flex: 0 0 auto; /* Faz a imagem ter tamanho automático */
+  margin-bottom: 20px; /* Adiciona espaçamento entre a imagem e o texto */
+  max-width: 300px; /* Ajusta a largura máxima da imagem para ocupar toda a largura do contêiner */
+  height: auto; /* Garante que a altura seja ajustada automaticamente */
+}
+       
+    </style>
+</head>
+
+<body>
+    <header >
+        <h1 id="inicios">Jogos do Mario</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+    <div class="section-wrapper">
+        <button class="btn-antes" onclick="voltarImagens()"><</button>
+        <section id="carousel" class="section">
+            <h2>Jogos do Mario</h2>
+            <div class="carousel">
+                <a href="#txt1"><img class="imagem" src="https://mario.nintendo.com/static/3c873238d3e45bd07b5cd4309a2b19ea/54214/art.jpg" alt="Imagem 1" title="Super Mario Bros" onclick="mostrarGameInfo('Super Mario Bros')"></a>
+
+                 <img class="imagem" src="https://mario.nintendo.com/static/032eb92880ce69c2171f52e5bf23012e/54214/art.jpg" alt="Imagem 2" title="Super Mario Odyssey" onclick="mostrarGameInfo('Super Mario Odyssey')">
+                 <img class="imagem" src="https://mario.nintendo.com/static/c02efa0a077053b1818aa6b3b7b0918a/54214/art.jpg" alt="Imagem 3" title="Super Mario Kart" onclick="mostrarGameInfo('Super Mario Kart')">
+                <!-- Adicione eventos onclick para cada jogo -->
+            </div>
+        </section>
+        <button class="btn-next" onclick="trocarImagens()">></button>
+    </div>
+    <div id="txt1"> <h2 class="titulo">Super Mario Bros </h2> <img class="imgg" src="https://mario.nintendo.com/static/62f0c8ceb9375b67329afdbceb24d421/24ce1/screen-3.jpg" alt=""> <p>Super Mario Bros é um clássico dos videogames lançado pela Nintendo em 1985 para o console Nintendo Entertainment System (NES). Criado por Shigeru Miyamoto, o jogo apresenta o icônico personagem Mario em uma missão para resgatar a Princesa Peach das garras do vilão Bowser. Com uma jogabilidade simples e envolvente, gráficos coloridos e uma trilha sonora cativante, Super Mario Bros se tornou um marco na história dos videogames, popularizando os jogos eletrônicos e solidificando Mario como um ícone da cultura pop.</p> </div>
+  <div id="txt1">
+  <h2 class="titulo">Super Mario Bros 2</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/55d121a156a5675a462ddfcac4c5e6d2/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario Bros 2 Em Super Mario Bros 2, Mario e seus amigos embarcam em uma aventura através de mundos mágicos, saltando sobre inimigos e lançando vegetais para derrotar o temível Wart.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario Land</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/3fd1a4fbfbfae2b78de8e66b27e797b8/813e3/screen-3.jpg" alt="">
+  <p>Super Mario Land Em Super Mario Land, Mario parte para salvar a princesa Daisy das garras do malvado alienígena Tatanga, enfrentando perigos em terras desconhecidas e inimigos exóticos.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario Bros 3</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/ec0a30e730254b3bed7f482bc59820cb/24ce1/screen-1.jpg" alt="">
+  <p>Super Mario Bros 3 Super Mario Bros 3 leva os jogadores em uma jornada épica pelo Reino dos Cogumelos, com novos power-ups, chefes desafiadores e um vasto mundo cheio de segredos.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario World</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/81b5b23a6a32d75f239c22deee9c83a7/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario World Super Mario World apresenta um vasto mundo interconectado, repleto de fases desafiadoras e segredos ocultos, enquanto Mario e Yoshi unem forças para resgatar a Princesa Peach das garras de Bowser.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario Land 2</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/c988e641b2fffa3559ae1d48aa2cb08d/813e3/screen-3.jpg" alt="">
+  <p>Super Mario Land 2 Em Super Mario Land 2, Mario deve derrotar seu arqui-inimigo, Wario, enquanto viaja por um reino cheio de desafios e inovações, em sua busca para recuperar seu próprio castelo.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario 64</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/0caadecbaad36e189eaed68c6fa01bd3/24ce1/screen-1.jpg" alt="">
+  <p>Super Mario 64 Super Mario 64 revoluciona os jogos de plataforma ao trazer Mario para um mundo tridimensional expansivo, repleto de segredos, estrelas para coletar e desafios de tirar o fôlego no castelo da Princesa Peach.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario Sunshine</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/fe7b8e7d987c0bcd0efaf2b84f3c0d38/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario Sunshine Em Super Mario Sunshine, Mario embarca em uma jornada paradisíaca para limpar a ilha de Delfino da sujeira e restaurar a paz, utilizando sua confiável mochila de água, F.L.U.D.D.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">New Super Mario Bros</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/f89dd8fb06eb857befd143a30b30f10b/24ce1/screen-3.jpg" alt="">
+  <p>New Super Mario Bros New Super Mario Bros combina a nostalgia dos jogos clássicos com novos elementos de gameplay, oferecendo uma experiência fresca enquanto Mario corre para resgatar a princesa Peach das garras de Bowser Jr.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario Bros Wii</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/970ca6e6a91ae979cebaf61b2fc6c1c2/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario Bros Wii Em Super Mario Bros Wii, Mario e seus amigos embarcam em uma aventura multiplayer cooperativa, enfrentando desafios e inimigos em busca de resgatar a princesa Peach das garras de Bowser.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario Galaxy 2</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/7715c5a950f15850088a2df49a538c73/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario Galaxy 2 Super Mario Galaxy 2 leva os jogadores em uma viagem intergaláctica emocionante, com planetas únicos para explorar, power-ups emocionantes e desafios cósmicos enquanto Mario parte para salvar a Princesa Peach.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario 3d Land</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/f64262793d8910b7bf060b954f3d74d9/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario 3d Land Em Super Mario 3D Land, Mario mergulha em um mundo tridimensional cheio de desafios e surpresas, combinando ação clássica da série com novos elementos de gameplay.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">New Super Mario Bros 2</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/c2730813b40dd6e492edbfac8f13fda9/24ce1/screen-3.jpg" alt="">
+  <p>New Super Mario Bros 2 Em New Super Mario Bros 2, Mario e Luigi embarcam em uma busca por moedas em níveis repletos de ouro, enquanto enfrentam Bowser e seu exército de Koopalings.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">New Super Mario Bros. U</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/961e0932b39bc914121c07add939c455/24ce1/screen-3.jpg" alt="">
+  <p>New Super Mario Bros. U Em New Super Mario Bros. U, Mario e seus amigos enfrentam novos desafios em um jogo de plataforma clássico, enquanto tentam resgatar a Princesa Peach das garras de Bowser e seus asseclas.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario 3d World</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/75f4be3a3b0b39e90f46af65be908238/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario 3d World Super Mario 3D World oferece uma experiência multijogador cooperativa em um mundo tridimensional, repleto de novos power-ups, níveis desafiadores e ação frenética enquanto Mario e seus amigos lutam para salvar o Reino dos Cogumelos.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario Maker</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/ad50f1b0bad8258618651a23ceb5c648/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario Maker Super Mario Maker permite que os jogadores criem e compartilhem seus próprios níveis de Super Mario, oferecendo uma experiência infinita de criatividade e desafio.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario Run</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/cfe2eeac417a521ed11b847c0bfbc6d2/cd0be/screen-3.jpg" alt="">
+  <p>Super Mario Run Em Super Mario Run, Mario corre automaticamente através de níveis repletos de ação, enquanto os jogadores tocam na tela para saltar, derrotar inimigos e coletar moedas.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario Odyssey</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/fb22d275468aa2fca6714292d49a94f9/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario Odyssey Super Mario Odyssey leva os jogadores em uma jornada épica ao redor do mundo, enquanto Mario e Cappy unem forças para resgatar a Princesa Peach das garras de Bowser e salvar o Reino dos Cogumelos.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">New Super Mario Maker 2</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/4255686a9bc459dbb3fe6e0dc84f03b2/24ce1/screen-3.jpg" alt="">
+  <p>New Super Mario Maker 2 Em New Super Mario Maker 2, os jogadores podem criar e compartilhar níveis de Super Mario ainda mais elaborados e criativos, com novas ferramentas e elementos de gameplay.</p>
+</div>
+
+<div id="txt1">
+  <h2 class="titulo">Super Mario 3d All Stars</h2>
+  <img class="imgg" src="https://mario.nintendo.com/static/97fb40b61d61fc0d2bc9f441316f5537/24ce1/screen-3.jpg" alt="">
+  <p>Super Mario 3d All Stars Super Mario 3D All-Stars reúne três dos maiores jogos 3D de Super Mario em uma única coleção, com gráficos aprimorados e suporte para o Nintendo Switch.</p>
+</div>
+
+     <a href="#inicios"><button class = "botao" type="submit">Voltar ao inicio</button></a>
+    <script>
+        var imagens = document.querySelectorAll("img"); // Seleciona todas as imagens na página
+
+// Itera sobre cada imagem e adiciona a classe desejada
+for (var i = 0; i < imagens.length; i++) {
+    imagens[i].classList.add("imagem"); // Substitua "sua-classe-aqui" pelo nome da sua classe
+}
+        var novasImagens = [
+            "https://mario.nintendo.com/static/3c873238d3e45bd07b5cd4309a2b19ea/54214/art.jpg",
+            "https://mario.nintendo.com/static/032eb92880ce69c2171f52e5bf23012e/54214/art.jpg",
+            "https://mario.nintendo.com/static/c02efa0a077053b1818aa6b3b7b0918a/54214/art.jpg",
+            "https://mario.nintendo.com/static/439a71db535b4ef1e4b9544caf110364/54214/art.jpg",
+            "https://mario.nintendo.com/static/d84b6041085b9fd7cde76c271d73d413/54214/art.jpg",
+            "https://mario.nintendo.com/static/a51a0d71b5cff3be876bce8264f24c76/54214/art.jpg",
+            "https://mario.nintendo.com/static/72fe74d5ff8b3a74c378ee19b730e26c/54214/art.jpg",
+            "https://mario.nintendo.com/static/f26e48d5faaa09bd3f67a87714860d22/54214/art.jpg",
+            "https://mario.nintendo.com/static/d435d9b014bcc80cfe44f6ffa2d8a127/54214/art.jpg",
+            "https://mario.nintendo.com/static/edaae21ccb00cd1f0751aa87acf6e8cf/54214/art.jpg",
+            "https://mario.nintendo.com/static/879b09d3777fe482cbead335b52b476e/54214/art.jpg",
+            "https://mario.nintendo.com/static/d83ef9d97e5376773f48555145c5be31/54214/art.jpg",
+            "https://mario.nintendo.com/static/0c82ccf01dc047ab07a68bbb6b9679d0/54214/art.jpg",
+            "https://mario.nintendo.com/static/e0a81e40f8e512c299adde81004986f6/54214/art.jpg",
+            "https://mario.nintendo.com/static/9a7d9013ff1294aae846c613aa19d597/54214/art.jpg",
+            "https://mario.nintendo.com/static/424638c4e8bcdebee6cd2e3d37f7e1bb/54214/art.jpg",
+            "https://mario.nintendo.com/static/5d31a73d14ce3713641cee615a6a6e04/54214/art.jpg",
+            "https://mario.nintendo.com/static/d2294717679036651f54f3730f161cd7/54214/art.jpg",
+            "https://mario.nintendo.com/static/c16148d77c11d4ddeb111537e3f66bcc/54214/art.jpg",
+            "https://mario.nintendo.com/static/331bf968f381da6d12aaf23d166d7432/54214/art.jpg",
+            "https://mario.nintendo.com/static/d579b82f338e87a4e36faedf81537cfc/54214/art.jpg"  
+        ];
+        document.addEventListener('DOMContentLoaded', function () {
+            const carouselItems = document.querySelectorAll('.carousel-item');
+
+            carouselItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const id = item.getAttribute('id');
+                    const section = document.getElementById(id);
+                    section.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+        var indiceAtual = 0;
+
+        function trocarImagens() {
+            var imagens = document.querySelectorAll('.carousel img');
+            indiceAtual = (indiceAtual + 3) % novasImagens.length;
+            imagens.forEach(function(img, index) {
+                img.style.transition = "transform 0.8s ease"; // Ajusta a duração da transição
+                img.style.transform = "translateX(-50%)"; // Desliza a imagem para a esquerda
+                setTimeout(function() {
+                    img.src = novasImagens[indiceAtual + index];
+                    img.style.transform = "translateX(0)"; // Desliza a imagem de volta para a posição original
+                }, 700); // Define um atraso para a troca de imagem, correspondente à duração da transição
+            });
+        }
+
+        function voltarImagens() {
+            var imagens = document.querySelectorAll('.carousel img');
+            indiceAtual = (indiceAtual - 3 + novasImagens.length) % novasImagens.length;
+            imagens.forEach(function(img, index) {
+                img.style.transition = "transform 0.7s ease"; // Ajusta a duração da transição
+                img.style.transform = "translateX(50%)"; // Desliza a imagem para a direita
+                setTimeout(function() {
+                    img.src = novasImagens[indiceAtual + index];
+                    img.style.transform = "translateX(0)"; // Desliza a imagem de volta para a posição original
+                }, 700); // Define um atraso para a troca de imagem, correspondente à duração da transição
+            });
+        }
+
+        function mostrarGameInfo(nomeJogo) {
+            var infoDiv = document.getElementById("game-info");
+            var texto = "";
+  function scrollToTop() {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c > 0) {
+                window.requestAnimationFrame(scrollToTop);
+                window.scrollTo(0, c - c / 8);
+            }
+        }
+
+        // Show or hide the "back to top" button based on scroll position
+        window.addEventListener("scroll", function() {
+            const button = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        });
+            // Defina informações para cada jogo
+            switch (nomeJogo) {
+                case "Super Mario Bros":
+                    texto = "Super Mario Bros é um clássico jogo de plataforma lançado pela Nintendo em 1985. O jogo segue Mario em sua missão para salvar a Princesa Peach do vilão Bowser.";
+                    break;
+                case "Super Mario Odyssey":
+                    texto = "Super Mario Odyssey é um jogo de plataforma 3D lançado pela Nintendo em 2017. Neste jogo, Mario viaja por diversos reinos para resgatar a Princesa Peach do maligno Bowser e de sua tentativa de casar com ela.";
+                    break;
+                case "Super Mario Kart":
+                    texto = "Super Mario Kart é um jogo de corrida lançado pela Nintendo em 1992. Ele introduziu a série Mario Kart, onde os jogadores competem em karts controlados por personagens da série Mario.";
+                    break;
+                // Adicione informações para outros jogos aqui
+                default:
+                    texto = "Informações não disponíveis.";
+                    break;
+            }
+
+            infoDiv.innerHTML = "<h2>" + nomeJogo + "</h2><p>" + texto + "</p>";
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+

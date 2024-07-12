@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif; /*fonte da letra do negocio do lado */
+    margin: 0; /* deixa sem um espacinho branco na lateral */
+}
+body, html {
+    background-image: url('https://observatoriodatv.uol.com.br/wp-content/uploads/2019/12/princesas-disney.jpg'); /* URL da imagem de fundo */
+    background-size: cover; /* Para cobrir toda a área do corpo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa */
+}
+.container1 {
+    width: 25%; /* centralizacao do titulo */
+    margin: 0 auto;  /* centralizacao do titulo tbm */
+}
+header {
+    background-color: #be5ab1;  /* cor de fundo em cima*/
+    color: rgb(255, 255, 255);  /*cor do titulo */ 
+}
+header h1 {
+    float: left; /*tamanho do negocio de cima */
+    font-family:'Waltograph', cursive; /*fonte do titulo*/
+}
+.sidebar {
+    height: 100%;
+    width: 200px; /* Largura da sidebar */
+    position: fixed; /* Para manter a sidebar fixa durante a rolagem */
+    top: 0; /*deixa a parte de cima por baixo da parte do lado */
+    background-color: #a51bc0; /* Cor de fundo da sidebar */
+    padding-top: 30px; /*abaixa a escrita do lado */
+    overflow-y: auto; /*barra de rolagem*/
+}
+.sidebar h2 {
+    color: #fff;  /* cor do titulo do lado */
+    text-align: center; /*deixa o titulo do lado no centro */
+    font-family:'Waltograph', cursive; /*fonte da letra do lado */
+}
+
+.sidebar ul {
+    padding: 0; /* deixa a escrita do lado no centro tbm  */
+}
+
+.sidebar ul li {
+    padding: 10px; /* deixa o espaco entre as escritas do lado  */
+    text-align: center; /* deixa a escrita do lado no centro  */
+}
+
+.sidebar ul li a {
+    color: #fff;  /* coe da escrita do lado */
+    text-decoration: none; /* tira a linha em baixo do texto do lado */
+}
+section {
+    padding: 50px 0; /* deixa o espaco entre as caixas da texto */
+    text-align: center;  /* deixa tudo dentro da caixa de texto no  meio  */
+    font-family:'Waltograph', cursive; /*fonte da letra da caixa de texto */
+}
+section h2 {
+    color: #a824a8;  /* cor dos titulos */   
+}
+section p {
+    color: #000000; /* cor da escrita */
+    margin-bottom: 20px; /* distancia da escrita */
+}
+.link{
+    color: #a51bc0;/* cor da palavra q leva p um, link extreno */
+}
+footer {
+    background-color: #b82576;  /* cor do  negocio de baixo*/
+    color: #fff;  /* cor da letra do negocio de baixo */
+    padding: 10px 0; /* altura do negocio de baixo */
+    text-align: center; /* p deixar o negocio de baixo no meio */
+}
+
+body {
+    background-color: white; /* Define o fundo da página como branco */
+  }
+  
+  .texto-branco {
+    max-width: 1050px; /* Define a largura máxima da parte branca */
+    background-color: white; /* Define o fundo do texto como branco */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 20px; /* Adiciona espaço interno para o conteúdo */
+    border-radius: 15px; /* Alinha o conteúdo no iníciodeixa a borda arredondadinha */ 
+    border: 2px solid rgb(184, 26, 137);/* grossura da linha por volta do texto branco */
+    align-items: flex-start; /* Alinha o conteúdo no início */
+    text-decoration: none; /* tira a linha em baixo do texto do botao  */
+  }
+
+  img:hover{
+    transform: scale(0.9);  /* efeito na imagem */ 
+}
+img {
+    transition: transform 0.6s ease-in-out; /* velocidade do efeito da imagem */
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

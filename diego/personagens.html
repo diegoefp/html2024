@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bros</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap">
+    <style>
+        /* CSS */
+        body {
+            font-family: 'Baloo 2', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url("data:image/png;base64,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"); /* Adiciona uma imagem de fundo */
+            background-size: cover; /* Garante que a imagem cubra todo o fundo */
+            background-repeat: no-repeat;
+            background-position: center; /* Centraliza a imagem no fundo */
+            overflow-x: hidden; /* Impede a rolagem horizontal */
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #f44336;
+            color: #fff;
+            padding: 20px; /* Aumenta o padding */
+            text-align: center;
+            transition: background-color 0.5s ease; /* Suaviza a transição da cor de fundo */
+            top: 0; /* Alinha o cabeçalho no topo */
+            width: 100%;
+            z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.5s ease, border-bottom-color 0.5s ease; /* Adiciona transição para a cor do texto e da borda */
+            border-bottom: 2px solid transparent; /* Adiciona uma borda transparente */
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* Muda a cor do texto ao passar o mouse */
+            border-bottom-color: #ffd700; /* Muda a cor da borda ao passar o mouse */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .character {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Alinha verticalmente ao centro */
+            margin-bottom: 20px; /* Adiciona espaço entre as imagens */
+        }
+
+        .character img {
+            max-height: 200px; /* Define a altura máxima dos personagens */
+            max-width: 200px;
+            width: auto; /* Mantém a proporção */
+            cursor: pointer; /* Adiciona cursor de ponteiro ao passar o mouse */
+            transition: transform 0.5s ease; /* Adiciona uma transição suave de transformação */
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+        }
+
+        .character img:hover {
+            transform: scale(1.05);
+        }
+
+.character-text {
+    width: 85%;
+    padding: 20px;
+    background-color: white;
+    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 0, 0, 0.2) 50%, rgba(255, 0, 0, 0.2) 75%, transparent 75%, transparent);
+    color: black;
+    border-radius: 12px;
+    margin-right: auto;
+    margin-left: 95px;
+    text-align: center;
+    transition: transform 0.8s ease;
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s linear infinite;
+}
+
+.character-text:hover {
+    transform: scale(1.02);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.luigi{
+    width: 85%;
+    padding: 20px;
+    background-color: white;
+    background-image: linear-gradient(45deg, rgba(0, 255, 0, 0.2) 25%, transparent 25%, transparent 50%, rgba(0, 255, 0, 0.2) 50%, rgba(0, 255, 0, 0.2) 75%, transparent 75%, transparent);
+    color: black;
+    border-radius: 12px;
+    margin-right: auto;
+    margin-left: 100px;
+    text-align: center;
+    transition: transform 0.8s ease;
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s linear infinite;
+}
+.luigi:hover {
+    transform: scale(1.02);
+}
+
+     .Yoshi {
+    width: 85%;
+    padding: 20px;
+    background-color: white;
+    background-image: linear-gradient(45deg, rgba(128, 0, 128, 0.3) 25%, transparent 25%, transparent 50%, rgba(128, 0, 128, 0.3) 50%, rgba(128, 0, 128, 0.3) 75%, transparent 75%, transparent);
+    color: black;
+    border-radius: 12px;
+    margin-right: auto;
+    margin-left: 68px;
+    text-align: center;
+    transition: transform 0.8s ease;
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s linear infinite;
+}
+.Yoshi:hover {
+    transform: scale(1.02);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+}
+
+
+       .Toad {
+           height: 30%;
+    width: 85%;
+    padding: 20px;
+    background-color: white;
+    background-image: linear-gradient(45deg, rgba(0, 0, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(0, 0, 255, 0.2) 50%, rgba(0, 0, 255, 0.2) 75%, transparent 75%, transparent);
+    color: black;
+    border-radius: 12px;
+    margin-right: auto;
+    margin-left: 70px;
+    text-align: center;
+    transition: transform 0.8s ease;
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s linear infinite;
+}
+
+.Toad:hover {
+    transform: scale(1.02);
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+}
+
+
+.Dk{
+     width: 85%;
+    padding: 20px;
+    background-color: white;
+    background-image: linear-gradient(45deg, rgba(139, 69, 19, 0.35) 25%, transparent 25%, transparent 50%, rgba(139, 69, 19, 0.35) 50%, rgba(139, 69, 19, 0.35) 75%, transparent 75%, transparent);
+    color: black;
+    border-radius: 12px;
+    margin-right: auto;
+    margin-left: 10px;
+    text-align: center;
+    transition: transform 0.8s ease;
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s linear infinite;
+}
+.Dk:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+button {
+    background-color: #0000008d; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Preenchimento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem externa */
+    cursor: pointer; /* Cursor ao passar por cima */
+    border-radius: 40px; /* Borda arredondada */
+    transition-duration: 0.4s; /* Duração da transição */
+}
+
+button:hover {
+    background-color: #0b0b0b; /* Mudança de cor ao passar o mouse */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mario Bros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="characters">
+            <h2 class="titulo">Personagens</h2>
+            <div class="character" onclick="toggleDescription(this)">
+                <img src="https://mario.nintendo.com/static/a5f7fe49f4862aa68eaba347ee05c336/02be2/mario.png" alt="Mario">
+                <div class="character-text"><h1>Mario</h1>O herói principal do Reino do Cogumelo. Mario é sempre brilhante e alegre e instantaneamente reconhecível por seu macacão azul, boné vermelho e bigode característico. Ele é um amigo de confiança da Princesa Peach e ele e seu irmão Luigi são conhecidos em todo o país por seus atos de bravura. Mario é excelente em esportes como tênis, golfe, beisebol, futebol e até corridas de kart. Ele é bom em todos eles! Ele é encanador de profissão, mas é realmente um pau para toda obra. Ele usa sua habilidade de salto magistral e uma variedade de power-ups para enfrentar seu arquirrival, Bowser.</div>
+            </div>
+            <div class="character" onclick="toggleDescription(this)">
+                <img src="https://mario.nintendo.com/static/12386c8cabe28d812b427d21c9f26d52/d9801/luigi.png" alt="Luigi">
+                <div class="luigi"><h1>Luigi</h1>Irmão de Mario e companheiro herói do Reino do Cogumelo. Luigi é instantaneamente reconhecível em seu chapéu verde e camisa verde, sua marca registrada.
+
+                    Luigi é gentil, mas pode ficar um pouco nervoso, especialmente perto de fantasmas. No entanto, suas habilidades estão no mesmo nível das de Mario, então quando esses irmãos se unem, não há nada que eles não possam alcançar.
+                    
+                    Luigi é mais alto e pode pular mais alto que Mario. Se você olhar de perto, também notará que o formato do bigode também é um pouco diferente.</div>
+            </div>
+            <div class="character" onclick="toggleDescription(this)">
+                <img src="https://mario.nintendo.com/static/54c0617c992012b38e212c154f4e3944/3eddd/waluigi.png" alt="Yoshi">
+                <div class="Yoshi"><h1>Waluigi</h1>Amigo e cúmplice de Wario. Waluigi é o rival autoproclamado de Luigi.
+
+Waluigi está disposto a se esforçar muito para derrotar Mario e Luigi, nem que seja para irritá-los. Seus braços e pernas longos ajudam a mantê-lo competitivo nos esportes.</div>
+            </div>
+            <div class="character" onclick="toggleDescription(this)">
+                <img src="https://mario.nintendo.com/static/e3ebf11b069067da929b608250baa44e/55d59/toad.png" alt="Toad">
+                <div class="Toad"><h1>Toad</h1>Um residente do Reino do Cogumelo que trabalha a serviço da Princesa Peach. Toad tem manchas vermelhas na cabeça, embora outros de sua espécie tenham uma variedade de cores.
+
+Toad é muito alegre e leal. Ele faz o possível para ajudar Mario e Luigi em seus esforços para proteger o Reino do Cogumelo de Bowser, mesmo que ele acabe se colocando em perigo no processo.</div>
+            </div>
+            <div class="character">
+                <img class="donkey" src="https://mario.nintendo.com/static/e1d6f43b375300777c647d7505dfc514/c2c43/donkey-kong.png" alt="Donkey Kong">
+                <div class="Dk"><h1>Donkey Kong</h1>O rei da selva cuja marca registrada é a gravata vermelha com suas iniciais.
+
+Donkey Kong pode arremessar barris gigantes com a maior facilidade e é tão poderoso que o chão treme quando ele bate no chão.
+
+Ele adora bananas e sempre guarda um grande estoque delas em sua casa na árvore.</div>
+            </div>
+            
+        </section>
+      <a href="https://mario.nintendo.com/characters/"> <button>Saiba Mais ➤</button></a>
+   
+        <section id="games">
+
+        </section>
+    </main>
+
+    <script>
+        function toggleDescription(element) {
+            const text = element.querySelector('.character-text');
+            if (text.style.display === 'none' || text.style.display === '') {
+                text.style.display = 'block';
+            } else {
+                text.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+

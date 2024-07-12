@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewandowski - Carreira</title>
+    <style>
+       body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Azul escuro */
+    color: #ffffff; /* Grená */
+}
+
+
+header {
+    background-color: #d50012; /* Grená */
+    color: #000000; /* Branco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    transition: margin-left 0.3s ease; /* Adicionando transição suave */
+}
+
+
+.year-container {
+    display: flex;
+    align-items: center;
+    margin: 10px auto; /* Centralizando horizontalmente */
+    background-color: #d50012; /* Grená */
+    border: 1px solid #ffffff; /* Azul escuro */
+    border-radius: 24px;
+    height: 220px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 600px; /* Ajustando a largura do contêiner */
+}
+
+
+.year-container:hover {
+    transform: scale(1.25);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.year-card {
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+
+
+.year-card h2 {
+    margin-top: 0;
+    color: #ffffff; /* Branco */
+    font-size: 1.5em;
+}
+
+
+.year-card ul {
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Adicionando alinhamento à esquerda */
+}
+
+
+.year-card ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+
+.year-card ul li strong {
+    color: #0400ff; /* Branco */
+}
+
+
+.year-image {
+    width: 220px; /* Diminuindo a largura da imagem */
+    height: 220px; /* Diminuindo a altura da imagem */
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+
+@media (max-width: 500px) {
+    .year-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .year-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .year-image {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        border: none;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+}
+
+
+#lewaintro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    color: #000000; /* Branco */
+}
+
+
+#final {
+    font-size: 24px;
+}
+
+
+#titulo {
+    color: #ffffff; /* Branco */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Esconder a barra lateral inicialmente */
+    background-color: #0003a5; /* Azul escuro */
+    color: #ffffff; /* Branco */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 100%; /* Ajustando a altura para 100% */
+    z-index: 1000;
+    box-sizing: border-box; /* Adicionando box-sizing para incluir padding na largura total */
+    transition: left 0.3s ease; /* Adicionando transição suave */
+}
+
+
+#sidebar ul {
+    padding: 0;
+    list-style-type: none; /* Removendo as bolinhas */
+}
+
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+
+#sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#sidebar ul li a:hover {
+    color: #d50a0a; /* Grená */
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #0011ff;
+    max-width: 50%; /* Defina o valor desejado para a largura máxima */
+    margin: 0 auto; /* Centralizando horizontalmente */
+}
+
+
+#Introducao {
+    color: rgb(3, 2, 2);
+    font-size: 30px;
+}
+
+
+#golmarcante {
+    color: rgb(0, 0, 0);
+}
+
+
+#temporadas {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+
+#titulofinal {
+    color: rgb(0, 0, 0);
+}
+
+
+#final {
+    color: rgb(0, 0, 0);
+}
+
+
+#hover-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    z-index: 999; /* Garantir que a área de hover esteja acima de outros elementos */
+    cursor: pointer;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 href= "#top" id="titulo">ㅤㅤCarreira de Lewandowski</h1>
+    </header>
+    <div id="hover-area"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#titulo">Introdução</a></li>
+            <li><a href="#temporadas">Temporadas</a></li>
+            <li><a href="#titulofinal">Conclusão</a></li>
+            <li><a href="neymar.html">Carreira de Neymar</a></li>
+            <li><a href="cristiano.html">Carreira de CR7</a></li>
+            <li><a href="dybala.html">Carreira de Dybala</a></li>
+            <li><a href="reus.html">Carreira de Reus</a></li>
+            <li><a href="index.html">Carreira de Messi</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="lewa-info">
+            <h1 id="Introducao">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤINTRODUÇÃO</h1>
+            <h1 id="lewaintro">
+                Robert Lewandowski, nascido em 1988 na Polônia, é uma estrela do futebol mundial, conhecido por sua habilidade como atacante. Ele brilhou em clubes como Borussia Dortmund e Bayern de Munique, conquistando vários títulos. Além disso, é um artilheiro importante da seleção polonesa. Sua capacidade de marcar gols e sua presença em campo o tornaram uma lenda do esporte.
+
+
+                </h1>
+            <h1 id="temporadas">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTEMPORADAS</h1>
+               
+            <div class="year-container">
+                <img src="https://pliki.meczyki.pl/big700/373/60c755fddbacc.JPG" alt="Lionel Messi 2008" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2008</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong>  nenhum</li>
+                        <li><strong>Gols:</strong> 23</li>
+                        <li><strong>Assistências:</strong> 8</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pbs.twimg.com/media/EFZuJxOW4AAJaus.jpg" alt="Lionel Messi 2009" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2009</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 20</li>
+                        <li><strong>Assistências:</strong> 9</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pbs.twimg.com/media/FgEfngpXgAAgHVw.jpg:large" alt="Lionel Messi 2010" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2010</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Bundesliga</li>
+                        <li><strong>Gols:</strong> 9</li>
+                        <li><strong>Assistências:</strong> 4</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pbs.twimg.com/media/FCE_kKxWQAITEyV.jpg" alt="Lionel Messi 2011" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2011</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Bundesliga e Copa da Alemanha</li>
+                        <li><strong>Gols:</strong> 30</li>
+                        <li><strong>Assistências:</strong> 12</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://static.dw.com/image/15683789_605.jpg" alt="Lionel Messi 2012" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2012</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Supercopa da  Alemanha</li>
+                        <li><strong>Gols:</strong> 36</li>
+                        <li><strong>Assistências:</strong> 13</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://i.pinimg.com/474x/5b/45/ef/5b45efdf772e8edd333c362291bbed36.jpg" alt="Lionel Messi 2013" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2013</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 28</li>
+                        <li><strong>Assistências:</strong> 13</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://img.fcbayern.com/image/upload/t_cms-16x9/f_auto/w_1600%2Cc_fill/q_auto/cms/public/images/fcbayern-com/homepage/saison-19-20/profis/lewandowski/140923_lewandowski_02_ima.jpg" alt="Lionel Messi 2014" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2014</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 25</li>
+                        <li><strong>Assistências:</strong> 8</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://img.fcbayern.com/image/upload/t_cms-1x1-seo/v1601374341/cms/public/images/fcbayern-com/media/images/homepage/spieler-15-16/lewandowski/jubel_ima_220915.jpg" alt="Lionel Messi 2015" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2015</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Bundesliga, Copa da Alemanha e Supercopa da Alemanha</li>
+                        <li><strong>Gols:</strong> 42</li>
+                        <li><strong>Assistências:</strong> 14</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://cdn.espn.com.br/image/wide/622_dcbb03c0-15d3-3753-81fc-0deb29fc926b.jpg   " alt="Lionel Messi 2016" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2016</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Bundesliga e Copa da Alemanha</li>
+                        <li><strong>Gols:</strong> 43</li>
+                        <li><strong>Assistências:</strong> 21</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://www.ogol.com.br/img/galerias/566/363566_med_eintracht_frankfurt_x_bayern_munchen_1_bundesliga_2016_2017_campeonato_nbsp_jornada_7.jpg.jpg" alt="Lionel Messi 2017" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2017</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Bundesliga e Copa da Alemanha</li>
+                        <li><strong>Gols:</strong> 42</li>
+                        <li><strong>Assistências:</strong> 28</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/02/07/15180366995162.jpg" alt="Lionel Messi 2018" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2018</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Bundesliga e Supercopa da Alemanha</li>
+                        <li><strong>Gols:</strong> 40</li>
+                        <li><strong>Assistências:</strong> 21</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://img.fcbayern.com/image/upload/t_cms-1x1-seo/v1601352942/cms/public/images/fcbayern-com/homepage/saison-19-20/profis/lewandowski/191214_lewandowski_01_get.jpg" alt="Lionel Messi 2019" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2019</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Bundesliga, Supercopa da Alemanha e Copa da Alemanha</li>
+                        <li><strong>Gols:</strong> 55</li>
+                        <li><strong>Assistências:</strong> 23</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://conteudo.imguol.com.br/c/esporte/b1/2020/11/27/lewandowski-com-a-taca-de-campeao-da-champions-league-1606513281862_v2_900x506.jpg" alt="Lionel Messi 2020" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2020</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Bundesliga, UEFA Champions League, Mundial de Clubes da FIFA, Supercopa da UEFA e Copa da Alemanha</li>
+                        <li><strong>Gols:</strong> 48</li>
+                        <li><strong>Assistências:</strong> 16</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pbs.twimg.com/media/FDnGsEUWEAUu5QI.jpg:large" alt="Lionel Messi 2021" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2021</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Bundesliga e Copa da Alemanha</li>
+                        <li><strong>Gols:</strong> 50</li>
+                        <li><strong>Assistências:</strong> 19</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s2-oglobo.glbimg.com/VwDYj9ZZmmR7W0MmVI8G8tI8A6U=/0x0:5039x3348/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2022/b/9/zboxhWTQSXgkWTJs1gSg/99710195-files-in-this-file-photo-taken-on-may-14-2022-bayern-munichs-polish-forward-robert-lewando.jpg" alt="Lionel Messi 2022" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2022</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga e Supercopa da Espanha</li>
+                        <li><strong>Gols:</strong> 33</li>
+                        <li><strong>Assistências:</strong> 18</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://www.fcbarcelonanoticias.com/uploads/s1/13/57/74/4/lewandowski-delantero-suplente.jpeg" alt="Lionel Messi 2023" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2023</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 22</li>
+                        <li><strong>Assistências:</strong> 11</li>
+                    </ul>
+                </div>
+                </div>
+                <hr>
+                <div class="year-container">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/64e79729d54fdb42ad3b0612/0x0.jpg?format=jpg&crop=2937,1652,x0,y74,safe&height=900&width=1600&fit=bounds" class="year-image">
+                    <div class="year-card">
+                        <h2>Temporada: 2024</h2>
+                        <ul>
+                            <li><strong>Títulos:</strong>  nenhum</li>
+                            <li><strong>Gols:</strong> 26</li>
+                            <li><strong>Assistências:</strong> 12</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <h1 id="titulofinal"> CONCLUSÃO</h1>
+            <h1 id="final">
+                Robert Lewandowski é amplamente reconhecido como um dos maiores atacantes de sua geração. Ao longo de sua carreira, ele destacou-se por sua habilidade de finalização precisa, força física e inteligência tática. Lewandowski construiu uma carreira brilhante no futebol europeu, especialmente no Borussia Dortmund e no Bayern de Munique, onde acumulou inúmeros títulos, incluindo várias Bundesligas, Copas da Alemanha e a cobiçada Liga dos Campeões da UEFA.</h1>
+               
+                <h1  id="golmarcante">HAT-TRICK MAIS RAPIDO DA CHAMPIONS <br><iframe width="560" height="315" src="https://www.youtube.com/embed/T_MIIZsICfs" title="video"
+                frameborder="0" allow="accelerometer;clipboard-write;encrypted-media;gyroscope;picture-in-picture"allowfullscreen></iframe> </h1>
+               
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var hoverArea = document.getElementById('hover-area');
+                        var sidebar = document.getElementById('sidebar');
+                        var mainContent = document.querySelector('main');
+           
+                    sidebar.style.left = '0';
+   
+                    sidebar.addEventListener('mouseenter', function() {
+                    sidebar.style.left = '0';
+                        mainContent.style.marginLeft = '200px';
+                });
+   
+                    sidebar.addEventListener('mouseleave', function() {
+                    sidebar.style.left = '-180px'; // Ajuste o valor para o tamanho do pedaço da barra lateral a ser exibido
+                        mainContent.style.marginLeft = '0';
+                });
+   
+                });
+    </script>
+</body>
+</html>
+
+
+

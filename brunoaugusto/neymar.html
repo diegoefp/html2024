@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neymar Jr - Carreira</title>
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #052975; /* Azul escuro */
+    color: rgb(255, 255, 255); /* Vermelho */
+}
+
+
+header {
+    background-color: rgb(173, 5, 5); /* Vermelho */
+    color: #0b0a66; /* Branco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1300px;
+            margin: 0 auto;
+            transition: left 0.3s ease; /* Adicionando transição suave */
+        }
+
+
+        .year-container {
+    display: flex;
+    align-items: center;
+    margin: 10px auto; /* Centralizando horizontalmente */
+    background-color: #c90a0a; /* Grená */
+    border: 1px solid #052975; /* Azul escuro */
+    border-radius: 24px;
+    height: 220px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 600px; /* Ajustando a largura do contêiner */
+}
+
+
+.year-container:hover {
+    transform: scale(1.25);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.year-card {
+    padding: 30px;
+    width: 320px; /* Diminuindo a largura do cartão */
+}
+
+
+.year-card h2 {
+    margin-top: 0;
+    color: #ffffff; /* Branco */
+    font-size: 1.5em;
+}
+
+
+.year-card ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.year-card ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+
+.year-card ul li strong {
+    color: #0d17a5; /* Branco */
+}
+
+
+.year-image {
+    width: 220px; /* Diminuindo a largura da imagem */
+    height: 220px; /* Diminuindo a altura da imagem */
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+
+@media (max-width: 500px) {
+    .year-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+    .year-card {
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+
+    .year-image {
+        width: 20%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+}
+#Introducao{
+    font-size: 32px;
+    color: white;
+}
+#neyintro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    color: #ffffff; /* Branco */
+}
+
+
+#final {
+    font-size: 24px;
+}
+
+
+#titulo {
+    color: #ffffff; /* Branco */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000b70; /* Azul escuro */
+    color: #ffffff; /* Branco */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 100%; /* Ajustando a altura para 100% */
+    z-index: 1000;
+    transition: left 0.3s ease; /* Adicionando transição suave */
+    box-sizing: border-box; /* Adicionando box-sizing para incluir padding na largura total */
+}
+
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+
+#sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#sidebar ul li a:hover {
+    color: #00a3e0; /* Azul claro */
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ffffff;
+    max-width: 60%; /* Defina o valor desejado para a largura máxima */
+    margin: 0 auto; /* Centralizando horizontalmente */
+}
+
+
+main {
+    margin-left: 0; /* Removendo a margem esquerda ao fechar a barra lateral */
+}
+ #temporadas{
+    color: #ffffff;
+    font-size: 30px;
+ }
+ #hover-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    z-index: 999; /* Garantir que a área de hover esteja acima de outros elementos */
+    cursor: pointer;
+    transition: transform 1.3s ease; /* Adicionando transição suave */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 href= "#top" id="titulo">ㅤㅤCarreira de Neymar jr</h1>
+    </header>
+    <div id="hover-area"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#titulo">Introdução</a></li>
+            <li><a href="#Itemporadas">Temporadas</a></li>
+            <li><a href="#titulofinal">Conclusão</a></li>
+            <li><a href="messi.html">Carreira de Messi</a></li>
+            <li><a href="cristiano.html">Carreira de CR7</a></li>
+            <li><a href="dybala.html">Carreira de Dybala</a></li>
+            <li><a href="reus.html">Carreira de Reus</a></li>
+            <li><a href="lewa.html">Carreira de Lewandowski</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="ney-info">
+            <h1 id="Introducao">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤINTRODUÇÃO</h1>
+        <h1 id="neyintro"> Neymar da Silva Santos Júnior, mais conhecido como Neymar, é um futebolista brasileiro nascido em 5 de fevereiro de 1992 em Mogi das Cruzes, São Paulo. Renomado por sua habilidade técnica, velocidade e capacidade de drible, Neymar emergiu como uma das principais estrelas do futebol mundial.<br>
+            Iniciou sua carreira profissional no Santos FC, onde ajudou o clube a conquistar a Copa Libertadores em 2011. Em 2013, transferiu-se para o FC Barcelona, formando o famoso trio "MSN" ao lado de Lionel Messi e Luis Suárez, ganhando a Liga dos Campeões da UEFA em 2015.</h1>
+
+
+            <h1 id="temporadas">ㅤㅤㅤ  ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTEMPORADAS</h1>
+            <div class="year-container">
+                <img src="https://placar.com.br/wp-content/uploads/2022/03/neymar-1.jpg" alt="Ney 2009" class="year-image">
+                <div class="year-card">
+                    <h2> Temporada: 2009</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 14</li>
+                        <li><strong>Assistências:</strong> 7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://esportecerto.com/wp-content/uploads/2021/03/img_60539387bb00a.jpg" alt="Ney 2010" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2010</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Campeonato Paulista, Copa do Brasil</li>
+                        <li><strong>Gols:</strong> 45</li>
+                        <li><strong>Assistências:</strong> 16</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://conteudo.imguol.com.br/c/esporte/a8/2020/07/23/neymar-seguido-por-borges-comemora-gol-do-santos-contra-o-flamengo-em-2011-1595542220966_v2_3x4.jpg" alt="Ney 2011" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2011</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Campeonato Paulista, Copa Libertadores</li>
+                        <li><strong>Gols:</strong> 31</li>
+                        <li><strong>Assistências:</strong> 15</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pbs.twimg.com/media/FGvQn6QVQA4KC71.jpg" alt="Ney 2012" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2012</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Campeonato Paulista, Recopa Sul-Americana</li>
+                        <li><strong>Gols:</strong> 52</li>
+                        <li><strong>Assistências:</strong> 25</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://images.ctfassets.net/3mv54pzvptwz/6HF65hdwT7EZ2CFyvwToSV/d2b8b823a7affb758ea0e79737de0d6a/Foto-1-Destaque-3.jpg" alt="Ney 2013" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2013</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa das Confederações, Supercopa da Espaha</li>
+                        <li><strong>Gols:</strong> 41</li>
+                        <li><strong>Assistências:</strong> 33</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2014/06/18/neymarcabisbaixoap.jpg" alt="Ney 2014" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2014</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga, Copa del Rey</li>
+                        <li><strong>Gols:</strong> 54</li>
+                        <li><strong>Assistências:</strong> 17</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://images.ctfassets.net/3mv54pzvptwz/5zqIYfPe6IJyERhFCvCUs2/a1c7407ee3a30fc008cea5ba508f08dd/neymar2_reu.jpg" alt="Ney 2015" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2015</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga, Copa del Rey, Champions League</li>
+                        <li><strong>Gols:</strong> 35</li>
+                        <li><strong>Assistências:</strong> 22</li>
+                        <li> Todo catalão sonha com esse Barcelona</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s2.glbimg.com/C-d75P4mQv1gC7fMlL0zwMPHt_c=/0x0:2000x1371/690x473/s.glbimg.com/es/ge/f/original/2016/08/20/gettyimages-592597166_f0yhIMQ.jpg" alt="ney 2016" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2016</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Olimpíadas, La Liga, Copa del Rey, Supercopa da Espanha, Supercopa da UEFA, Mundial de Clubes da FIFA</li>
+                        <li><strong>Gols:</strong> 41</li>
+                        <li><strong>Assistências:</strong> 23</li>
+                        <li>O auge do craque!</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://i.pinimg.com/1200x/85/de/b4/85deb4bc6d95cf165775798c607c7497.jpg" alt="Ney 2017" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2017</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Supercopa da espanha, Ligue 1, Copa da França, Coupe de Ligue 1, Trophée des Champions </li>
+                        <li><strong>Gols:</strong> 32</li>
+                        <li><strong>Assistências:</strong> 18</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://imagenes.elpais.com/resizer/v2/GOQ56ZN5CPVKYLLURD2LJ6ROT4.jpg?auth=fcb1c61c84ed42caf85a58186e8e2ef4095577ca88f2bdca32007fb2c79b942f&width=1960&height=1470&smart=true" alt="Ney  2015" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2018</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Ligue 1, Trophée des Champions</li>
+                        <li><strong>Gols:</strong> 27</li>
+                        <li><strong>Assistências:</strong> 16</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://icdn.psgtalk.com/wp-content/uploads/2019/12/Neymar-PSG-vs-Nantes-Ligue-1-2019.jpg" alt="Ney 2019" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2019</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Ligue 1, Copa da França, Coupe de la Ligue</li>
+                        <li><strong>Gols:</strong> 23</li>
+                        <li><strong>Assistências:</strong> 14</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://conteudo.imguol.com.br/c/esporte/0f/2020/12/07/neymar-em-acao-durante-partida-entre-manchester-united-e-psg-pela-liga-dos-campeoes-2020-21-1607377446286_v2_3x4.jpg" alt="Ney 2020" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2020</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa da França, Copa América</li>
+                        <li><strong>Gols:</strong> 19   </li>
+                        <li><strong>Assistências:</strong> 12</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3400224:1691062844/Neymar.jpg?f=4x3&$p$f=90e64a4" alt="Ney 2021" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2021</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Ligue 1</li>
+                        <li><strong>Gols:</strong> 17</li>
+                        <li><strong>Assistências:</strong> 11</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2022/12/10/2022-12-09t175713z_1_lynxmpeib80s8_rtroptp_4_soccer-worldcup-cro-bra-report-1h8226cobxhkp.JPG" alt="Ney 2022" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2022</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Ligue 1</li>
+                        <li><strong>Gols:</strong> 23</li>
+                        <li><strong>Assistências:</strong> 12</li>
+                        <li>faltavam apenas 4 minutos...</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s2-oglobo.glbimg.com/yEtJtmwiM3BgprS50qWuHqTCybQ=/0x0:4589x3059/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/5/G/68NVbBRUOEomm2qFihTQ/102312168-files-in-this-file-photo-taken-on-february-11-2023-paris-saint-germains-brazilian-forward.jpg" alt="Ney 2023" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada 2023</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Ligue 1</li>
+                        <li><strong>Gols:</strong> 23</li>
+                        <li><strong>Assistências:</strong> 7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://assets-fr.imgfoot.com/neymar-2324.jpg" alt="Ney 2024" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2024</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Liga da Arábia</li>
+                        <li><strong>Gols:</strong> 18</li>
+                        <li><strong>Assistências:</strong> 6</li>
+                        <li>Como isso aconteceu???</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            </section>
+           
+            <h1>ㅤㅤㅤ</h1>
+            <h1 id="titulofinal">CONCLUSÃO<br></h1><h1 id="final">Sua jornada desde os campos do Santos até os maiores palcos do futebol mundial, como o FC Barcelona e o Paris Saint-Germain, demonstra sua dedicação e paixão pelo jogo. <br>
+                Além disso, sua atuação pela Seleção Brasileira solidificou seu status como um dos maiores jogadores de todos os tempos do Brasil. À medida que continua sua carreira, Neymar permanece uma inspiração para milhões de fãs e jovens atletas ao redor do mundo, simbolizando a magia e a emoção do futebol.</h1>
+           
+               <div class="container">
+               <div class="div-video">
+                <h1>ㅤㅤㅤㅤㅤㅤㅤGOL MARCANTE<br></h1><iframe width="560" height="315" src="https://www.youtube.com/embed/1wvwSER_w-M" title="video"
+                 frameborder="0" allow="accelerometer;clipboard-write;encrypted-media;gyroscope;picture-in-picture"allowfullscreen></iframe>
+                 
+                 <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var hoverArea = document.getElementById('hover-area');
+                        var sidebar = document.getElementById('sidebar');
+                        var mainContent = document.querySelector('main');
+           
+                    sidebar.style.left = '0';
+   
+                    sidebar.addEventListener('mouseenter', function() {
+                    sidebar.style.left = '0';
+                        mainContent.style.marginLeft = '200px';
+                });
+   
+                    sidebar.addEventListener('mouseleave', function() {
+                    sidebar.style.left = '-180px'; // Ajuste o valor para o tamanho do pedaço da barra lateral a ser exibido
+                        mainContent.style.marginLeft = '0';
+                });
+   
+                });
+    </script>
+</main>
+</body>
+</html>
+
+
+
+
+

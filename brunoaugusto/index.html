@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi - Carreira</title>
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #004d98; /* Azul escuro */
+    color: #ece2e2; /* Grená */
+}
+
+
+header {
+    background-color: #a50044; /* Grená */
+    color: #ffffff; /* Branco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    transition: margin-left 0.3s ease; /* Adicionando transição suave */
+}
+
+
+.year-container {
+    display: flex;
+    align-items: center;
+    margin: 10px auto; /* Centralizando horizontalmente */
+    background-color: #a50044; /* Grená */
+    border: 1px solid #004d98; /* Azul escuro */
+    border-radius: 24px;
+    height: 220px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 600px; /* Ajustando a largura do contêiner */
+}
+
+
+.year-container:hover {
+    transform: scale(1.25);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.year-card {
+    text-align: left; /* Alteração para alinhar à esquerda */
+    padding: 30px;
+    width: 100%;
+}
+
+
+.year-card h2 {
+    margin-top: 0;
+    color: #ffffff; /* Branco */
+    font-size: 1.5em;
+}
+
+
+.year-card ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.year-card ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+
+.year-card ul li strong {
+    color: #ffffff; /* Branco */
+}
+
+
+.year-image {
+    width: 220px; /* Diminuindo a largura da imagem */
+    height: 220px; /* Diminuindo a altura da imagem */
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+
+@media (max-width: 500px) {
+    .year-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .year-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .year-image {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        border: none;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+}
+
+
+#messiintro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    color: #ffffff; /* Branco */
+}
+
+
+#final {
+    font-size: 24px;
+}
+
+
+#titulo {
+    color: #ffffff; /* Branco */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Esconder a barra lateral inicialmente */
+    background-color: #0003a5; /* Azul escuro */
+    color: #ffffff; /* Branco */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 100%; /* Ajustando a altura para 100% */
+    z-index: 1000;
+    box-sizing: border-box; /* Adicionando box-sizing para incluir padding na largura total */
+    transition: left 0.3s ease; /* Adicionando transição suave */
+}
+
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+
+#sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#sidebar ul li a:hover {
+    color: #1e29be; /* Grená */
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #d50a0a;
+    max-width: 50%; /* Defina o valor desejado para a largura máxima */
+    margin: 0 auto; /* Centralizando horizontalmente */
+}
+
+
+#Introducao {
+    color: white;
+    font-size: 30px;
+}
+
+
+#golmarcante {
+    color: white;
+}
+
+
+#temporadas {
+    color: white;
+    font-size: 30px;
+}
+
+
+#titulofinal {
+    color: white;
+}
+
+
+#final {
+    color: white;
+}
+
+
+#hover-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    z-index: 999; /* Garantir que a área de hover esteja acima de outros elementos */
+    cursor: pointer;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 href= "#top" id="titulo">ㅤㅤCarreira de Lionel Messi</h1>
+    </header>
+    <div id="hover-area"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#titulo">Introdução</a></li>
+            <li><a href="#temporadas">Temporadas</a></li>
+            <li><a href="#titulofinal">Conclusão</a></li>
+            <li><a href="neymar.html">Carreira de Neymar</a></li>
+            <li><a href="cristiano.html">Carreira de CR7</a></li>
+            <li><a href="dybala.html">Carreira de Dybala</a></li>
+            <li><a href="reus.html">Carreira de Reus</a></li>
+            <li><a href="lewa.html">Carreira de Lewandowski</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="messi-info">
+            <h1 id="Introducao">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤINTRODUÇÃO</h1>
+            <h1 id="messiintro"> Lionel Messi: Nascido em Rosário, Argentina, em 24 de junho de 1987, Lionel Messi é um dos maiores jogadores de futebol de todos os tempos. Sua jornada começou no Newell's Old Boys antes de se juntar à academia juvenil do Barcelona aos 13 anos.<br>
+                Desde então, Messi encantou o mundo com suas jogadas mágicas e precisão no gol. Ele acumulou inúmeros títulos com o Barcelona, incluindo múltiplas La Ligas e Liga dos Campeões da UEFA. Além disso, sua contribuição para a seleção argentina é inestimável. Sua carreira é um testemunho de perseverança, paixão e talento extraordinário, fazendo dele uma verdadeira lenda do futebol.</h1>
+            <h1 id="temporadas">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTEMPORADAS</h1>
+                <div class="year-container">
+                <img src="https://conteudo.imguol.com.br/c/esporte/1d/2020/05/20/messi-comemora-seu-primeiro-gol-pelo-barcelona-com-ronaldinho-em-2005-1589999557495_v2_849x1280.jpg" alt="Lionel Messi 2005" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2005</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga</li>
+                        <li><strong>Gols:</strong> 7</li>
+                        <li><strong>Assistências:</strong>1</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://i.pinimg.com/736x/5a/c2/78/5ac278289afe9ec3b63acffc822a2074.jpg" alt="Lionel Messi 2006" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2006</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 8</li>
+                        <li><strong>Assistências:</strong>5</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://i0.wp.com/e1.pxfuel.com/desktop-wallpaper/422/120/desktop-wallpaper-why-messi-s-new-look-will-save-men-s-hair-messi-long-hair.jpg?fit=960%2C960&ssl=1" alt="Lionel Messi 2007" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2007</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga, Supercopa da Espanha</li>
+                        <li><strong>Gols:</strong> 17</li>
+                        <li><strong>Assistências:</strong>3</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pbs.twimg.com/media/D2mvpOpX0AEBr8M.jpg:large" alt="Lionel Messi 2008" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2008</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Liga dos campeões da UEFA, La Liga, Copa del Rey </li>
+                        <li><strong>Gols:</strong> 38</li>
+                        <li><strong>Assistências:</strong> 17</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVHeUTAZEtMjWO7GydNUSkWxW_FnASmWTbu6iVPFprhw&s" alt="Lionel Messi 2009" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2009</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Liga dos campeões da UEFA, La Liga, Copa del Rey, Supercopa da UEFA, Supercopa da Espanha, Mundial de Clubes</li>
+                        <li><strong>Gols:</strong> 47</li>
+                        <li><strong>Assistências:</strong>11</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://i.pinimg.com/originals/14/dc/f1/14dcf12a99ffc3f79ab263d6f5a7a8fa.jpg" alt="Lionel Messi 2010" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2010</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga, Supercopa da Espanha</li>
+                        <li><strong>Gols:</strong> 60</li>
+                        <li><strong>Assistências:</strong> 17</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://i.pinimg.com/originals/ca/49/ca/ca49cac5aa41b8b57bc7070878e834e6.jpg" alt="Lionel Messi 2011" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2011</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Liga dos campeões da UEFA, La Liga, Supercopa da UEFA, Supercopa da Espanha, Copa do Mundo de Clubes</li>
+                        <li><strong>Gols:</strong> 59</li>
+                        <li><strong>Assistências:</strong> 15</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://static.independent.co.uk/2024/03/20/06/19110627-21c78610-f16a-4da1-9401-3fa84a7e6646.jpg" alt="Lionel Messi 2012" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2012</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga</li>
+                        <li><strong>Gols:</strong> 91</li>
+                        <li><strong>Assistências:</strong> 22</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2012/12/24/01lionelmessigetty.jpg" alt="Lionel Messi 2013" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2013</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 60</li>
+                        <li><strong>Assistências:</strong> 15</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s2.glbimg.com/W5ESuS9pGuvifcSHlrbZcR1VBCQ=/66x0:1458x948/690x470/s.glbimg.com/es/ge/f/original/2014/03/16/messi_barcelona_efe_95.jpg" alt="Lionel Messi 2014" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2014</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 60</li>
+                        <li><strong>Assistências:</strong> 16</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s2-ge.glbimg.com/i7txOu0_FTPDSU6D9lBfovR7DdE=/1200x/smart/filters:cover():strip_icc()/s.glbimg.com/es/ge/f/original/2015/06/06/suarez_messi_neymar_get_1.jpg" alt="Lionel Messi 2015" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2015</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Champions League, La Liga, Copa del Rey, Supercopa da UEFA, Supercopa da Espanha, Copa do Mundo de Clubes</li>
+                        <li><strong>Gols:</strong> 52</li>
+                        <li><strong>Assistências:</strong> 26</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2018/06/22/6bb99cf5-12a5-47e2-8670-d8eb6f357046/thtKaKMe.jpg" alt="Lionel Messi 2016" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2016</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Supercopa da UEFA, Supercopa da Espanha, Copa do Mundo de Clubes</li>
+                        <li><strong>Gols:</strong> 55</li>
+                        <li><strong>Assistências:</strong> 21</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://images.futebolinterior.com.br/2021/04/0002050252155_img.jpg" alt="Lionel Messi 2017" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2017</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga</li>
+                        <li><strong>Gols:</strong> 54</li>
+                        <li><strong>Assistências:</strong> 20</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Messi_vs_Nigeria_2018.jpg/800px-Messi_vs_Nigeria_2018.jpg" alt="Lionel Messi 2018" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2018</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga, Copa del Rey</li>
+                        <li><strong>Gols:</strong> 48</li>
+                        <li><strong>Assistências:</strong> 18</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://www.sportsnet.ca/wp-content/uploads/2019/04/Lionel-Messi-1.jpg" alt="Lionel Messi 2019" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2019</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Supercopa da Espanha</li>
+                        <li><strong>Gols:</strong> 51</li>
+                        <li><strong>Assistências:</strong> 19</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://lncimg.lance.com.br/uploads/2020/12/26/5fe7707449f50.jpeg" alt="Lionel Messi 2020" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2020</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa del Rey</li>
+                        <li><strong>Gols:</strong> 43</li>
+                        <li><strong>Assistências:</strong> 14</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s2.glbimg.com/CoY5Vulx7XBKxoG2nNjp_FbaEAk=/smart/e.glbimg.com/og/ed/f/original/2021/11/29/messi.jpeg" alt="Lionel Messi 2021" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2021</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa América</li>
+                        <li><strong>Gols:</strong> 38</li>
+                        <li><strong>Assistências:</strong> 12</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://assets.goal.com/images/v3/bltaaa483e47da093c4/GettyImages-1450106798.jpg?auto=webp&format=pjpg&width=3840&quality=60" alt="Lionel Messi 2022" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2022</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Ligue 1, Copa del Rey</li>
+                        <li><strong>Gols:</strong> 42</li>
+                        <li><strong>Assistências:</strong> 15</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://img.band.uol.com.br/image/2023/10/30/lionel-messi-ganha-a-bola-de-ouro-em-2023-seu-oitavo-trofeu-184653.jpg" alt="Lionel Messi 2023" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2023</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Ligue 1</li>
+                        <li><strong>Gols:</strong> 36</li>
+                        <li><strong>Assistências:</strong> 17</li>
+                    </ul>
+                </div>
+                </div>
+                <hr>
+                <div class="year-container">
+                    <img src="https://i.guim.co.uk/img/media/57c862ff8449e3d7e4bdf1fe4a0b2c12aa6b6c8e/0_172_5132_3080/master/5132.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=de9782eb96fb6f4cfb90563e1e13849e" alt="Lionel Messi 2024" class="year-image">
+                    <div class="year-card">
+                        <h2>Temporada: 2024</h2>
+                        <ul>
+                            <li><strong>Títulos:</strong>  Leagues Cup</li>
+                            <li><strong>Gols:</strong> 12</li>
+                            <li><strong>Assistências:</strong> 11</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <h1 id="titulofinal"> CONCLUSÃO</h1>
+            <h1 id="final">Lionel Messi é mais do que um jogador de futebol, ele é uma inspiração global. Sua história de determinação e sucesso transcende as fronteiras do esporte, impactando milhões em todo o mundo. <br>
+                Com seu talento incomparável e sua humildade notável, Messi continua a desafiar expectativas e a encantar fãs de todas as idades. Seu legado no mundo do futebol é eterno, e sua influência vai muito além do campo. Lionel Messi personifica a excelência, o espírito esportivo e a paixão pelo jogo, tornando-se verdadeiramente uma lenda viva.</h1>
+               
+                <h1  id="golmarcante">ㅤㅤㅤㅤㅤGOL MARCANTE <br><iframe width="560" height="315" src="https://www.youtube.com/embed/yhzdTZJPzxU" title="video"
+                frameborder="0" allow="accelerometer;clipboard-write;encrypted-media;gyroscope;picture-in-picture"allowfullscreen></iframe> </h1>
+               
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var hoverArea = document.getElementById('hover-area');
+                        var sidebar = document.getElementById('sidebar');
+                        var mainContent = document.querySelector('main');
+           
+                    sidebar.style.left = '0';
+   
+                    sidebar.addEventListener('mouseenter', function() {
+                    sidebar.style.left = '0';
+                        mainContent.style.marginLeft = '200px';
+                });
+   
+                    sidebar.addEventListener('mouseleave', function() {
+                    sidebar.style.left = '-180px'; // Ajuste o valor para o tamanho do pedaço da barra lateral a ser exibido
+                        mainContent.style.marginLeft = '0';
+                });
+   
+                });
+    </script>
+</body>
+</html>
+
+
+
+
+

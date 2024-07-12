@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISNEY PRINCESAS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container1">
+          
+            <h1   text-aling="center"  name="inicio" >DISNEY PRINCESAS</h1>
+            <section id="home"></section>
+        </div>
+    </header>
+    <style>body {
+        font-family: Arial, sans-serif; /*fonte da letra do negocio do lado */
+        margin: 0; /* deixa sem um espacinho branco na lateral */
+    }
+    body, html {
+        background-image: url('https://observatoriodatv.uol.com.br/wp-content/uploads/2019/12/princesas-disney.jpg'); /* link da imagem de fundo */
+        background-size: cover; /* Para cobrir toda a área do corpo */
+        background-position: center; /* Centraliza a imagem de fundo */
+        background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+        background-attachment: fixed; /* Faz a imagem de fundo ficar fixa */
+    }
+    .container1 {
+        width: 25%; /* centralizacao do titulo */
+        margin: 0 auto;  /* centralizacao do titulo tbm */
+    }
+    header {
+        background-color: #be5ab1;  /* cor de fundo em cima*/
+        color: rgb(255, 255, 255);  /*cor do titulo */ 
+    }
+    header h1 {
+        float: left; /*tamanho do negocio de cima */
+        font-family:'Waltograph', cursive; /*fonte do titulo*/
+    }
+    .sidebar {
+        height: 100%;
+        width: 200px; /* Largura da sidebar */
+        position: fixed; /* Para manter a sidebar fixa durante a rolagem */
+        top: 0; /*deixa a parte de cima por baixo da parte do lado */
+        background-color: #a51bc0; /* Cor de fundo da sidebar */
+        padding-top: 30px; /*abaixa a escrita do lado */
+        overflow-y: auto; /*barra de rolagem*/
+    }
+    .sidebar h2 {
+        color: #fff;  /* cor do titulo do lado */
+        text-align: center; /*deixa o titulo do lado no centro */
+        font-family:'Waltograph', cursive; /*fonte da letra do lado */
+    }
+    
+    .sidebar ul {
+        padding: 0; /* deixa a escrita do lado no centro tbm  */
+    }
+    
+    .sidebar ul li {
+        padding: 10px; /* deixa o espaco entre as escritas do lado  */
+        text-align: center; /* deixa a escrita do lado no centro  */
+    }
+    
+    .sidebar ul li a {
+        color: #fff;  /* coe da escrita do lado */
+        text-decoration: none; /* tira a linha em baixo do texto do lado */
+    }
+    section {
+        padding: 50px 0; /* deixa o espaco entre as caixas da texto */
+        text-align: center;  /* deixa tudo dentro da caixa de texto no  meio  */
+        font-family:'Waltograph', cursive; /*fonte da letra da caixa de texto */
+    }
+    section h2 {
+        color: #a824a8;  /* cor dos titulos */   
+    }
+    section p {
+        color: #000000; /* cor da escrita */
+        margin-bottom: 20px; /* distancia da escrita */
+    }
+    .link{
+        color: #a51bc0;/* cor da palavra q leva p um, link extreno */
+    }
+    footer {
+        background-color: #b82576;  /* cor do  negocio de baixo*/
+        color: #fff;  /* cor da letra do negocio de baixo */
+        padding: 10px 0; /* altura do negocio de baixo */
+        text-align: center; /* p deixar o negocio de baixo no meio */
+    }
+    
+    body {
+        background-color: white; /* Define o fundo da página como branco */
+      }
+      
+      .texto-branco {
+        max-width: 1050px; /* Define a largura máxima da parte branca */
+        background-color: white; /* Define o fundo do texto como branco */
+        margin: 0 auto; /* Centraliza o container horizontalmente */
+        padding: 20px; /* Adiciona espaço interno para o conteúdo */
+        border-radius: 15px; /* deixa a borda arredondadinha */ 
+        border: 2px solid rgb(184, 26, 137);/* grossura da linha por volta do texto branco */
+        align-items: flex-start; /* Alinha o conteúdo no início */
+        text-decoration: none; /* tira a linha em baixo do texto do botao  */
+      }
+    
+      img:hover{
+        transform: scale(0.9);  /* efeito na imagem */ 
+    }
+    img {
+        transition: transform 0.6s ease-in-out; /* velocidade do efeito da imagem */
+    }
+    .voltar{
+        color: #a51bc0; /* cor da letra do voltar */
+        background-color: white; /* Define o fundo do texto como branco */
+        border: 2px solid rgb(184, 26, 137);/* grossura da linha por volta do texto branco */
+        border-radius: 15px; /* deixa a borda arredondadinha */ 
+        text-decoration: none; /* tira a linha em baixo do texto do lado */
+        padding: 20px; /* Adiciona espaço interno para o conteúdo */
+    }
+      </style>
+
+    <div class="sidebar">
+        <h2 >Menu</h2>
+        <ul>
+            <li><a href="#inicio">INÍCIO</a></li>
+            <li><a href="#HISTÓRIA">HISTÓRIA</a></li>
+            <li><a href="#anos 90">anos 90</a></li>
+            <li><a href="#anos 2000">anos 2000</a></li>
+            <li><a href="#PRINCESAS">PRINCESAS</a></li>
+            <li><a href="#Branca de neve">Branca de neve</a></li>
+            <li><a href="#Cinderela">Cinderela</a></li>
+            <li><a href="#Aurora">Aurora</a></li>
+            <li><a href="#Ariel">Ariel</a></li>
+            <li><a href="#Bela">Bela</a></li>
+            <li><a href="#Jasmine">Jasmine</a></li>
+            <li><a href="#Pocahontas">Pocahontas</a></li>
+            <li><a href="#Mulan">Mulan</a></li>
+            <li><a href="#Tiana">Tiana</a></li>
+            <li><a href="#Rapunzel">Rapunzel</a></li>
+            <li><a href="#Merida">Merida</a></li>
+            <li><a href="#Moana">Moana</a></li>
+            <li><a href="#Raya">Raya</a></li>
+            <li><a href="#EX-PRINCESAS">EX-PRINCESAS</a></li>
+            <li><a href="#Alice">Alice</a></li>
+            <li><a href="#Sininho">Sininho</a></li>
+            <li><a href="#Eilonwy ">Eilonwy</a></li>
+            <li><a href="#Esmeralda ">Esmeralda</a></li>
+            <li><a href="#Megara ">Megara</a></li>
+            <li><a href="#Jane Porter">Jane Porter</a></li>
+            <li><a href="#Kida ">Kida</a></li>
+            <li><a href="#Giselle ">Giselle</a></li>
+            <li><a href="#OUTRAS">OUTRAS</a></li>
+            <li><a href="#Ana e Elsa">Ana e Elsa</a></li>
+            <li><a href="#Elena ">Elena </a></li>
+            <li><a href="#Mirabel">Mirabel</a></li>
+            <li><a href="#Mirabel"></a></li>
+            <li><a href="#Mirabel"></a></li>
+            <li><a href="#Mirabel"></a></li>
+            <li><a href="#Mirabel"></a></li>
+ </ul>
+    </div>
+
+    <section id="inicio">
+        <div class="container">
+            
+            <h2 class="texto-branco">INÍCIO</h2>
+            <p class="texto-branco">Disney Princesa (Disney Princess na marca original) é uma franquia de mídia que pertence à Walt Disney Company, idealizada na década de 1990 e lançada oficialmente em 2000 por Andy Mooney ex-presidente da Disney Consumer Products. É composta por treze personagens femininas de treze diferentes filmes da Walt Disney Animation Studios e da Pixar. Uma das maiores franquias de mídia do planeta, tem licença da Hasbro para produzir as bonecas, estimada em US$ 500 milhões. Em 2012 foi a franquia de entretenimento mais bem sucedida do mundo, lucrando em média US$ 3 bilhões em vendas por ano.
+
+                As personagens da franquia têm variado muito desde sua criação. Originalmente era composta por Branca de Neve, Cinderela, Aurora (também conhecida como Bela Adormecida), Ariel (também conhecida como Pequena Sereia), Bela, Jasmine, Pocahontas e Mulan, com Tiana, Rapunzel, Merida, Moana e agora Raya sendo adicionadas mais tarde. Embora a linha seja chamada "Disney Princesa", personagens de origem não real pertencem à franquia, como Mulan. Tambêm existem Princesas Consideradas Honorárias, elas não são princesas oficiais da franquia mas as vezes aparecem com as demais princesas oficiais em ocasiões especiais já que elas possuem suas próprias franquias e são bastante populares, essas princesas são: Elsa, Anna, Elena e Mirabel.</p>
+            .</p>
+        </div>
+    </section>
+
+    <section id="HISTÓRIA">
+        <div class="container">
+            <h2 class="texto-branco">HISTORIA</h2>
+            <h2   class="texto-branco" id="anos 90">anos 90</h2>
+            <p  class="texto-branco">Em 1994, a Mattel começou a produzir diversas linhas de bonecas reunindo diversas Princesas Disney juntas.Esta foi a primeira vez que personagens de franquias diferentes eram reunidas em um único produto.
+
+                Em 4 de maio de 1995, o Walt Disney Home Video lançou a Disney Princess Collection, uma série de VHS e discos a laser com Ariel e Jasmine.
+                
+                Em 12 de março de 1996, a Walt Disney Records lançou a primeira trilha-sonora de Princesa. O álbum alcançou o número #4 na parada Top Kid Audio da Billboard.
+                
+                Em 24 de Junho de 1998, a primeira revista das Princesas Disney foi lançado no Reino Unido. e em setembro de 1999 na Dinamarca.[carece de fontes]
+                
+                Em 1999, a Disney Consumer Products lançou a marca Princesa nas lojas da Disney Store.
+                
+                Em dezembro de 1999, Andy Mooney, que trabalhava para a Nike, empresa de produtos esportivos, foi contratado como novo presidente da Disney Consumer Products, para combater a queda de vendas de seus produtos licenciados, substituindo Anne Osberg.</p>
+                
+                <h2   class="texto-branco" id="anos 2000">anos 2000</h2>
+                <p  class="texto-branco"> A franquia das Princesas Disney começou a ganhar destaque em 2000, quando a Mattel e a Simba Toys obtiveram licenças exclusivas para produzir bonecas baseadas nas princesas nos mercados norte-americano, latino e europeu. Em 2001, a popularidade cresceu rapidamente com o lançamento do álbum "Disney's Princess Collection" e a introdução de bonecas das princesas como crianças pela Playmates Toys. Até o final de 2001, a franquia já havia lucrado $136 milhões.
+
+                    A partir de 2002, a franquia expandiu-se para incluir o spin-off "Disney Fadas", com Sininho como protagonista. Ela competiu com outras grandes franquias, como My Little Pony da Hasbro, influenciando meninas em todo o mundo. As vendas de produtos licenciados ultrapassaram $700 milhões em 2002, aumentando para $1.3 bilhões no ano seguinte.
+                    
+                    Em 2004, foi lançada a música-tema "If You Can Dream", e em 2005, a franquia ultrapassou $3 bilhões em vendas. A inauguração da loja Bibbidi Bobbidi Boutique em 2006 no Walt Disney World ofereceu às meninas a oportunidade de se fantasiar como princesas.
+                    
+                    Na Toy Fair de 2007, a Disney lançou uma nova linha de produtos chamada "Enchanted Tales", onde as princesas usavam vestidos dourados. No mesmo ano, Giselle, do filme Encantada, foi apresentada como uma nova princesa, mas a ideia foi abandonada devido a problemas de licenciamento. Em 2007, o filme "Disney Princess Enchanted Tales: Follow Your Dreams" foi lançado, mas não foi bem recebido pela crítica.
+                    
+                    Até 2008, a revista Disney Princesa era traduzida para 27 idiomas e publicada em 72 países, vendendo mais de 14,6 milhões de cópias por ano. O show de patinação no gelo das Princesas Disney, no Disney On Ice, atraiu 2,5 milhões de espectadores em 23 países.</p>
+           
+            </div>
+    </section>
+
+    <section id="PRINCESAS">
+        <div class="texto-branco">
+            <h2 class="texto-branco" >PRINCESAS</h2>
+            <h2  class="texto-branco" id="Branca de neve">Branca de neve</h2>
+            <a href="https://www.bing.com/videos/riverview/relatedvideo?q=branca+de+neve+trailer&qs=n&sp=-1&ghc=1&lq=0&pq=branca+de+neve+trailer&sc=9-22&sk=&cvid=19B1A167D4814F28AAFCDA469739DEE2&ghsh=0&ghacc=0&ghpl=&ru=%2fsearch%3fq%3dbranca%2bde%2bneve%2btrailer%26qs%3dn%26form%3dQBRE%26sp%3d-1%26ghc%3d1%26lq%3d0%26pq%3dbranca%2bde%2bneve%2btrailer%26sc%3d9-22%26sk%3d%26cvid%3d19B1A167D4814F28AAFCDA469739DEE2%26ghsh%3d0%26ghacc%3d0%26ghpl%3d&mmscn=vwrc&mid=B555ECC43BBC9C697B7BB555ECC43BBC9C697B7B&FORM=WRVORC">
+            <img  align="right"  width="300px" height="450px" src="https://th.bing.com/th/id/OIP.g9s4ZkhgnhVfvusbY5REvQAAAA?rs=1&pid=ImgDetMain" alt="">
+        </a>
+                <p  >Protagonista da primeira animação cinematográfica da Disney,<a  class="link" href="https://pt.wikipedia.org/wiki/Branca_de_Neve_(Disney)"> Branca de Neve </a> é baseada na personagem título do conto de fadas Schneewittchen, criado pelos autores alemães os Irmãos Grimm. Em sua história, Branca de Neve vive em um castelo com sua madrasta, a Rainha Má, que a inveja por sua beleza, fazendo a princesa trabalhar como serviçal. Como a rainha deseja matar Branca de Neve, ela foge pela floresta, sendo acolhida pelos Sete Anões. No filme original, Adriana Caselotti é a voz da personagem.<br>
+               
+             </p>
+             <a href="https://www.bing.com/ck/a?!&&p=1a3c2cb17e0c395bJmltdHM9MTcxNzQ1OTIwMCZpZ3VpZD0xMDcwZWU5Yy1iMDU5LTZjMDItMjU4Zi1mZDc2YjE2ODZkZTcmaW5zaWQ9NTI3NA&ptn=3&ver=2&hsh=3&fclid=1070ee9c-b059-6c02-258f-fd76b1686de7&psq=branca+de+neve+trailer+2025&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1RZ2YydEJ4cUdXcw&ntb=1">
+                <img src="https://cdn.kinocheck.com/i/w=480/6dio2wrg2k.jpg" alt="">
+            </a>
+        <p  >
+        Branca de neve teve vários live-action, incluindo "Espelho, Espelho Meu" em 2012, "A Branca de Neve e o Caçador" em 2012, seguido de "O Caçador e a Rainha do gelo" em 2016, "Branca de Neve" em 2001 e agora em 2025, “Branca de Neve” será produzido pela Disney e trará Rachel Zegler como a princesa e Gal Gadot como a madrasta má.    </p>
+    </p>
+        </div>
+       </section>
+   
+       <section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Cinderela">Cinderela</h2>
+        <a href="https://www.dailymotion.com/video/x88o1g8">
+        <img  align="right"  width="300px" height="450px" src="https://static.wikia.nocookie.net/walt-disney-animation-studios/images/0/07/Cinderella.png/revision/latest?cb=20230909192622" alt="">
+    </a>
+            <p  >Baseada no conto de fadas original do autor francês Charles Perrault,<a  class="link" href="https://pt.wikipedia.org/wiki/Cinderela_(personagem_da_Disney)">Cinderela</a>  é a segunda princesa da linha oficial.[2] Escravizada pela sua madrasta, a Madame Tremaine, Cinderela trabalha com os serviços da casa, e sonha com uma vida feliz. Certo dia, um convite é enviado para sua casa, aonde é avisado que haverá um baile e todas as donzelas da cidade foram convidadas. Com a ajuda de sua Fada Madrinha, ela vai ao baile e conhece o Príncipe, se apaixonando por ele perdidamente.[55] No filme original, Ilene Woods interpreta a personagem.
+         </p>
+         <a href="https://www.bing.com/ck/a?!&&p=097c54c4282c9208JmltdHM9MTcxNzQ1OTIwMCZpZ3VpZD0xMDcwZWU5Yy1iMDU5LTZjMDItMjU4Zi1mZDc2YjE2ODZkZTcmaW5zaWQ9NTIxNg&ptn=3&ver=2&hsh=3&fclid=1070ee9c-b059-6c02-258f-fd76b1686de7&psq=cinderela+2016+trailer&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1Lc25sVTJ5LUx6MA&ntb=1">
+            <img  aling="center" width="450px" height="300px" src="data:image/jpeg;base64,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" alt="">
+        </a>
+            <p  >
+                
+             
+
+    Cinderela teve vários live-action, incluindo "Cinderela" em 1965, "Cinderela" em 1997, "Ever After: A Cinderella Story" em 1998, "Cinderela" em 2013, o "Cinderela" de 2016 sendo o oficial feito pela Disney e o mais recente com a Camila Cabelo "Cinderella" em 2021. </p>
+</p>
+    
+</div>
+</section>
+
+<section>
+<div class="texto-branco">
+    <h2  class="texto-branco" id="Aurora">Aurora</h2>
+    <a href="https://www.youtube.com/watch?v=nisPnbiKo80">
+    <img  align="right"  width="300px" height="500px" src="https://th.bing.com/th/id/OIP.yO7UoX_6KGrX5UQpbV6LCwHaK_?rs=1&pid=ImgDetMain" alt="">
+</a>
+        <p  ><a class="link" href="https://pt.wikipedia.org/wiki/Aurora_(Disney)">Aurora</a> é a terceira princesa da linha oficial, baseada no conto de fadas La Belle au bois dormant de Charles Perrault, Em sua história, uma bruxa malvada chamada Malévola coloca uma maldição sobre Aurora, na qual aos 16 anos, ela vai espetar o dedo na roca de fiar, e morrerá. No entanto, a fada Primavera reverte o feitiço, fazendo com que ao espertar o dedo, ela vai dormir, sendo acordada pelo beijo de amor verdadeiro. Ao se passar os 16 anos, Aurora espeta o dedo, e só com a ajuda de seu verdadeiro amor, o príncipe Phillip, ela consegue acordar de seu sono. Mary Costa desempenha a voz da personagem no filme original.
+     </p>
+     <a href="https://www.youtube.com/watch?v=Uqg12lAsydY">
+        <img  aling="center"  width="450px" height="300px" src="https://th.bing.com/th/id/R.cd1d18d89b7d41727d9e30eb91a2743b?rik=tLyeDge7aFresA&pid=ImgRaw&r=0" alt="">
+    </a>
+        <p  >
+O filme da princesa Aurora, mais conhecida como "Bela Adormecida" teve alguns live-action, entre eles "A Bela Adormecida" em 1987, "A Bela Adormecida" em 2011 e os mais famosos contando a historia da vilã "Malévola" ao invés da princesa Aurora e tendo como protagonista principal Angelina Jolie e produzidos pela Disney, "Malévola" em 2014 e a continuação "Malévola: Dona do Mal" em 2019.  </p>
+</p>
+
+</div>
+</section>
+<section>
+<div class="texto-branco">
+    <h2  class="texto-branco" id="Ariel">Ariel</h2>
+    <a href="https://www.youtube.com/watch?v=ilTMOsDHpP0">
+    <img  align="right"  width="300px" height="500px" src="https://i.pinimg.com/736x/d9/2c/63/d92c63b1fa43024f31f4563645f86db1--ariel-disney-princesses-disney.jpg" alt="">
+</a>
+        <p  >
+            Vagamente baseada na personagem título do conto de fadas Den lille havfrue do autor dinamarquês Hans Christian Andersen,<a class="link" href="https://pt.wikipedia.org/wiki/Ariel_(personagem)">Ariel</a>  é a quarta Princesa Disney. Em seu filme, Ariel, uma sereia filha do Rei Tritão, se apaixona pelo príncipe, que vive sobre terra. Para poder encontrar com seu verdadeiro amor, ela vai até Úrsula, a bruxa do mar, e oferece sua voz para poder virar humana. No entanto, se ela não conseguir fazer com que Eric se apaixone por ela, se tornará escrava de Úrsula para sempre. Com a ajuda de seu pai, Ariel consegue voltar a ser humana novamente, e se casa com Eric.Sua voz original é de Jodi Benson.
+     </p>
+     <a href="https://www.youtube.com/watch?v=0-wPm99PF9U">
+        <img  aling="center"  width="450px" height="300px" src="https://i0.wp.com/cinemaepixels.com.br/wp-content/uploads/2023/03/a-pequena-sereia-poster-e1678803016636.jpg?fit=1688%2C670&ssl=1" alt="">
+    </a>
+        <p>Até o momento o unico live-action oficial da Disney foi "A Pequene Sereia", lançado em 2023 nos cinemas do mundo todo com a Halle Bailey no papel principal, nos mostrando uma nova versão da clássica animação de 1989 da Disney.  </p>
+</p>
+
+</div>
+
+</section>
+<section>
+<div class="texto-branco">
+    <h2  class="texto-branco" id="Bela">Bela</h2>
+    <a href="https://www.youtube.com/watch?v=MZsYDpafGTY">
+    <img  align="right"  width="300px" height="500px" src="https://th.bing.com/th/id/OIP.yDt6nO8TA6TMHIa80rhHJAHaKc?w=709&h=1000&rs=1&pid=ImgDetMain" alt="">
+</a>
+        <p  >
+           
+            <a class="link" href="https://pt.wikipedia.org/wiki/Bela_(personagem)">Bela</a> cujo nome original significa "beleza" em francês, é baseada na personagem do conto de fadas francês La Belle et la Bête de Madame Jeanne Marie de Beaumont, por sua vez vagamente inspirado em contos de tradição oral europeia. Bela, com seu grande amor pela literatura, sente-se sozinha e sofre pela ausência com quem possa compartilhar esse amor. Os livros despertam-na um espírito de aventura e almeja viver uma fora deles. Certo dia, seu pai acaba se tornando prisioneiro de uma fera, e para liberta-lo, ela se coloca em seu lugar. No entanto, no processo, ela acaba descobrindo que a Fera não é o monstro que todos pensam, e o amor acaba surgindo inesperadamente. Bela foi originalmente interpretada por Paige O'Hara.</p>
+     <a href="https://www.youtube.com/watch?v=yzHuQPgO3Gs">
+        <img  aling="center"  width="450px" height="300px" src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/ED49F2AF1B2592ABAE1F902E9AAA538D5917B8FADBEBCDB25A600C5F2FA0C5EA/scale?width=1200&aspectRatio=1.78&format=jpeg" alt="">
+    </a>
+        <p>Até agora só se tem dois live-action de "A Bela e a Fera", sendo um deles o "A Bela e a Fera" de 1946 e o "A Bela e a Fera" de 2017 sendo este o oficial da disney estrelado por Emma Watson como Bela e Dan Stevens como a Fera e foi muito bem recebido e se tornou um grande sucesso de bilheteria.  </p>
+</p>
+
+</div>
+</section>
+
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Jasmine">Jasmine</h2>
+        <a href="https://www.youtube.com/watch?v=eTjHiQKJUDY">
+        <img  align="right"  width="300px" height="550px" src="https://i.pinimg.com/564x/0d/73/2d/0d732d5331cfba3f62bed6bfa29fb26b.jpg" alt="">
+    </a>
+            <p  >
+               
+                <a class="link" href="https://pt.wikipedia.org/wiki/Jasmine_(personagem)">Jasmine</a> é a sexta princesa da linha oficial, é também a primeira e única princesa do Oriente Médio até então , baseada na Princesa Badroulbadour do conto Aladim e a Lâmpada Maravilhosa, que pertence ao livro As Mil e uma Noites. Jasmine é a única princesa até agora que não é protagonista de um filme, pois no seu filme o protagonista é Aladdin. Em seu filme, Jasmine esta cansada de sua vida no palácio, e decide fugir, se disfarçando. No mercado público, ela conhece Aladdin, que vive nas ruas de Agrabah. Para conquistar a princesa, ele se disfarça de Príncipe Ali, com a ajuda do Gênio, pois acredita que uma princesa jamais se casaria com um plebeu. Os dois se aproximam e se apaixonam. Jasmine descobre a verdade sobre Aladdin, e o feiticeiro do mal, Jafar, tenta dominar o mundo, o que Aladdin impede até o fim do filme. Após Aladdin perceber que não pode continuar fingindo ser alguém que não é, decide cumprir sua promessa e deseja que o Gênio seja livre. Vendo o amor de Jasmine e Aladdin, o sultão muda a lei para permitir que ela se casasse com quem ela considere digno.</p>
+         <a href="https://www.google.com/search?q=alladin+live+action+trailer&source=lmns&bih=925&biw=2000&prmd=isvnbmtz&safe=active&hl=pt-BR&sa=X&ved=2ahUKEwjk9ajMz8mGAxVtM7kGHcLVBgQQ0pQJKAB6BAgBEAI#fpstate=ive&vld=cid:b90ef0d8,vid:foyufD52aog,st:0">
+            <img  aling="center"  width="450px" height="300px" src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A546B855C2A59B8BFB5BD69B1A8FCA0AD898E3A17AF8286930B33F1E343508DE/scale?width=1200&aspectRatio=1.78&format=webp" alt="">
+        </a>
+            <p>Houve duas adaptações live-action do clássico "Aladdin". A primeira, lançada em 2019 e dirigida por Guy Ritchie, trouxe uma nova vida ao conto, contando com Mena Massoud no papel de Aladdin, Naomi Scott como Jasmine e Will Smith interpretando o icônico Gênio. Embora tenha recebido críticas mistas, o filme foi um sucesso de bilheteria.
+
+                Além disso, em 2019, o Disney Channel produziu "Aladdin: Aventuras de Jasmine", um spin-off live-action que se concentra na personagem Jasmine. Este filme contou uma história original, explorando novas facetas da personagem principal, mas sem se ligar diretamente ao enredo do filme principal.</p>
+    
+    </div>
+    </section>
+
+
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Pocahontas">Pocahontas</h2>
+        <a href="https://www.google.com/search?sca_esv=4ce04de13f7e18f6&sca_upv=1&q=Pocahontas+trailer&source=lnms&uds=ADvngMgowWIAy_dNRpcaHasDSBsEPg2q1p0dZH4MtyAvSQTahkPUW0UF6SwAXptwUCF8hTBXR7rYzsZ0HJ5Xi3q1xZHVhRDrBOMtMVd-VUq6TX38eal9IwztSTVpAtSrc4DpJkgnzlf_CvJehraQU7shaBURK0IVBTObtwQ7pWjrxLqPuqTjmpIO-lxYgBiYAfkr5Y63trSJV-GIxYutfHREwCbwaKb2jk7gB4Brvd1A4d3kSPy8oGxpUSSGCRMoyexCAQBP_pbsLo1sg4ekMmaMxSy_pM67-5peHiDM1ImCFP7obEHwRAfNvYK7OEhprCAX4RlyyjDgHenXU8EKSi09LzvmTZyAS5erXF8ivcsgT2pph7tfBRg&sa=X&ved=2ahUKEwi3jseDh8qGAxXArpUCHX3KBH0Q0pQJegQIEBAB&biw=1600&bih=723&dpr=1#fpstate=ive&vld=cid:0fab3f30,vid:5iB82S8rHyg,st:0">
+        <img  align="right"  width="300px" height="500px" src="https://th.bing.com/th/id/OIP.MHug0y1jQsJHCLK216Wx1gHaSL?rs=1&pid=ImgDetMain" alt="">
+    </a>
+    
+            <p  >
+               
+                Filha de um chefe indígena,<a class="link" href="https://pt.wikipedia.org/wiki/Pocahontas_(personagem)">Pocahontas</a>  é a sétima princesa na linha oficial, baseada em Matoaka. Em sua história, Pocahontas é filha do Chefe Powhatan e vive em uma tribo no estado da Virgínia. Os colonos visitam as terras onde ela mora, procurando ouro, e ela acaba se apaixonando por um deles, John Smith. No entanto, ela acaba sendo descoberta por Kocoum, um índio de sua tribo que foi proposto para se casar com ela, e no processo, ele acaba morrendo. Isso gera uma guerra, que só termina com a intromissão da princesa. Diferente das princesas anteriores a ela, Pocahontas não terminou com seu interesse amoroso no final do filme (no filme Pocahontas 2 ela desenvolve um interesse amoroso por outra pessoa, o inglês John Rolfe, com quem acaba se casando). Em seu filme original, ela tem a voz de Irene Bedard (diálogos) e Judy Kuhn (canções).</p>
+               
+                    <img  aling="center"  width="450px" height="300px" src="https://thedisinsider.com/wp-content/uploads/2021/01/pocahontas.png" alt="">
+              
+            <p> Não há um live-action oficial de "Pocahontas" produzido pela Disney. No entanto, houve especulações e rumores sobre a possibilidade de um filme live action baseado na história. A Disney tem adaptado várias de suas animações clássicas para live action nos últimos anos, então é possível que isso aconteça no futuro, mas até agora não foi confirmado.</p>
+    
+    </div>
+    </section>
+
+    <section>
+        <div class="texto-branco">
+            <h2  class="texto-branco" id="Mulan">Mulan</h2>
+            <a href="https://www.youtube.com/watch?v=HKH7_n425Ss">
+            <img  align="right"  width="300px" height="500px" src="https://th.bing.com/th/id/OIP.AITbM_njekU2nAh9m7kYsQHaOw?rs=1&pid=ImgDetMain" alt="">
+        </a>
+        
+                <p  >
+                   
+                   <a class="link" href="https://pt.wikipedia.org/wiki/Fa_Mulan"> Mulan</a> é a única personagem da franquia que não é uma princesa de verdade, seja por nascimento ou casamento, mas é incluída como parte da franquia, sendo a oitava princesa na linha oficial. Baseada na personagem do poema chinês The Ballad of Hua Mulan,[ Mulan é uma jovem atrapalhada, filha de um antigo herói de guerra. Certo dia, um aviso diz que seu pai deve se unir ao exército chinês para lutar contra a invasão dos Hunos. Sabendo que ele não sobreviveria, Mulan se veste de soldado e vai em seu lugar. Embora ela consiga ultrapassar todos os obstáculos dos treinamentos, ela acaba sendo descoberta e deixada para trás. No final do filme, ela salva a vida do Imperador. Sua voz original é de Ming-Na Wen (diálogos) e Lea Salonga (canções).</p>
+                    <a href="https://www.youtube.com/watch?v=KK8FHdFluOQ">
+                        <img  aling="center"  width="450px" height="300px" src="https://image.tmdb.org/t/p/original/8nfEcjsHK5L9LAB0MjXKYadounG.jpg" alt="">
+                    </a>
+                <p> Houve apenas duas adaptações live-action de "Mulan", o primeiro foi "Mulan" em 2009, dirigido por Jingle Ma e produzido na China. Zhao Wei interpreta Mulan nesta versão, que apresenta uma abordagem mais fantasiosa da história, e o segundo sento o oficial produzido pela Disney "Mulan" em 2020, dirigido por Niki Caro, Liu Yifei estrela como Mulan, e o filme foi lançado diretamente no Disney+ em 2020 devido à pandemia de COVID-19.</p>
+        
+        </div>
+        </section>
+
+        
+    <section>
+        <div class="texto-branco">
+            <h2  class="texto-branco" id="Tiana">Tiana</h2>
+            <a href="https://www.youtube.com/watch?v=gqgPzVsJhB8">
+            <img  align="right"  width="300px" height="500px" src="https://th.bing.com/th/id/R.88c32b88d12121bfab590b51e8b2696c?rik=%2b2h1vBbl7L%2be%2fA&riu=http%3a%2f%2fcdn.playbuzz.com%2fcdn%2ff723305b-0e9c-4f10-957c-825cfad1508a%2f73a89b90-383c-44f5-87ce-5c9563f99a77.jpg&ehk=Sp9wAsXJql8rzKOSuhWMaVyjMmAscX8a5diV21oLBfw%3d&risl=&pid=ImgRaw&r=0" alt="">
+        </a>
+        
+                <p >Vagamente baseada na personagem do conto de fadas The Frog Prince dos Irmãos Grimm,<a class="link" href="https://pt.wikipedia.org/wiki/Tiana_(Disney)">Tiana</a>  é a nona princesa da linha oficial. Vivendo na Nova Orleães do começo do século XX, ela sonha em abrir um restaurante, e juntou dinheiro a vida toda para isso. No entanto, certo dia, ela conhece um sapo, que diz ser um príncipe de Maldonia (um país africano fictício), e que vai ajudar ela a realizar seu desejo, se ela der um beijo nele. Tiana faz o combinado, mas acaba também se tornando um sapo. Eles então seguem em uma jornada para tentar descobrir como voltarão a ser humanos, o que resulta nos dois se apaixonando. Tiana tem a voz de original de Anika Noni Rose.</p>
+                    
+                        <img  aling="center"  width="450px" height="300px" src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/16C227E5FBE92352195517B28CF9FAD71023813B71CCC3C73BB28C1136E5E474/scale?width=1200&aspectRatio=1.78&format=jpeg" alt="">
+                   
+                <p>  Em fevereiro de 2022, a Disney anunciou planos para um remake em live=action do filme animado de 2009. Ainda não foram divulgados muitos detalhes sobre o elenco, direção ou data de lançamento. Portanto, este projeto pode ser o primeiro live-action oficial da história.</p>
+        
+        </div>
+        </section>
+
+        <section>
+            <div class="texto-branco">
+                <h2  class="texto-branco" id="Rapunzel">Rapunzel</h2>
+                <a href="https://www.youtube.com/watch?v=ycoY201RTRo">
+                <img  align="right"  width="300px" height="500px" src="https://th.bing.com/th/id/OIP.P723YlvQihO9GCi33ZuH9AAAAA?rs=1&pid=ImgDetMain" alt="">
+            </a>
+            
+                    <p >Baseada no conto de fadas alemão de autoria dos Irmãos Grimm,<a class="link" href="https://pt.wikipedia.org/wiki/Rapunzel_(Disney)">Rapunzel </a> é a décima princesa da linha oficial. Diferente de seu conto de origem, Rapunzel não é uma donzela em perigo. Certo dia, um ladrão vai até sua torre, se esconder, mas acaba se tornando refém da jovem. Ela faz um acordo com ele, aonde ela devolverá a bolsa de Flynn Rider (o ladrão), em troca de ele levar ela para ver as lanternas flutuantes, um evento que acontece todo ano em seu aniversário. Ele concorda, e entre muitas confusões, os dois acabam se apaixonando. No filme original, a voz de Rapunzel é desempenhada por Mandy Moore.</p>
+                        
+                            <img  aling="center"  width="450px" height="300px" src="https://i.pinimg.com/originals/39/09/c4/3909c4411529e37bdac687cbf39b7308.jpg" alt="">
+                       
+                    <p>  A Disney anunciou planos para um filme live-action baseado no universo de "Enrolados", focado no personagem Flynn Rider, também conhecido como Eugene Fitzherbert. No entanto, não foram divulgados muitos detalhes sobre o projeto, como elenco, direção ou data de lançamento.
+
+
+
+                    </p>
+            
+            </div>
+            </section>
+
+            <section>
+                <div class="texto-branco">
+                    <h2  class="texto-branco" id="Merida">Merida</h2>
+                    <a href="https://www.youtube.com/watch?v=vHOC1Kd_zhw">
+                    <img  align="right"  width="300px" height="500px" src="https://th.bing.com/th/id/R.bf8cb4e2ad52f207c245c21933b80dab?rik=1wGRNaaJi4FmUQ&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f31300000%2fPrincess-Merida-brave-31302695-795-1493.jpg&ehk=MlLLKyrBAmiS7uX1R4i5MLuz1EKQdiq9Hjg7iGe184k%3d&risl=&pid=ImgRaw&r=0" alt="">
+                </a>
+                
+                        <p >A primeira princesa que não é baseada em qualquer conto, lenda ou figura histórica é a escocesa <a class="link" href="https://pt.wikipedia.org/wiki/Merida_(Disney)">Merida</a>, a décima primeira princesa da linha oficial e também a primeira princesa do estúdio Pixar. Em seu filme, Merida é uma jovem que quer seguir o próprio destino, mas sua mãe, a Rainha Elinor, quer ensinar a princesa a como ser uma boa rainha, se casando com um príncipe, algo que Merida não aceita. Querendo viver a vida de seu modo, Merida decide ir até uma bruxa, para conseguir uma poção para mudar o próprio destino, no entanto, a poção transforma Elinor em um urso, e Mérida terá que desfazer o feitiço em dois dias, se não, sua mãe será um urso para sempre. Seguindo em uma grande jornada, Merida irá descobrir seu próprio destino. A voz original de Merida é de Kelly Macdonald.</p>
+                            
+                                <img  aling="center"  width="450px" height="300px" src="https://static.wixstatic.com/media/1da4f0_ef9db96f19bb42d98884c82d49657ed4~mv2.jpg/v1/fill/w_800,h_451,al_c,q_85,enc_auto/1da4f0_ef9db96f19bb42d98884c82d49657ed4~mv2.jpg" alt="">
+                           
+                        <p> 
+                           
+                            No momento, a Disney não anunciou planos para uma adaptação live-action de "Valente" (Brave). A lista atual de futuras adaptações live-action inclui títulos como "Branca de Neve," "Moana," "O Corcunda de Notre Dame," entre outros, mas "Valente" não está entre eles, A Disney está constantemente desenvolvendo e lançando várias adaptações live-action de seus clássicos animados, então é possível que "Valente" seja considerada no futuro. Por enquanto, no entanto, não há anúncios ou desenvolvimentos oficiais sobre uma versão live-action de "Valente."
+    
+    
+    
+                        </p>
+                
+                </div>
+                </section>
+
+                
+            <section>
+                <div class="texto-branco">
+                    <h2  class="texto-branco" id="Moana">Moana</h2>
+                    <a href="https://www.youtube.com/watch?v=00XR32hEAJU">
+                    <img  align="right"  width="300px" height="500px" src="https://th.bing.com/th/id/OIP.oq47wo5M0vHGUxopB-XXJwHaNq?rs=1&pid=ImgDetMain" alt="">
+                </a>
+                
+                        <p >Em 2019,<a class="link" href="https://pt.wikipedia.org/wiki/Moana_(personagem)"> Moana</a>, conhecida na Europa como Vaiana, foi agregada como décima segunda princesa, mesmo que sem uma cerimônia de coroação como a de Merida em 2014. Filha do chefe de uma tribo polinésia, Moana é escolhida pelo oceano para encontrar o semideus Maui e devolver uma relíquia para a deusa Te Fiti, visando acabar com uma praga acabando com a vegetação de sua ilha.A voz original de Moana é de Auli'i Cravalho.</p>
+                            
+                                <img  aling="center"  width="450px" height="300px" src="https://th.bing.com/th/id/R.07cc129b89789d51351850ae0680bb4c?rik=D3QrK3%2f6dTbObg&pid=ImgRaw&r=0" alt="">
+                           
+                        <p> 
+                            A Disney está desenvolvendo uma adaptação live-action de "Moana" (2026). A adaptação será dirigida por Thomas Kail e contará com Dwayne Johnson reprisando seu papel como o semideus Maui. Auliʻi Cravalho, que deu voz à Moana na animação original, não retornará ao papel principal, mas estará envolvida como produtora. A nova atriz para o papel de Moana ainda será escolhida​.
+    
+                        </p>
+                
+                </div>
+                </section>
+
+
+                <section>
+                    <div class="texto-branco">
+                        <h2  class="texto-branco" id="Raya">Raya</h2>
+                        <a href="https://www.youtube.com/watch?v=uF8w-6x61fc">
+                        <img  align="right"  width="300px" height="500px" src="https://th.bing.com/th/id/OIP.vRU0JO4yB5ekLxbSUyVORwAAAA?rs=1&pid=ImgDetMain" alt="">
+                    </a>
+                    
+                            <p > <a class="link" href="https://pt.wikipedia.org/wiki/Raya_(personagem)">Raya</a> foi oficialmente adicionada como décima terceira Princesa Oficial, e é uma das poucas princesas da Disney a não ser baseada em um personagem preexistente. Raya também é a única princesa cuja mãe é desconhecida por estar viva ou morta, já que sua mãe não é vista ou mencionada ao longo do filme. Ela é filha do chefe da aldeia de Heart, quando sua aldeia foi ameaçada pelos Druun, Raya foi confiada por seu pai para acordar Sisu e trazer Kumandra de volta. Ela finalmente encontra coragem para fazê-lo, com a ajuda de Sisu, Boun, Noi, Tong e, eventualmente, Namaari. Ao aprender a confiar, Raya se livra dos Druun, e eles se tornam Kumandra mais uma vez. No filme original, a voz de Raya é desempenhada por Kelly Marie Tran.
+
+                            </p>
+                                
+                                    <img  aling="center"  width="450px" height="300px" src="https://image.tmdb.org/t/p/original/1kcAsJp2ImbdJ26pZxS3u69ZRP8.jpg" alt="">
+                               
+                            <p> 
+                                Atualmente, a Disney não anunciou planos para uma adaptação live-action de "Raya e o Último Dragão". Embora a Disney esteja explorando muitas de suas animações para adaptações live-action, "Raya e o Último Dragão" não está na lista das produções confirmadas para os próximos anos.
+                            </p>
+                    
+                    </div>
+                    </section>
+
+
+</section>
+
+
+<section id="EX-PRINCESAS">
+    <div class="texto-branco">
+        <h2 class="texto-branco" >EX-PRINCESAS</h2>
+        <h2  class="texto-branco" id="Alice">Alice</h2>
+        <a href="https://www.youtube.com/watch?v=Q6ugT20VNCI">
+        <img  align="left"  width="300px" height="400px" src="https://th.bing.com/th/id/OIP.bNjeazA7z8HxMzm0nY8gzQHaOA?rs=1&pid=ImgDetMain" alt="">
+    </a>
+            <p  > <a class="link" href="https://pt.wikipedia.org/wiki/Alice_(Disney)">Alice</a> é a personagem principal do filme de 1951 da Walt Disney Pictures, Alice no País das Maravilhas e do livro que o filme foi adaptado. A voz e a referência para os animadores da personagem do filme foi feita por Kathryn Beaumont, que também fez a voz na atração auto-intitulada na Disneylândia, bem como em outros meios de comunicação que envolvem a Disney, incluindo a série de TV, O Point do Mickey e o primeiro jogo de vídeo game da série Kingdom Hearts.No entanto, Alice nunca entrou para a franquia, servindo somente como Princesa de Teste.
+
+
+         </p>
+         <a href="https://www.youtube.com/watch?v=R7ygoQRaWYY">
+            <img aling="center"  width="450px" height="300px" src=" https://imagoi.com/wp-content/uploads/2021/02/Alice-no-pais-das-maravilhas-poster-imagoi.jpg" alt="">
+        </a>
+    <p  >
+        A Disney produziu dois filmes live-action baseados na história de "Alice no País das Maravilhas" de Lewis Carroll,o primeiro "Alice no País das Maravilhas" em 2010 estrelando Mia Wasikowska como Alice, Johnny Depp como o Chapeleiro Maluco, Helena Bonham Carter como a Rainha Vermelha, Anne Hathaway como a Rainha Branca, e o segundo "Alice Através do Espelho" em 2016 sendo a sequencia do primeiro.</p>
+    </div>
+
+
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Sininho">Sininho</h2>
+        <a href="https://www.youtube.com/watch?v=L-o0ufCPANo">
+        <img  align="left"  width="300px" height="400px" src="https://i.pinimg.com/originals/03/9c/52/039c522077c8a0d084fc0f7f9422c18c.jpg" alt="">
+    </a>
+            <p  ><a class="link" href="https://pt.wikipedia.org/wiki/Sininho">Sininho</a> (do filme Peter Pan de 1953): originalmente, Sininho (nome original de Tinker Bell) era uma das princesas da franquia até 2005, mas a produção da Disney Consumer Products acabou decidindo que ela não se encaixava com as outras princesas da franquia, então ela foi retirada para ter sua própria franquia a Disney Fadas.
+
+         </p>
+         <a href="https://www.youtube.com/watch?v=2HMbcoV25ss">
+            <img aling="center"  width="450px" height="300px" src="https://image.tmdb.org/t/p/original/n7CHg4puue57JTed3DMpy6Uj3Q6.jpg" alt="">
+        </a>
+    <p  >
+        Em 1991, "Hook", dirigido por Steven Spielberg, apresentou Robin Williams como um Peter Pan adulto. Em 2003, P.J. Hogan lançou uma versão fiel da peça de J.M. Barrie com Jeremy Sumpter. Em 2015, "Pan", dirigido por Joe Wright, explorou as origens de Peter. Em 2020, "Wendy" de Benh Zeitlin ofereceu uma reimaginação moderna. Em 2023, a Disney lançou "Peter Pan & Wendy", dirigida por David Lowery, com Alexander Molony e Jude Law.</p>
+    </div>
+</section>
+
+
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Eilonwy">Eilonwy</h2>
+        <a href="https://www.youtube.com/watch?v=6L4nWo7F00c">
+        <img  align="left"  width="300px" height="400px" src="https://th.bing.com/th/id/R.52cf870fd07cd6d888369e17b8fc1af5?rik=Kecvemu1YxgriA&riu=http%3a%2f%2forthanc.fixme.fi%2f~hapuriainen%2fpics%2fother%2fdisney%2feilonwy3_ref.png&ehk=V1j5jJh983ehOblcqVOuBt5Xhgb5KtzZ10xkVqzLt5A%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </a>
+            <p  ><a class="link" href="https://disneyprincesas.fandom.com/pt-br/wiki/Princesa_Eilonwy">Eilonwy </a>(do filme O Caldeirão Mágico de 1985): embora seja uma princesa de berço, Eilonwy não faz parte da linha oficial das Disney Princesas, isso acontece, pelo fato de que seu filme teve um desempenho muito fraco nos cinemas.
+         </p>
+        
+            <img aling="center"  width="450px" height="300px" src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9334C65D1B12E66A5115FE7E67FC8466EDDFDDAF6B1AE21F1B68B4967AB62C93/scale?width=1200&aspectRatio=1.78&format=jpeg" alt="">
+       
+    <p  >
+        Até agora, não houve uma adaptação live-action do filme de animação da Disney "O Caldeirão Mágico" de 1985. Esse filme de animação é baseado na série de livros "The Chronicles of Prydain" de Lloyd Alexander. Embora a Disney tenha explorado várias de suas propriedades para adaptações live-action, "O Caldeirão Mágico" ainda não recebeu esse tratamento. No entanto, com a tendência crescente de adaptações live-action de clássicos animados, é possível que no futuro a Disney considere uma versão live-action deste filme.</p>
+    </div>
+</section>
+
+
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Esmeralda">Esmeralda</h2>
+        <a href="https://www.youtube.com/watch?v=KSCia7v3fcg">
+        <img  align="left"  width="300px" height="400px" src="https://i.pinimg.com/736x/2f/da/10/2fda10099f36314c6fb446b726a1d6c0.jpg" alt="">
+    </a>
+            <p  ><a class="link" href="https://pt.wikipedia.org/wiki/Esmeralda_(Disney)">Esmeralda</a> (do filme O Corcunda de Notre-Dame de 1996): até 2008, Esmeralda era parte da franquia Disney Princesas, junto com Branca de Neve, Cinderela, Aurora, Ariel, Bela, Jasmine, Pocahontas e Mulan.</p>
+        
+            <img aling="center"  width="450px" height="300px" src="https://disneyplusbrasil.com.br/wp-content/uploads/2021/01/O-Corcunda-de-Notre-Dame.jpg" alt="">
+       
+    <p  >
+        Houve várias adaptações live-action de "O Corcunda de Notre Dame" ao longo dos anos. Entre elas, destacam-se o filme mudo de 1923, estrelado por Lon Chaney como Quasímodo, uma das mais influentes e conhecidas; a versão de 1939, aclamada pela crítica, com Charles Laughton e Maureen O'Hara nos papéis principais; e a adaptação francesa de 1956, reconhecida na França, com Anthony Quinn e Gina Lollobrigida. Além disso, houve filmes para televisão em 1982, 1997 e 1998, cada um trazendo sua própria interpretação do clássico. Mais recentemente, a Disney anunciou uma nova adaptação live-action, prometendo uma abordagem moderna e fiel ao romance original de Victor Hugo.</p>
+    </div>
+</section>
+
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Megara">Megara</h2>
+        <a href="https://www.youtube.com/watch?v=vlblxDGoGwo">
+        <img  align="left"  width="300px" height="500px" src="https://th.bing.com/th/id/OIP.A7nX08EbgcemV_r3ujtOvAAAAA?rs=1&pid=ImgDetMain" alt="">
+    </a>
+            <p  ><a class="link" href="https://pt.wikipedia.org/wiki/H%C3%A9rcules_(1997)#Elenco">Mégara</a> (do filme Hércules de 1997): apareceu em alguns produtos da franquia, mas nunca foi considerada uma princesa oficial. No entanto parecia que a Disney estava prestes a fazer isso devido a sua participação em diversos produtos relacionados a franquia Disney Princesa. No dia 9 de junho de 1998 Megara apareceu na segunda trilha sonora oficial da princesas Disney,nomeada como Princess Collection 2, seu Solo I Won't Say (I'm Love) estava presente. Em 7 de setembro de 2004 fez aparição no álbum Disney Princess Sing Along Song Once Upou a Dream. Em 2001 Megara foi adicionada a primeira linha de bonecas Sparkling Princess.
+         </p>
+        
+            <img aling="center"  width="450px" height="300px" src="https://imagoi.com/wp-content/uploads/2021/04/Hercules-poster-imagoi.jpg" alt="">
+       
+    <p  >
+        Até o momento, a Disney não produziu uma adaptação live-action de "Hércules", seu filme animado de 1997, mas há rumores de que uma adaptação live-action esteja em desenvolvimento. No entanto, várias adaptações de filmes e séries de televisão foram feitas com base na mitologia de Hércules ao longo dos anos, embora não estejam diretamente relacionadas ao filme da Disney. Entre elas estão filmes italianos da década de 1960 estrelados por Steve Reeves como Hércules, como "Hércules" (1958), "Hércules e as Mulheres Amazonas" (1961) e "Hércules, o Invencível" (1964). Mais recentemente, em 2014, foi lançado um filme de ação em 3D dirigido por Brett Ratner, estrelado por Dwayne "The Rock" Johnson como Hércules, e em 2016, uma série de televisão foi ao ar no canal Syfy, estrelada por Kevin Sorbo como Hércules. Embora essas produções não sejam diretamente relacionadas ao filme animado da Disney, elas oferecem diferentes interpretações e abordagens do mito de Hércules ao longo dos anos.
+    </p>
+    </div>
+</section>
+
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Jane Porter">Jane Porter</h2>
+        <a href="https://www.youtube.com/watch?v=9FZ0l8csNSg">
+        <img  align="left"  width="300px" height="450px" src="https://vignette.wikia.nocookie.net/disneyprincesas/images/9/9a/Jane11.png/revision/latest?cb=20140726225909&path-prefix=pt-br" alt="">
+    </a>
+            <p  ><a class="link" href="https://pt.wikipedia.org/wiki/Jane_Porter_(Tarzan)">Jane</a> Porter (do filme Tarzan de 1999): Em novembro de 1999, foi anunciada em uma revista Disney Princess do Reino Unido como a mais nova princesa da franquia. Ela continuou aparecendo na franquia até 2000, e depois, desapareceu.
+         </p>
+         <a href="https://www.youtube.com/watch?v=Aj7ty6sViiU">
+            <img aling="center"  width="450px" height="300px" src="https://www.comingsoon.net/wp-content/uploads/sites/3/2024/01/Untitled-design4-4.jpg" alt="">
+        </a>
+    <p  >
+         Houve dois filmes live-action baseados no icônico personagem Tarzan. O primeiro, "Tarzan, o Magnífico", lançado em 1959, é uma adaptação do romance "Tarzan and the Foreign Legion" de Edgar Rice Burroughs. Estrelado por Gordon Scott como Tarzan e dirigido por Robert Day, o filme segue as aventuras do herói na selva. O segundo filme, intitulado "A Lenda de Tarzan", foi lançado em 2016. Dirigido por David Yates, este filme estrela Alexander Skarsgård como Tarzan e se passa anos após ele ter deixado a selva para viver em Londres. No entanto, ele é chamado de volta para investigar atividades suspeitas em uma mina, levando-o de volta às suas raízes na selva.</p>
+    </div>
+</section>
+
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Kida">Kida</h2>
+        <a href="https://www.youtube.com/watch?v=CAkN1-JkKGA">
+        <img  align="left"  width="300px" height="450px" src="https://th.bing.com/th/id/OIP.le0xzRveGb5VDHkS-QDjXQHaM7?rs=1&pid=ImgDetMain" alt="">
+    </a>
+            <p  ><a class="link" href="https://princesasdadisney.com/conheca-a-historia-da-kida-a-princesa-de-atlantis/">Kida</a> (do filme Atlantis: O Reino Perdido de 2001): chegou a aparecer em um livro chamado Kida - The Heart of Atlantis, com a marca da franquia. No entanto, nunca chegou a se tornar uma princesa oficial. </p>
+       
+            <img aling="center"  width="450px" height="300px" src="https://mazakony.com/forums/uploads/monthly_2020_07/Atlantis_The_Lost_Empire.jpg.c6b8edddce86cd48eb1730b20501f43b.jpg" alt="">
+       
+    <p  >
+        Não há filmes live-action baseados na história de "Atlantis" que sejam tão amplamente conhecidos quanto os filmes baseados em Tarzan ou Hércules. No entanto, a história de Atlântida tem sido uma fonte de inspiração para várias obras de ficção, incluindo filmes, séries de TV e livros, muitos dos quais exploram o conceito da lendária civilização perdida de diversas maneiras.</p>
+    </div>
+</section>
+
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Giselle">Giselle</h2>
+        <a href="https://www.youtube.com/watch?v=X6wKOqCLbxs">
+        <img  align="left"  width="300px" height="500px" src="https://i.pinimg.com/originals/e0/cb/0d/e0cb0d700127d1cca6ea5d6ad8ad8a6a.jpg" alt="">
+    </a>
+            <p  ><a class="link" href="https://disneyprincesas.fandom.com/pt-br/wiki/Giselle">Giselle </a>(do filme Encantada de 2007): originalmente, estava para entrar na franquia, no entanto, a Disney decidiu o contrário, pois teria que pagar os direitos de imagem da atriz Amy Adams. </p>
+         <a href="https://www.youtube.com/watch?v=aWVS9OZ3Q8o">
+            <img aling="center"  width="450px" height="300px" src="https://i.ytimg.com/vi/jqgoUQjlvZc/hqdefault.jpg" alt="">
+        </a>
+    <p  >
+        Em "Encantada" (2007), a princesa Giselle é banida do reino mágico de Andalasia pela rainha Narissa e acaba no mundo real, onde se apaixona pelo advogado Robert. Enquanto isso, o príncipe Edward e seus amigos animais tentam resgatá-la. O filme culmina em um confronto entre Giselle e Narissa durante um baile de gala, onde Giselle escolhe ficar com Robert, aprendendo que o amor verdadeiro pode ser encontrado de maneiras inesperadas. "Desencantada" (previsto para 2022) promete continuar a jornada de Giselle em Andalasia e no mundo real, explorando mais aventuras e desafios enquanto ela busca sua felicidade.</p>
+    </div>
+</section>
+
+   </section>
+
+
+  
+   <section id="OUTRAS">
+    <div class="texto-branco">
+        <h2 class="texto-branco" >OUTRAS</h2>
+        <h2  class="texto-branco" id="Ana e Elsa">Ana e Elsa</h2>
+        <a href="https://www.youtube.com/watch?v=eSLe4HuKuK0">
+        <img  align="right"  width="300px" height="500px" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e647605a-8e2c-4ed7-98ae-754a8d672b6a/ddhu0s5-b10a0337-3704-4438-bb4a-a63394bd0f14.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U2NDc2MDVhLThlMmMtNGVkNy05OGFlLTc1NGE4ZDY3MmI2YVwvZGRodTBzNS1iMTBhMDMzNy0zNzA0LTQ0MzgtYmI0YS1hNjMzOTRiZDBmMTQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ak3tDC9-Ew8cF6yY0TXx8ucLq0qhLAa2Qu7c7RYLZ0A" alt="">
+    </a>
+            <p  ><a class="link" href="https://pt.wikipedia.org/wiki/Anna_(Disney)">Anna</a> e <a class="link" href="https://pt.wikipedia.org/wiki/Elsa_(Disney)">Elsa</a> eram esperadas a se juntar a franquia como 12º e 13º princesas em 2014, mas isto não aconteceu. A Disney Store afirmou que eles ainda estão pensando em como encaixar Elsa e Anna no grupo, especialmente porque Elsa é rainha, além de ambas estrelarem sua franquia própria com enorme sucesso. Os fãs tem especulado que a razão seria as críticas a Disney Princesa como uma franquia antiquada que prejudicou a imagem de personagens femininas fortes, como Merida e Mulan, que foram repaginadas para entrar no grupo, gerando controvérsias. Ainda assim, ambas aparecem junto das Princesas oficiais em Wifi Ralph: Quebrando a Internet.</p>
+         <a href="https://www.youtube.com/watch?v=TbQm5doF_Uc">
+            <img  aling="center" width="450px" height="300px"  src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3A52BE95615D0AD12A64832BF7D022C5900B5D2F1DA5030E1A41794A542648C1/scale?width=1200&aspectRatio=1.78&format=jpeg" alt="">
+        </a>
+    <p  >
+       Não houve um filme live-action de "Frozen" lançado até o momento. No entanto, a Disney anunciou planos para produzir um filme live-action baseado na história de "Frozen", mas ainda não há muitos detalhes sobre isso. Será interessante ver como eles adaptarão a história para o formato live-action.
+    </p>
+    </div>
+
+    
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Elena">Elena</h2>
+        <a href="https://www.youtube.com/watch?v=cRpmMwQ0aR4">
+        <img  align="right"  width="300px" height="500px" src="https://wallpapercave.com/wp/wp2462750.jpg" alt="">
+    </a>
+            <p  ><a class="link" href="https://pt.wikipedia.org/wiki/Elena_(personagem)">Elena</a> acabou ganhando muita fama principalmente por ser a primeira princesa latina de uma animação da Disney. Devido a isso, Elena começou a aparecer constantemente com as demais Princesas Oficiais, como na canção “Live Your Story” e na campanha “Dream Big, a Princess”. Por isso muitos pensavam que ela se tornaria uma princesa oficial junto da Moana, e que apareceria junto das princesas oficiais em Wifi Ralph: Quebrando a Internet, mas acabou que ela não apareceu, já que a Disney decidiu que assim como Anna e Elsa, Elena deveria possuir sua própria franquia, no entanto ela aparece com as outras princesas em parques, vídeos, imagens promocionais e em vários outros produtos.  </p>
+       
+            <img  aling="center"  width="450px" height="300px" src="https://th.bing.com/th/id/R.508b56c2cae9541430324e447d67c4e6?rik=%2f7JKQBrVTh7Dcg&pid=ImgRaw&r=0" alt="">
+       
+            <p  >
+                Ainda não foi anunciado um filme live-action de "Elena de Avalor". No entanto, como fãs da série, podemos esperar que a Disney eventualmente explore essa possibilidade, dado o sucesso do programa. Seria interessante ver como eles trariam essa história para o formato live-action. </p>
+    
+    </div>
+    </section>
+
+       
+<section>
+    <div class="texto-branco">
+        <h2  class="texto-branco" id="Mirabel">Mirabel</h2>
+        <a href="https://www.youtube.com/watch?v=zRMicKd9IH8">
+        <img  align="right"  width="300px" height="500px" src="https://tudoparacolorir.com.br/wp-content/uploads/2023/03/imagem-de-encanto-4.jpg" alt="">
+    </a>
+            <p  ><a class="link" href="https://en.wikipedia.org/wiki/Mirabel_Madrigal">Mirabel</a> foi criada para ter sua própria franquia já que a família madrigal é bastante grande. No entanto a Disney não esperava que Encanto fosse fazer tanto sucesso, mas no final das contas, Encanto se tornou um sucesso tanto pelas suas músicas, tanto pela representatividade. Mirabel foi a primeira personagem considera “Princesa” a usar óculos, isso chamou bastante a atenção do público. No entanto, mesmo a Disney não tendo interesse em adicioná-la a franquia das Princesas Disney, a Disney acha que devido à sua popularidade Mirabel, ele merece aparecer com a demais princesas em alguns produtos, Mirabel apareceu atualmente com as demais princesas na World Princess Week da Disneyland, e tambêm na coleção da LEGO. </p>
+        
+            <img  aling="center"  width="450px" height="300px" src="https://image.tmdb.org/t/p/original/4rQPEA0k6EursVxmOEaZsKGlFfB.jpg" alt="">
+    
+            <p  >
+                 A Disney anunciou planos para produzir um filme live-action baseado em "Encanto", que promete trazer uma nova perspectiva da cultura latina. A história girará em torno de uma menina que é a única membro de sua família sem poderes mágicos. A produção do filme está em andamento, e os fãs estão ansiosos para ver como será essa adaptação para o formato live-action.</p>
+    
+    </div>
+    </section>
+    <a  class="voltar" href="#inicio">voltar ao inicio</a>
+   </section>
+    <footer>
+        <div class="container">
+            <p>&copy; DISNEY PRINCESAS.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

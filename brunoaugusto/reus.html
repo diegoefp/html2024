@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Reus - Carreira</title>
+    <style>
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fdda24; /* Amarelo */
+        color: #ffffff; /* Preto */
+    }
+   
+    header {
+        background-color: #000000; /* Preto */
+        color: #fdda24; /* Amarelo */
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+   
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+   
+    main {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-left: 220px; /* Adicionando margem para evitar a sobreposição com a barra lateral */
+    }
+   
+    .year-container {
+    display: flex;
+    align-items: center;
+    margin: 10px auto; /* Centralizando horizontalmente */
+    background-color: #000000; /* Grená */
+    border: 1px solid #f8f400; /* Azul escuro */
+    border-radius: 24px;
+    height: 220px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 600px; /* Ajustando a largura do contêiner */
+}
+   
+    .year-container:hover {
+        transform: scale(1.25);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+   
+    .year-card {
+        padding: 30px;
+        width: 320px; /* Diminuindo a largura do cartão */
+    }
+   
+    .year-card h2 {
+        margin-top: 0;
+        color: #fdda24; /* Amarelo */
+        font-size: 1.5em;
+    }
+   
+    .year-card ul {
+        list-style: circle;
+        padding: 0;
+        margin: 0;
+    }
+   
+    .year-card ul li {
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+   
+    .year-card ul li strong {
+        color: #fdda24; /* Amarelo */
+    }
+   
+    .year-image {
+        width: 220px; /* Diminuindo a largura da imagem */
+        height: 220px; /* Diminuindo a altura da imagem */
+        object-fit: cover;
+        border-right: 1px solid #ddd;
+    }
+   
+    @media (max-width: 500px) {
+        .year-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+   
+        .year-card {
+            width: 20%;
+            box-sizing: border-box;
+        }
+   
+        .year-image {
+            width: 20%;
+            height: auto;
+            border-right: none;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+    }
+    #final {
+        font-size: 24px;
+    }
+   
+    #titulo {
+        color: #ffee00; /* Preto */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+   
+    #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000; /* Azul escuro */
+    color: #ffe600; /* Branco */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 100%; /* Ajustando a altura para 100% */
+    z-index: 1000;
+    transition: left 0.3s ease; /* Adicionando transição suave */
+    box-sizing: border-box; /* Adicionando box-sizing para incluir padding na largura total */
+}
+   
+    #sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+   
+    #sidebar ul li {
+        margin: 10px 0;
+    }
+   
+    #sidebar ul li a {
+        color: #fdda24;
+        text-decoration: none;
+        font-size: 18px;
+    }
+   
+    #sidebar ul li a:hover {
+        color: #ffffff; /* Amarelo claro */
+    }
+   
+    hr {
+    border: none;
+    height: 2px;
+    background-color: #000000;
+    max-width: 1176%; /* Defina o valor desejado para a largura máxima */
+    margin: 0 auto; /* Centralizando horizontalmente */
+}
+   
+    main {
+        margin-left: 320px; /* Adicionando margem para evitar a sobreposição com a barra lateral */
+    }
+    #temporadas{
+        color: #000000;
+        font-size: 30px;
+    }
+    #Introducao{
+        color: #000000;
+        font-size: 36px;
+        text-align: center;
+    }
+    #final {
+    margin-top: 10px; /* Adicionando um espaçamento superior */
+    color: #000000;
+    font-size: 24px;
+    clear: both; /* Garante que a posição do elemento seja clara em relação aos flutuadores */
+}
+    #titulofinal{
+        color: #000000;
+        font-size: 36px;
+        text-align: center;
+    }
+    #highlights{
+        color: #000000;
+    }
+
+
+    #hover-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    z-index: 999; /* Garantir que a área de hover esteja acima de outros elementos */
+    cursor: pointer;
+    transition: transform 1.3s ease; /* Adicionando transição suave */
+}
+</style>    
+</head>
+<body>
+    <header>
+        <h1 href= "#top" id="titulo">ㅤㅤㅤCarreira de Marco Reus</h1>
+    </header>
+    <div id="hover-area"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#titulo">Introdução</a></li>
+            <li><a href="#temporadas">Temporadas</a></li>
+            <li><a href="#titulofinal">Conclusão</a></li>
+            <li><a href="index.html">Carreira de Messi</a></li>
+            <li><a href="neymar.html">Carreira de Neymar</a></li>
+            <li><a href="dybala.html">Carreira de Dybala</a></li>
+            <li><a href="cristiano.html">Carreira de Cr7</a></li>
+            <li><a href="lewa.html">Carreira de Lewandowski</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="reus-info">
+            <h1 id="Introducao">INTRODUÇÃO</h1>
+            <div style="position:relative;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aCiMVBYnQmI" title="video"
+                        frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <h1 id="temporadas"> ㅤㅤㅤㅤㅤㅤTEMPORADAS</h1>
+            <div class="year-container">
+                <img src="https://s.glbimg.com/es/ge/f/300x230/2011/11/19/marcoreus_afp_62.jpg" alt="cr7 2012" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2012</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 25</li>
+                        <li><strong>Assistências:</strong> 14</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2013/04/02/981825-19380400-2560-1440.jpg" alt="cr7 2013" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2013</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> supercopa da alemanha</li>
+                        <li><strong>Gols:</strong> 24</li>
+                        <li><strong>Assistências:</strong> 20</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://cdn.vox-cdn.com/thumbor/nmtE0ShlvNH3tmmb44bCdQUeU0A=/0x70:2672x1851/1400x1050/filters:focal(0x70:2672x1851):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/40104012/454898202.0.jpg" alt="cr7 2014" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2014</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> supercopa da alemanha</li>
+                        <li><strong>Gols:</strong> 9</li>
+                        <li><strong>Assistências:</strong> 4</li>
+                        <li>uma pena não estar na copa de 2014...</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://e00-marca.uecdn.es/albumes/2015/04/04/the_top_10_strikers_of_2015/1428168355_extras_albumes_0_980.jpg" alt="cr7 2015" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2015</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 19</li>
+                        <li><strong>Assistências:</strong> 11</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://static.dw.com/image/19202305_605.jpg" alt="cr7 2016" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2016</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> copa da alemanha</li>
+                        <li><strong>Gols:</strong> 10</li>
+                        <li><strong>Assistências:</strong> 6</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://media.prosport.ro/TfKVnBfCgVK10gji1-wbXQwJzQU=/1280x720/smart/filters:contrast(5):format(webp):quality(80)/https%3A%2F%2Fwww.prosport.ro%2Fwp-content%2Fuploads%2F2018%2F06%2F17289598%2F1-44134947-303.jpg" alt="cr7 2017" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2017</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 8</li>
+                        <li><strong>Assistências:</strong> 2</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/11/06/15415139131385.jpg" alt="cr7 2018" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2018</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> </li>
+                        <li><strong>Gols:</strong> 20</li>
+                        <li><strong>Assistências:</strong> 14</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pbs.twimg.com/media/EA4HWIdWsAAwLcE?format=jpg&name=4096x4096" alt="cr7 2019" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2019</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> supercopa da alemanha</li>
+                        <li><strong>Gols:</strong> 13</li>
+                        <li><strong>Assistências:</strong> 9</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://cdn.vox-cdn.com/thumbor/rklfU-1l2sdfZMdT-FIFUuI80mk=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22524386/1232932556.jpg" alt="cr7 2020" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2020</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> copa da alemanha</li>
+                        <li><strong>Gols:</strong> 9</li>
+                        <li><strong>Assistências:</strong> 7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://en.africatopsports.com/wp-content/uploads/2021/04/Marco-Reus.jpg" alt="cr7 2021" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2021</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 11</li>
+                        <li><strong>Assistências:</strong> 7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://static.dw.com/image/60763238_906.jpg" alt="cr7 2022" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2022</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 7</li>
+                        <li><strong>Assistências:</strong> 5</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://playmakerbrasil.com.br/wp-content/uploads/2023/11/marco-reus-of-dortmund-nov-2022.jpg" alt="cr7 2023" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada 2023</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 9</li>
+                        <li><strong>Assistências:</strong> 10</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s2-oglobo.glbimg.com/mlRl3pQk12E91tb3bboeVhugRX8=/0x0:609x458/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/M/B/6dds22RVquDajAvaIuog/whatsapp-image-2023-01-10-at-20.50.52.jpeg" alt="cr7 2024" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2024</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum </li>
+                        <li><strong>Gols:</strong> 6</li>
+                        <li><strong>Assistências:</strong> 6</li>
+                    </ul>
+                </div>
+            </div>
+            <h1  id="titulofinal">CONCLUSÃO</h1>
+            </section>
+            <h1 id="final">Em suma, a carreira de Marco Reus é uma história de talento, dedicação e superação que transcende os gramados. Sua influência vai além das estatísticas e dos títulos conquistados, deixando um legado de inspiração para as gerações futuras de jogadores e fãs do esporte.<br>
+                Sua resiliência diante de adversidades, seu comprometimento com a equipe e sua capacidade de liderança são exemplos a serem seguidos. Reus personifica os valores essenciais do futebol: paixão, determinação e trabalho em equipe. Assim, sua trajetória não apenas enriquece a história do esporte, mas também inspira aqueles que o admiram, dentro e fora dos campos.</h1>
+           
+            <h1 id="highlights">ㅤㅤㅤㅤㅤㅤHIGHLIGHTS<br><iframe width="560" height="315" src="https://www.youtube.com/embed/WJ4beITZoHA" title="video"
+            frameborder="0" allow="accelerometer;clipboard-write;encrypted-media;gyroscope;picture-in-picture"allowfullscreen></iframe></h1>
+           
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var hoverArea = document.getElementById('hover-area');
+                    var sidebar = document.getElementById('sidebar');
+                    var mainContent = document.querySelector('main');
+       
+                sidebar.style.left = '0';
+
+
+                sidebar.addEventListener('mouseenter', function() {
+                sidebar.style.left = '0';
+                    mainContent.style.marginLeft = '200px';
+            });
+
+
+                sidebar.addEventListener('mouseleave', function() {
+                sidebar.style.left = '-180px'; // Ajuste o valor para o tamanho do pedaço da barra lateral a ser exibido
+                    mainContent.style.marginLeft = '0';
+            });
+
+
+            });
+</script>
+</main>
+</body>
+</html>
+
+
+
+

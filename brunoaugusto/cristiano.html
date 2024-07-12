@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo - Carreira</title>
+    <style>
+        body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Branco */
+    color: #ffffff; /* Preto */
+}
+
+
+header {
+    background-color: #ffc72c; /* Azul escuro */
+    color: #ffffff; /* Branco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-left: 220px; /* Adicionando margem para evitar a sobreposição com a barra lateral */
+}
+
+
+.year-container {
+    display: flex;
+    align-items: center;
+    margin: 10px auto; /* Centralizando horizontalmente */
+    background-color: #004da5; /* Grená */
+    border: 1px solid #ffffff; /* Azul escuro */
+    border-radius: 24px;
+    height: 220px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 600px; /* Ajustando a largura do contêiner */
+}
+
+
+.year-container:hover {
+    transform: scale(1.25);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.year-card {
+    padding: 30px;
+    width: 320px; /* Diminuindo a largura do cartão */
+}
+
+
+.year-card h2 {
+    margin-top: 0;
+    color: #ffc72c; /* temporadas */
+    font-size: 1.5em;
+}
+
+
+.year-card ul {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+}
+
+
+.year-card ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+
+.year-card ul li strong {
+    color: #ffc72c; /* titulos e dados*/
+}
+
+
+.year-image {
+    width: 220px; /* Diminuindo a largura da imagem */
+    height: 220px; /* Diminuindo a altura da imagem */
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+
+@media (max-width: 500px) {
+    .year-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+    .year-card {
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+
+    .year-image {
+        width: 20%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+}
+
+
+#cr7intro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    color: #000000; /* Preto */
+}
+
+
+#final {
+    font-size: 24px;
+    color: black;
+}
+#titulofinal{
+color: black;
+}
+#golmarcante{
+    color: black;
+}
+
+
+#titulo {
+    color: #000000; /* Preto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #121369; /* Azul escuro */
+    color: #ffffff; /* Branco */
+    padding: 20px;
+    width: 200px;
+    height: 100%; /* Ajustando a altura para 100% */
+    z-index: 1000;
+    box-sizing: border-box; /* Adicionando box-sizing para incluir padding na largura total */
+    transition: left 0.3s ease; /* Adicionando transição suave */
+}
+
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#sidebar ul li {
+    margin: 10px 0;
+}
+
+
+#sidebar ul li a {
+    color: #ffc72c;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#sidebar ul li a:hover {
+    color: white; /* Amarelo claro */
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(2, 27, 255);
+    max-width: 55%; /* Defina o valor desejado para a largura máxima */
+    margin: 0 auto; /* Centralizando horizontalmente */
+}
+
+
+main {
+    margin-left: 320px; /* Adicionando margem para evitar a sobreposição com a barra lateral */
+}
+#Introducao{
+    color: black;
+    font-size: 32px;
+}
+#temporadas{
+    color: #000000;
+    font-size: 30px;
+}
+#hover-area {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 100%;
+            z-index: 999; /* Garantir que a área de hover esteja acima de outros elementos */
+            cursor: pointer;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1 href= "#top" id="titulo">ㅤㅤㅤㅤCarreira de Cristiano Ronaldo</h1>
+    </header>
+    <div id="hover-area"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#titulo">Introdução</a></li>
+            <li><a href="#temporadas">Temporadas</a></li>
+            <li><a href="#final">Conclusão</a></li>
+            <li><a href="index.html">Carreira de Messi</a></li>
+            <li><a href="neymar.html">Carreira de Neymar</a></li>
+            <li><a href="dybala.html">Carreira de Dybala</a></li>
+            <li><a href="reus.html">Carreira de Reus</a></li>
+            <li><a href="lewa.html">Carreira de Lewandowski</a></li>
+        </ul>
+    </div>
+    <main>
+
+
+        <section id="cr7-info">
+            <h1 id="Introducao"> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤINTRODUÇÃO</h1>
+            <h1 id="cr7intro">
+                Cristiano Ronaldo é uma figura que transcende o mundo do futebol, sendo amplamente reconhecido como um dos maiores jogadores de todos os tempos.
+                Nascido em 5 de fevereiro de 1985, na Ilha da Madeira, Portugal, Cristiano Ronaldo dos Santos Aveiro, conhecido simplesmente como Cristiano Ronaldo ou CR7, é um atacante que tem deixado uma marca indelével no esporte.</h1>
+            <h1 id="temporadas">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTEMPORADAS</h1>
+            <div class="year-container">
+                <img src="https://img.olympics.com/images/image/private/t_1-1_1280/primary/avexiicm5haekjjbmqzn" alt="cr7 2004" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2004</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> FA cup</li>
+                        <li><strong>Gols:</strong> 6</li>
+                        <li><strong>Assistências:</strong> 4</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://i.pinimg.com/originals/43/9e/1f/439e1ff3f773a5a497f76ec7aa1c20ae.jpg" alt="cr7 2005" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2005</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 9</li>
+                        <li><strong>Assistências:</strong> 6</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://d3nfwcxd527z59.cloudfront.net/content/uploads/2022/11/24155235/Ronaldo-2006.jpg" alt="cr7 2006" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2006</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Leagues Cup</li>
+                        <li><strong>Gols:</strong> 1</li>
+                        <li><strong>Assistências:</strong> 8</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://www.nzherald.co.nz/resizer/tQXzJnn_RU95IUcXRmvfuAx2xo8=/576x613/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/2ARTPX3LSNIX32YX6C5LUX7M5A.jpg" alt="cr7 2007" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2007</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Premier League</li>
+                        <li><strong>Gols:</strong> 23</li>
+                        <li><strong>Assistências:</strong> 14</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pm1.aminoapps.com/6444/54f21703571711f38768b645041c96e6f901d895_hq.jpg" alt="cr7 2008" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2008</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Premier League, UEFA Champions League, Mundial de Clubes da FIFA</li>
+                        <li><strong>Gols:</strong> 42</li>
+                        <li><strong>Assistências:</strong> 8</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://lncimg.lance.com.br/cdn-cgi/image/width=828,height=undefined,quality=75,fit=pad,format=webp/uploads/2016/07/07/577e9aa20535d.jpeg" alt="cr7 2009" class="year-image">
+                <div class="year-card">
+                    <h2> Temporada: 2009</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Premier League, League Cup</li>
+                        <li><strong>Gols:</strong> 26</li>
+                        <li><strong>Assistências:</strong> 12</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://cdn.bleacherreport.net/images_root/slides/photos/000/954/942/105699116_original.jpg?1306034276" alt="cr7 2010" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2010</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 33</li>
+                        <li><strong>Assistências:</strong> 7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s.glbimg.com/es/ge/f/original/2011/01/20/cristianoronaldo2_efe_30.jpg" alt="cr7 2011" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2011</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa del Rey</li>
+                        <li><strong>Gols:</strong> 53</li>
+                        <li><strong>Assistências:</strong> 16</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pbs.twimg.com/media/Fgd3MuwXEAI2jK6.jpg:large" alt="cr7 2012" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2012</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga, Supercopa da Espanha</li>
+                        <li><strong>Gols:</strong> 60</li>
+                        <li><strong>Assistências:</strong> 15</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://img.bleacherreport.net/img/images/photos/002/678/502/hi-res-183200738-cristiano-ronaldo-of-real-madrid-looks-on-during-the-la_crop_exact.jpg?w=1200&h=1200&q=75" alt="cr7 2013" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2013</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 55</li>
+                        <li><strong>Assistências:</strong> 12</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://cdn.vox-cdn.com/thumbor/vvOOzA6Iip1Ti5_rfdpZdwaLHhk=/0x270:2324x1819/1400x1400/filters:focal(0x270:2324x1819):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/45196094/465185479.0.jpg" alt="cr7 2014" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2014</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> UEFA Champions League, Copa del Rey, UEFA Super Cup, Mundial de clubes da FIFA</li>
+                        <li><strong>Gols:</strong> 51</li>
+                        <li><strong>Assistências:</strong> 17</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://pm1.narvii.com/6183/83cfd8e676effc856b4bd1bd2cc30be05056f7e0_hq.jpg" alt="cr7 2015" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2015</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 61</li>
+                        <li><strong>Assistências:</strong> 22</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://s2.glbimg.com/Cv-BVl00bgY29qEmdLdRrepB48M=/0x0:1954x1252/690x442/s.glbimg.com/es/ge/f/original/2016/12/18/2016-12-18t142430z_125072670_mt1aci14707271_rtrmadp_3_soccer-clubfinal.jpg" alt="cr7 2016" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2016</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> UEFA Champions League, UEFA Super Cup, Mundial de clubes da FIFA, UEFA Euro 2016</li>
+                        <li><strong>Gols:</strong> 51</li>
+                        <li><strong>Assistências:</strong> 18</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://placar.com.br/wp-content/uploads/2021/10/cristiano-ronaldo-fifa-20171023-0020.jpg" alt="cr7 2017" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2017</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> La Liga, UEFA Champions League, UEFA Super Cup, Mundial de clubes da FIFA</li>
+                        <li><strong>Gols:</strong> 42</li>
+                        <li><strong>Assistências:</strong> 13</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/newr7/2YTSFKV4S5JTFFHBK4UN723QAE.jpg" alt="cr7 2018" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2018</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> UEFA Champions League, UEFA Super Cup, Mundial de clubes da FIFA</li>
+                        <li><strong>Gols:</strong> 44</li>
+                        <li><strong>Assistências:</strong> 8</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://i.guim.co.uk/img/media/2a647a1e3ee463a4f25bbc49bd93eec1fa4347f5/0_93_4000_2401/master/4000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=df7c07b2239164e17453ec94ab511010" alt="cr7 2019" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2019</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Serie A, Supercopa Italiana</li>
+                        <li><strong>Gols:</strong> 28</li>
+                        <li><strong>Assistências:</strong> 10</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2019/11/13/2019-11-13T154054Z_1_LYNXMPEFAC1PI_RTROPTP_4_SOCCER-EURO-POR-LTU-PREVIEW.JPG" alt="cr7 2020" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2020</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Serie A</li>
+                        <li><strong>Gols:</strong> 37</li>
+                        <li><strong>Assistências:</strong> 5</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2021/07/01/2021-07-01T173751Z_2_LYNXNPEH602RE_RTROPTP_3_FUT-JUVENTUS-RONALDO-DIRETOR.JPG" alt="cr7 2021" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2021</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Copa da Italia, Supercopa Italiana</li>
+                        <li><strong>Gols:</strong> 36</li>
+                        <li><strong>Assistências:</strong> 4</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://tntsports.com.br/__export/1642082806459/sites/esporteinterativo/img/2022/01/13/cristianoronaldo-united.jpg" alt="cr7 2022" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2022</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 24</li>
+                        <li><strong>Assistências:</strong> 3</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://placar.com.br/wp-content/uploads/2023/12/000_347Q8CQ.jpg" alt="cr7 2023" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada 2023</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> Saudi Pro League</li>
+                        <li><strong>Gols:</strong> 27</li>
+                        <li><strong>Assistências:</strong> 7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="year-container">
+                <img src="https://nacaotricolor.com/wp-content/uploads/2024/02/CR.webp" alt="cr7 2024" class="year-image">
+                <div class="year-card">
+                    <h2>Temporada: 2024</h2>
+                    <ul>
+                        <li><strong>Títulos:</strong> nenhum</li>
+                        <li><strong>Gols:</strong> 20</li>
+                        <li><strong>Assistências:</strong> 5</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            </section>
+            <h1>ㅤㅤㅤㅤ</h1>
+            <h1 id="titulofinal">CONCLUSÃO<br></h1><h1 id="final">Em resumo, Cristiano Ronaldo é muito mais do que apenas um jogador de futebol. Ele é um ícone cultural, um exemplo de determinação e superação, e um dos maiores atletas da história. Sua jornada inspiradora continua a cativar e motivar pessoas ao redor do mundo.</h1>
+           
+overscroll-behavior-block:;
+            <h1 id="golmarcante">ㅤㅤㅤㅤGOL MARCANTE<br><iframe width="560" height="315" src="https://www.youtube.com/embed/Jwe-mKWgoGs" title="video"
+            frameborder="0" allow="accelerometer;clipboard-write;encrypted-media;gyroscope;picture-in-picture"allowfullscreen></iframe></h1>
+           
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var hoverArea = document.getElementById('hover-area');
+                    var sidebar = document.getElementById('sidebar');
+                    var mainContent = document.querySelector('main');
+       
+                sidebar.style.left = '0';
+
+
+                sidebar.addEventListener('mouseenter', function() {
+                sidebar.style.left = '0';
+                    mainContent.style.marginLeft = '200px';
+            });
+
+
+                sidebar.addEventListener('mouseleave', function() {
+                sidebar.style.left = '-180px'; // Ajuste o valor para o tamanho do pedaço da barra lateral a ser exibido
+                    mainContent.style.marginLeft = '0';
+            });
+
+
+            });
+</script>
+</main>
+</body>
+</html>
+
+
+
+
+
