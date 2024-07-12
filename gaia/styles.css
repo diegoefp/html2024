@@ -1,0 +1,92 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    background-image: url('https://wallpaper.forfun.com/fetch/ac/ac993ee9fbfbe0da8eb1130dec3087f2.jpeg');
+    padding: 0;
+    background-size: 100% 100%;
+
+
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ed1d24;
+    background-image: url('https://wallpaper.forfun.com/fetch/ac/ac993ee9fbfbe0da8eb1130dec3087f2.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+   padding: 10px;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.quadrado{
+    background-color: rgb(163, 166, 167);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-decoration: none;
+    border: 2px solid black; /* Adiciona uma borda preta */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+    img {
+    max-width: 45%; /* Garante que a imagem não ultrapasse a largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    box-shadow: 0 0 10px rgba(244, 9, 9, 0.1); /* Adiciona uma sombra */
+}
+
+/* Estilos específicos para cada seção */
+h2 {
+    color: #ed1d24;
+}
+.voltar{
+    
+    padding-top: 30px;
+}
+
+/* Adicione mais estilos conforme necessário */

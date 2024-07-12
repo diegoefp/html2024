@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+video{
+    width: 80%;
+    height: auto;
+}
+
+.alinha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+img{
+    width: 90%;
+    height: auto;
+}
+
+p{
+    font-size: 28px;
+}

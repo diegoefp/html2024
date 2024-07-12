@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Brasil</title>
+    <a name="inicio"></a>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: purple; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-decoration: none;
+            background-image: url('.jpeg');
+            background-attachment: fixed;                  
+        }
+        header {
+            background-color: purple;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 43px;
+            height: 15px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-image: url('Roxo.jpeg');
+            
+        }
+
+        header img {
+            width: 200px;
+            height: 50px;
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .streamer img  {
+            width: 300px;
+            height: 250px;
+            border-radius: 30%;
+            margin-right: 20px;
+            text-align: center;
+            
+        }
+        .streamer {
+            background-color: #ccaee2;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+            text-decoration: none;
+            
+        }
+        .streamer h2 {
+            margin-top: 0;
+            
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        @keyframes mover {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(10px, 10px); }
+            100% { transform: translate(0, 0    ); }
+        }
+        h2{
+            text-align: center;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px; 
+            height: 100%;
+            right: -250px;
+            background-color: #ccaee2;
+            color: rgb(143, 25, 190);
+            padding: 2px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif; 
+            overflow-y: auto;           
+            text-decoration: none;
+        }
+        
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+          }
+          
+          .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
+          
+          .content {
+            width: calc(100% - 20px); /* Reduz 20px para compensar a largura da barra de rolagem */
+            padding: 10px;
+            height: 100%;
+            overflow-y: scroll;
+          }
+          
+          .scrollbar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100%;
+            background-color: #f1f1f1;
+
+          
+        }
+        h5{
+            text-align: center;
+            
+        }
+img:hover {
+    animation: move 0.5s alternate; 
+}
+h6{
+    text-align: center; 
+    
+}
+.box {
+            padding: 20px;
+            background-color: #ccaee2;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+.button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+        }
+        
+</style>
+</head>
+<body>
+    <header>
+        
+        <img src="TítuloTwitch.png" alt="">
+    </header>
+    <section>
+        <div class="sidebar">
+            
+            <h2><b> Tópicos </b></h2>
+                
+            <ul class="custom-list">
+                <p>
+                    <li><a href="#inicio">Início</a></li>
+                </p>
+                <p>
+                    <li> <a href="#Twitch">Twitch<a> </li>
+                 </p>
+                <p>
+                    
+                    
+                   <li> <a>Principais Streamer<a> </li>
+                </p>
+                    <li><a href="#Streamers">Streamers</a></li>
+                <p>
+                
+
+                    <li> <a>Streamers Femininas<a> </li>
+                 </p>
+                 <p>
+                    <li><a href="#Streamers_Femininas">Streamers Femininas</a></li>
+                </p>
+                <p>
+                    
+
+                    <li> <a>Principais Categorias<a> </li>
+                 </p>
+                 
+        </div>
+        <div class="streamer">
+            
+            <h1 id="Twitch" align="center"></h1>
+            <h2>SOBRE A PLATAFORMA</h2>
+            <p>A <b>Twitch</b> é uma das plataformas de streaming ao vivo mais populares do mundo, focada principalmente em jogos eletrônicos, mas que também abrange uma ampla variedade de conteúdos, como música, arte, entretenimento e até mesmo transmissões ao vivo de atividades do dia a dia.</p>
+            <p>
+                Fundada em 2011 por <a target="_blank" href="https://en.wikipedia.org/wiki/Justin_Kan">Justin Kan</a> e <a target="_blank" href="https://en.wikipedia.org/wiki/Emmett_Shear">Emmett Shear</a>, a <b>Twitch</b> originalmente começou como uma ramificação do site <a target="_blank" href="https://tecnoblog.net/noticias/justin-tv-encerra-atividades/">Justin.tv</a>, centrado em transmissões ao vivo de video games e competições de eSports. Em pouco tempo, a plataforma ganhou popularidade, tornando-se um ponto de encontro para gamers, criadores de conteúdo e espectadores de todo o mundo.</p>
+                <p>
+                Hoje, a <b>Twitch</b> oferece uma ampla gama de recursos e funcionalidades para criadores de conteúdo, incluindo:</p>
+                <p>
+                <b>Transmissões ao Vivo:</b> Os usuários podem transmitir seus jogos e outras atividades ao vivo para uma audiência global. A interação em tempo real entre o streamer e os espectadores é uma das características distintivas da plataforma.</p>
+                <p>
+                <b>Chat Interativo:</b> O chat ao vivo permite que os espectadores se envolvam diretamente com o streamer e entre si, criando uma comunidade interativa em torno do conteúdo transmitido.</p>
+                <p>
+                <b>Assinaturas e Doações:</b> Os espectadores podem apoiar financeiramente seus streamers favoritos por meio de assinaturas mensais, doações e bits, uma moeda virtual da Twitch.</p>
+                <p>
+                <b>Emotes e Recompensas:</b> A plataforma oferece uma variedade de emotes personalizáveis e recompensas para incentivar a interação entre streamers e espectadores.</p>
+                <p>
+                <b>Categorias Diversificadas:</b> Além de jogos, a <b>Twitch</b> oferece categorias de conteúdo variadas, incluindo música, arte, culinária, talk shows e muito mais.</p>
+                <p>
+                <b>Programação Oficial:</b> A Twitch também hospeda programações oficiais, como transmissões de eventos de eSports, shows ao vivo e maratonas de filmes e séries.</p>
+                <p>
+                A Twitch se destaca não apenas como uma plataforma de entretenimento, mas também como uma comunidade vibrante e diversificada, onde pessoas de diferentes origens e interesses podem se reunir para compartilhar suas paixões, fazer amizades e se divertir juntas. Com milhões de usuários ativos diariamente, a Twitch continua a ser uma das principais plataformas de streaming ao vivo do mundo, moldando a cultura digital e o entretenimento online.
+            </p>
+            <a target="_blank" href="https://www.twitch.tv/">
+                <h2><img src="LogoTwitch.jpg" alt="">
+                </h2></a>
+            </div>
+            <p>
+            <div class=Streamer">
+                <div class="box">
+                    <a name="Streamers"></a>
+                    <h2>Maiores Streamers</h2>
+                    <p>Descubra quem são os os principais streamers e os mais assistidos do Brasil.</p>
+                    <a href="Masculinos.html" class="button">Saber mais</a>
+                </div>
+            </div>
+        </p>
+            <p>
+            <div class=Streamer">
+                <a name="Streamers Femininas"></a>
+                <div class="box">
+                    <h2>Streamers Femininas</h2>
+                    <p>Descubra quem são as mulheres que mais representam o Brasil no mundo de Stream.</p>
+                    <a href="Molheres.html" class="button">Saber mais</a>
+                </div>
+            </div>
+            </p>
+
+            
+    </section>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+    const openSidebarButton = document.getElementById('openSidebarButton');
+    const closeButton = document.getElementById('closeButton');
+
+    openSidebarButton.addEventListener('click', () => {
+        sidebar.style.right = '0';
+    });
+
+    closeButton.addEventListener('click', () => {
+        sidebar.style.right = '-250px';
+    });
+;
+    </script>
+</body>
+</html>
