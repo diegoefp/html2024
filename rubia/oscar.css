@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(https://i.pinimg.com/564x/40/33/49/4033498eabeb3b3b77d18167d180f8a5.jpg);
+    color: #fff;
+    background-size: cover;
+    line-height: 1.6;
+    padding-top: 30px; /* Compensar o header fixo */
+}
+
+.titulo {
+    margin: 0; /* Remove qualquer margem da seção título */
+    padding: 0; /* Remove qualquer padding da seção título */
+}
+
+.titulo h1 {
+    font-size: 3em;
+    margin: 0; /* Remove a margem do título */
+    padding: 0; /* Remove o padding do título */
+    color: #d8d52c;
+}
+.logo {
+    width: 1520px;  /* Ajuste o tamanho conforme necessário */
+    height: auto;  /* Mantém a proporção da imagem */
+}
+
+
+
+.imagem-container {
+    width:  200px;
+    height: 250px;
+
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-group {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.imagem-uniforme {
+    width: 300px;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+a{
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o conteúdo interno */
+}
+.logo {
+    width: 8px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+nav {
+    display: inline-block; /* Ajusta a largura ao conteúdo */
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 5px; /* Espaçamento interno para os itens do menu */
+    border: 2px solid #b49900; /* Borda dourada */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.5s;
+}
+nav ul li:hover {
+    background-color: rgba(255, 217, 0, 0.2); /* Fundo dourado semi-transparente ao passar o mouse */
+}
+nav ul li a {
+    color: #fff6ce;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block; /* Faz com que o link ocupe todo o espaço do item do menu */
+}
+nav ul li a:hover {
+   color: #ffffff;
+}
+.titulo h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #d8d52c;
+}
+.hero p {
+    font-size: 1.5em;
+    color: #FFD700;
+}
+section {
+    padding: 60px 0;
+}
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ccb418;
+    text-align: center;
+}
+section p {
+    text-align: center;
+}
+section ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+section ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+section ul li h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+section ul li img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+}
+form {
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #FFD700;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+}
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #FFD700;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+}
+footer {
+    background: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #FFD700;
+  
+    .botao-entrar {
+
+
+        display: inline-block;
+
+
+        padding: 10px 20px;
+
+
+        background-color: #fff;
+
+
+        color: #333;
+
+
+        text-decoration: none;
+
+
+        font-size: 1.2em;
+
+
+        margin-top: 30px;
+
+
+        border-radius: 5px;
+
+
+        border: 2px solid #fff;
+
+
+        transition: background-color 0.3s, color 0.3s;
+
+
+  }
+
+}

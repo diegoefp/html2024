@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Oscar Awards</title>
+
+
+    <link href="https://fonts.googleapis.com/opacity: 0; /* Começa com opacidade zero */?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+ 
+
+    <style>
+
+
+        body, html {
+
+
+            margin: 0;
+
+
+            padding: 0;
+
+
+            height: 100%;
+
+
+            font-family: Arial, sans-serif;
+
+
+        }
+
+
+        .header {
+
+
+            position: relative;
+
+
+            height: 100vh;
+
+
+            background: url('https://i0.wp.com/3.bp.blogspot.com/-zQDcsAUYAfg/WK9pGO11_1I/AAAAAAAABIA/xWTuCisUovUIcQvQZPSybLdhY_m4SYh7wCPcB/s1600/oscars.jpg?ssl=1') no-repeat center center/cover;
+
+
+            display: flex;
+
+
+            justify-content: center;
+
+
+            align-items: center;
+
+
+            text-align: center;
+
+
+            color: white;
+
+
+            animation: mover-fundo 10s infinite linear;
+
+
+        }
+
+
+        @keyframes mover-fundo {
+
+
+            0% { background-position: 0 0; }
+
+
+            50% { background-position: 100% 100%; }
+
+
+            100% { background-position: 0 0; }
+
+
+        }
+
+
+        .overlay {
+
+
+            position: absolute;
+
+
+            top: 0;
+
+
+            left: 0;
+
+
+            width: 100%;
+
+
+            height: 100%;
+
+
+            background: rgba(0, 0, 0, 0.5);
+
+
+        }
+
+
+      .botao-entrar {
+
+
+            display: inline-block;
+
+
+            padding: 10px 20px;
+
+
+            background-color: #fff;
+
+
+            color: #333;
+
+
+            text-decoration: none;
+
+
+            font-size: 1.2em;
+
+
+            margin-top: 30px;
+
+
+            border-radius: 5px;
+
+
+            border: 2px solid #fff;
+
+
+            transition: background-color 0.3s, color 0.3s;
+
+
+      }
+
+
+  
+
+
+        .content {
+
+
+            position: relative;
+
+
+            z-index: 2;
+
+
+        }
+
+
+        h1 {
+
+
+            font-size: 4em;
+
+
+            margin: 0;
+
+
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+
+
+            font-family: 'Playfair Display', serif;
+
+
+        }
+
+
+        .subtitle {
+
+
+            font-size: 1.3em;
+
+
+            margin-top: 20px;
+
+
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+
+              font-family: 'Playfair Display', serif;
+
+
+        }
+
+
+        .oscar-image {
+
+
+            margin-top: 40px;
+
+
+            width: 200px;
+
+
+            height: auto;
+
+
+            border-radius: 50%;
+
+
+            border: 5px solid white;
+
+
+        }
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+    <div class="header">
+
+
+        <div class="overlay"></div>
+
+
+        <div class="content">
+
+
+            <h1>Oscar Awards</h1>
+
+
+            <div class="subtitle">Celebrando o melhor do cinema mundial</div>
+
+
+                <a href="oscar.html" class="botao-entrar">ENTRAR</a>
+
+
+           
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+
+</html>
+
+

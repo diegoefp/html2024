@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        img{
+          border-radius: 30px;
+          transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        }
+        img:hover{
+          transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o mouse passar por cima */
+        }
+        @media only screen and (max-width: 600px) {
+  /* Estilos para telas menores ou iguais a 600px */
+}
+
+        header {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent), url('https://pbs.twimg.com/media/Cu7OzjuWAAAvntC.jpg:large');
+            background-size: cover;
+            color: transparent 80%;
+            background-position: 20%;
+            color: #556B2F;
+            padding: 30px;
+            text-align: left;
+            position: relative;
+        }
+  
+        nav a {
+            color: white;
+            font-family:'Courier New', Courier, monospace;
+            text-decoration: none;
+            padding: 20px;
+            position: 10px;
+            transition: transform 0.3s ease;
+        }
+        @font-face {
+            font-family: 'Bleeding cowboys';
+            src:  url("https://db.onlinewebfonts.com/t/629c2522597b437915368970282b0731.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/629c2522597b437915368970282b0731.woff")format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+    background-color: black;
+}
+
+img{
+border: 3px solid white;
+}
+
+h1 {
+font-size: 35px;
+color: #8B0000;
+position: -10px;
+font-family: Arial, Helvetica, sans-serif;}
+
+.inform{
+display: inline-block; 
+margin-right: 15px; 
+background-color: #1C1C1C;
+color: white;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+border-color: white;
+border-style:double;
+width: 17%;
+border-radius: 30px;
+transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+.inform:hover{
+  background-color: #8B0000;
+  transform: translateY(-5px); /* Move o botão 5 pixels para cima quando o mouse passar por cima */
+}
+
+h2{
+font-size: 22px;
+color: white;
+font-family: 'Times New Roman', Times, serif;}
+
+li{
+color: white;}
+
+p{
+font-size: 20px;
+font-family: Lucida Handwriting;
+color: #8B0000;}
+
+p1{
+font-size: 20px;
+font-family: Quicksand;
+color: whitesmoke;}
+
+p2{
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace;
+  color: whitesmoke;
+}
+
+h4{
+font-size: 35px;
+color: #8B0000;
+}
+
+br1{
+font-size: 25px;
+}
+h3{
+color:#8B0000;
+font-size: 25px;
+}
+
+  h7 {
+    font-size: 125px;    font-family: 'Bleeding Cowboys'; /* Adicionando a fonte 'Bleeding cowboys' */
+      background-image: linear-gradient(to bottom, #CD0000, #000000); /* De vermelho (#ff0000) a azul (#0000ff) */
+      color: transparent;
+      background-clip: text;
+      line-height: 2; 
+}
+h8{
+  color: #8B0000;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+}
+
+.voltar-cima{
+  background-color: #1C1C1C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+.voltar-cima:hover{
+  background-color: #8B0000;
+}
+.elenco{
+  background-color: #1C1C1C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+.elenco:hover{
+  background-color: #8B0000;
+  transform: translateY(-5px); /* Move o botão 5 pixels para cima quando o mouse passar por cima */
+}
+.compartilhar{
+            background-color: #1C1C1C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+           margin: 0 5px;
+           transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        }
+        .compartilhar:hover{
+            background-color:#8B0000;
+            transform: translateY(-5px); /* Move o botão 5 pixels para cima quando o mouse passar por cima */
+        }
+        h9{
+            color: #8b0000;
+            font-family: Lucida Handwriting;
+            font-size: 25px;
+        }
+        footer{
+            color: #8B0000;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1C1C1C; /* Cor de fundo do rodapé */
+            color: white; /* Cor do texto */
+            text-align: center; /* Alinhamento do texto */
+        }
+        .top-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1C1C1C;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            z-index: 1000; /* Elevando o z-index para ficar acima do rodapé */
+        }
+        .top-button a {
+            color: white;
+            text-decoration: none;
+        }
+        h8{
+          color: #8B0000;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+      </style>
+    <title>The walking dead</title>
+</head>
+<body id="topo">
+  <header>
+    <h7>  THE WALKING DEAD </h7>
+  </header>
+
+    <center>
+    <nav a>
+
+      <h1 align="center"> ∘✧ Conheça outras coisas sobre a série! ✧∘ </h1>
+      <button class="inform"><a href="temporadas.html"> ⋆ Temporadas ⋆ </a></button>
+      <button class="inform"><a href="vilões.html"> ⋆ Vilões ⋆ </a></button>
+      <br><br><br><button class="inform"><a href="spinoffs.html"> ⋆ Spin-offs ⋆ </a></button>
+    </nav a>
+    </center>
+
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <br>
+    <br>
+   
+      <hr>
+    <h8 align="center"> ✧∘ Sobre o que é "The Walking Dead"? ✧∘ </h8>
+    <p></p>
+    <p></p>
+    <p2 align="right"> "The Walking Dead" (TWD) é uma série de televisão que se originou de uma série de quadrinhos de mesmo nome, criada por Robert Kirkman, 
+       Tony Moore e Charlie Adlard.A história se passa em um mundo pós-apocalíptico dominado por zumbis, 
+       onde um pequeno grupo de sobreviventes luta para se manter vivo e encontrar um lugar seguro para viver.
+    <br>
+    <br>
+       A série de televisão estreou em 2010 e se tornou um fenômeno cultural, alcançando uma base de fãs globalmente dedicada. 
+       Ela é conhecida por sua narrativa emocionante, personagens complexos e exploração de temas como sobrevivência, moralidade e 
+       relacionamentos humanos sob extrema adversidade.
+      <br>
+      <br>
+      Ao longo das temporadas, "The Walking Dead" acompanha os sobreviventes liderados por personagens como Rick Grimes, Daryl Dixon e Michonne, 
+      enquanto enfrentam não apenas as ameaças representadas pelos zumbis, mas também os perigos apresentados por outros sobreviventes humanos. A série é famosa por suas reviravoltas chocantes,
+      mortes de personagens principais e momentos emocionais intensos.
+      <br>
+      <br>
+      Além da série principal, "The Walking Dead" também gerou vários spin-offs, incluindo "Fear the Walking Dead", que explora o início do apocalipse zumbi em uma localização diferente,
+      e "The Walking Dead: World Beyond", que segue um grupo de adolescentes crescendo em um mundo pós-apocalíptico.
+      <br>
+      <br>
+      Ao longo de sua jornada, "The Walking Dead" influenciou a cultura popular, gerou uma série de videogames, romances, quadrinhos spin-off e mercadorias relacionadas. Sua capacidade de contar histórias 
+      cativantes em um cenário apocalíptico continuou a cativar espectadores ao longo dos anos, tornando-se uma das séries mais icônicas da televisão contemporânea.</p2>
+  
+      <br>
+      <br>
+     <h8> Onde posso assistir? </h8>
+     <nav a>
+     <p> <a href="https://www.netflix.com/br"> Netflix! (Clique aqui) </a></p>
+     <p> <a href="https://www.starplus.com/pt-br"> Star+! (Clique aqui) </a></p>
+    </nav a>
+
+   <hr>
+    <p align="center"> ⋆✧ Abaixo teremos alguns dos personagens ✧⋆  </p>
+    <h4 align="center"> ⋆༺𓆩☠︎︎𓆪༻⋆ </h4>
+
+       <center>
+        <nav a>
+        <hr>
+        <br><h2 align="center"> ∼⋆ღ✧ Rick Grimes ✧ღ⋆∼ </h2></br>
+         <img src="https://w0.peakpx.com/wallpaper/415/217/HD-wallpaper-rick-grimes-badass-colt-revovler-dead-the-python-zombie-rick-grimes-killer-walking.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Rick_Grimes" target="blank"><i> ⋆ Clique aqui.</i></a>  
+        <p></p>
+        <p1> Rick representa liderança, coragem e adaptação. 
+        <br> Rick é o líder do grupo principal e passa por uma jornada de transformação moral 
+        <br> ao enfrentar decisões difíceis para proteger sua família e comunidade.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a>
+        <br><h2 align="center"> ∼⋆ღ✧ Daryl Dixon ✧ღ⋆∼ </h2></br>
+         <img src="https://images3.alphacoders.com/945/945589.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Daryl_Dixon" target="blank"><i> ⋆ Clique aqui. </i></a>
+         <p></p>
+        <p1> Daryl simboliza a sobrevivência e lealdade.
+        <br> Ele é um sobrevivente habilidoso que desenvolve um forte vínculo com o grupo de Rick e
+        <br> é conhecido por sua habilidade de rastreamento e sua lealdade inabalável aos amigos.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a>
+        <br><h2 align="center"> ∼⋆ღ✧ Michonne (Grimes) ✧ღ⋆∼ </h2></br>
+         <img src="https://c4.wallpaperflare.com/wallpaper/768/520/835/michonne-the-walking-dead-season-9-danai-gurira-wallpaper-preview.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Michonne" target="blank"><i> ⋆ Clique aqui. </i></a>
+         <p></p>
+        <p1> Michonne representa força, resiliência e redenção. 
+        <br> Michonne é uma guerreira habilidosa que superou um passado traumático para 
+        <br> se tornar uma líder forte e protetora.</p1>
+        </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a>
+        <br><h2 align="center"> ∼⋆ღ✧ Carol Peletier ✧ღ⋆∼ </h2></br>
+         <img src="https://images2.alphacoders.com/875/875420.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Carol_Peletier" target="blank"><i> ⋆ Clique aqui.</i></a>
+         <p></p>
+        <p1> Carol personifica a transformação e a capacidade de se adaptar.
+        <br> Ela passa de uma mulher abusada a uma sobrevivente astuta e 
+        <br> determinada, disposta a fazer o que for necessário para proteger sua família.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a>
+        <br><h2 align="center"> ∼⋆ღ✧ Maggie  Greene (Rhee) ✧ღ⋆∼ </h2></br>
+         <img src="https://c4.wallpaperflare.com/wallpaper/904/919/632/the-walking-dead-maggie-greene-lauren-cohan-wallpaper-preview.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Maggie_Greene" target="blank"><i> ⋆ Clique aqui. </a>
+         <p></p>
+        <p1> Maggie representa determinação e liderança feminina.
+        <br> Negan é um líder carismático dos Salvadores, que impõe sua vontade através da violência extrema,
+        <br> mas também demonstra momentos de humanidade e complexidade. </p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a>    
+        <br><h2 align="center"> ∼⋆ღ✧ Negan Smith ✧ღ⋆∼ </h2></br>
+         <img src="https://mrwallpaper.com/images/hd/negan-with-a-small-smile-m2qga39uzqf5650y.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Negan" target="blank"><i> ⋆ Clique aqui. </i></a>
+         <p></p>
+        <p1> Negan simboliza a brutalidade e a ambiguidade moral. 
+        <br> Ele é um otimista que acredita na capacidade das pessoas de se 
+        <br> unirem e se ajudarem em tempos difíceis.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a>   
+        <br><h2 align="center"> ∼⋆ღ✧ Rosita Espinosa ✧ღ⋆∼ </h2></br>
+         <img src="https://44.media.tumblr.com/c26efe08285c9f97cd0a1d97b8aff1d4/5fedcd23db5ded34-e2/s540x810_f1/af07356cc2917f29b828373b48e422e228f83f9b.gif" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Rosita_Espinosa" target="blank"><i>⋆ Clique aqui. </i></a>
+         <p></p>
+        <p1> Rosita representa resiliência, coragem e esperança em um mundo pós-apocalíptico dominado por zumbis.
+        <br> Ela é uma sobrevivente habilidosa e determinada, que inspira os outros a lutar e 
+        <br> a permanecerem fortes, especialmente os espectadores mais jovens.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+      <nav a>    
+        <br><h2 align="center"> ∼⋆ღ✧ Abraham Ford ✧ღ⋆∼ </h2></br>
+         <img src="https://hips.hearstapps.com/hmg-prod/images/michael-cudlitz-the-walking-dead-1553320277.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Abraham_Ford" target="blank"><i> ⋆ Clique aqui. </i></a>
+         <p></p>
+        <p1> Abraham representa determinação, liderança e lealdade em um mundo pós-apocalíptico. 
+        <br> Ele é um ex-sargento do exército dos Estados Unidos que busca sobreviver e proteger 
+        <br> aqueles que ama, simbolizando a luta pela esperança e perseverança.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a>  
+        <br><h2 align="center"> ∼⋆ღ✧ Carl Grimes ✧ღ⋆∼ </h2></br>
+         <img src="https://c4.wallpaperflare.com/wallpaper/95/97/208/tv-show-the-walking-dead-carl-grimes-chandler-riggs-wallpaper-preview.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Carl_Grimes" target="blank"><i> ⋆ Clique aqui. </i></a>
+         <p></p>
+        <p1> Carl representa a perda da inocência e o amadurecimento em um mundo cruel. 
+        <br>Ele cresce rapidamente diante da adversidade, tornando-se um 
+        <br> membro valioso do grupo de sobreviventes.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a>   
+        <br><h2 align="center"> ∼⋆ღ✧ Glenn Rhee ✧ღ⋆∼ </h2></br>
+         <img src="https://c4.wallpaperflare.com/wallpaper/812/686/511/the-walking-dead-the-walking-dead-steven-yeun-glenn-wallpaper-preview.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Glenn_Rhee" target="blank"><i> ⋆ Clique aqui. </i></a>
+         <p></p>
+        <p1> Glenn personifica a esperança e a humanidade em meio à escuridão.
+        <br>Ele é um otimista que acredita na capacidade das pessoas de se unirem 
+        <br> e se ajudarem em tempos difíceis.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a> 
+        <br><h2 align="center"> ∼⋆ღ✧ Hershel Greene ✧ღ⋆∼ </h2></br>
+         <img src="https://i.pinimg.com/736x/d6/53/73/d65373fd3c4b29142001e27bbf06b2ee.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Hershel_Greene" target="blank"><i> ⋆ Clique aqui. <i></a>
+         <p></p>
+        <p1> Hershel simboliza a fé, a compaixão e a esperança. 
+        <br> Como um homem religioso e fazendeiro, Hershel busca manter sua fé em um mundo que parece ter perdido toda a esperança. 
+        <br> Ele oferece orientação moral e um senso de propósito para o grupo, mesmo nos momentos mais sombrios.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+
+      <center>
+        <nav a> 
+        <br><h2 align="center"> ∼⋆ღ✧ Aaron ✧ღ⋆∼ </h2></br>
+         <img src="https://i.pinimg.com/736x/2d/1d/8e/2d1d8ea0f2bf026c3c5c075b7e4a34bd.jpg" width="400px" height="auto">
+         <br><a href="https://pt.wikipedia.org/wiki/Aaron_(The_Walking_Dead)" target="blank"><i>⋆ Clique aqui. </i> </a>
+         <p></p>
+        <p1> Aaron representa esperança e bondade em um mundo pós-apocalíptico.
+        <br> Ele é um recrutador de Alexandria, buscando novos sobreviventes para construir um futuro melhor. 
+        <br> Sua natureza altruísta e crença na humanidade o tornam um símbolo de esperança, unindo diferentes grupos de sobreviventes.</p1>
+      </nav a>
+       </center>
+       <br>
+      <hr>
+      
+      <nav b>
+      <h3 align="center"> ✧⋆ Conheça o elenco! ✧⋆ </h3>
+      <center><button class="elenco"><a href="elenco.html">Clique aqui!</a></button></center>
+    </nav b>
+
+    <hr>
+    <br>
+
+    <center>
+        <h9> Compartilhe o site com mais amigos! </h9>
+        </center>
+        <br>
+
+
+    <center>
+        <button class="compartilhar" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href));" onclick="submitVote()">Compartilhar no Facebook</button>
+        <button class="compartilhar"  onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href));" onclick="submitVote()">Compartilhar no Twitter</button>
+        <button class="compartilhar"  onclick="window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(document.title + ' ' + window.location.href));" onclick="submitVote()">Compartilhar no WhatsApp</button>
+        <button class="compartilhar"  onclick="window.open('https://www.instagram.com/?url=' + encodeURIComponent(window.location.href));" onclick="submitVote()">Compartilhar no Instagram</button>    
+        </center>
+<p></p>
+<p></p>
+
+
+
+    <p></p>
+    <p></p>
+    <p></p>
+       
+    <nav a>
+      <center><br><button class="top-button" onclick="scrollToTop()" style="position:fixed; bottom:20px; right:20px; background-color: #1C1C1C;; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;"><a href="#topo"> Voltar ao Topo </a></button>
+      </nav a>
+     
+
+
+      <nav a>
+      <footer> Feito por Mayra - I2A
+         <br><a href="https://www.instagram.com/may.esbd/?next=%2F" target="blank"> @May.esbd </a> </footer>
+        </nav a>
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+        }
+        header {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent), url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/01b2e7b2-6adc-47db-9219-d7f91eb1a940/d5mc75c-4d0830b5-2829-425f-bf42-658fb42b8bfb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAxYjJlN2IyLTZhZGMtNDdkYi05MjE5LWQ3ZjkxZWIxYTk0MFwvZDVtYzc1Yy00ZDA4MzBiNS0yODI5LTQyNWYtYmY0Mi02NThmYjQyYjhiZmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._P0Zqc3JH5jhgwRiDaq2gJT88UuB9zHnSjS0TTFMTQg');
+            background-size: cover;
+            color: transparent 80%;
+            background-position: 20%;
+            color: #556B2F;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        @font-face {
+            font-family: 'Positions By Arixbored Regular';
+            src:  url("https://db.onlinewebfonts.com/t/c1592535779a6b3df12519d6699cb44a.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/c1592535779a6b3df12519d6699cb44a.woff")format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+        h3 {
+        font-size: 70px;    font-family: 'Positions By Arixbored Regular '; /* Adicionando a fonte 'Bleeding cowboys' */
+          background-image: linear-gradient(to bottom, #CD0000, #000000); /* De vermelho (#ff0000) a azul (#0000ff) */
+          color: transparent;
+          background-clip: text;
+          line-height: 2; 
+        }
+        nav a{
+            color: white;
+            font-family:'Courier New', Courier, monospace;
+            text-decoration: none;
+            padding: 20px;
+            position: 10px;
+            transition: transform 0.3s ease;
+          }
+          .inicio{
+            background-color: #1C1C1C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+           margin: 0 5px;
+           transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        }
+        .inicio:hover{
+            background-color: #8B0000;
+            transform: translateY(-5px); /* Move o botão 5 pixels para cima quando o mouse passar por cima */
+        }
+        h7{
+            color: white;
+            font-size: 20px;
+          font-family: 'Courier New', Courier, monospace;
+        }
+        .poll-container {
+            margin: 50px auto;
+            max-width: 400px;
+            background-color: #1C1C1C;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .poll-question {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .poll-options {
+            display: flex;
+            flex-direction: column;
+        }
+        .poll-option {
+            margin-bottom: 10px;
+        }
+        .pergunta {
+            padding: 10px 20px;
+            background-color: #696969;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .pergunta:hover {
+            background-color: #8B0000;
+        }
+        
+        h8{
+            color: #8B0000;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+        p{
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        img{
+          border-radius: 30px;
+          transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        }
+        img:hover{
+          transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o mouse passar por cima */
+        }
+       
+    </style>
+    <title>Vilões.</title>
+    
+</head>
+<body id="topo">
+    <header>
+        <h3> ✧∘ VILÕES ✧∘ </h3>
+      </header>
+
+      <br> 
+      <br> 
+
+      <nav a>
+        <button class="inicio"><a href="index.html"> Página principal </a></button>
+      </nav a>
+
+      <br>
+      <br>
+
+      <h7> Bem-vindo ao universo de "The Walking Dead", onde os vilões são tão assustadores quanto inesquecíveis. 
+        De governadores tirânicos a líderes de culto carismáticos e grupos de sobreviventes violentos, cada 
+        temporada apresenta antagonistas poderosos e complexos. Prepare-se para enfrentar personagens 
+        memoráveis como o Governador, Negan e Alpha, cada um trazendo consigo uma aura de terror e 
+        intriga. Embarque nesta jornada emocionante através do mundo apocalíptico de 
+        "The Walking Dead" e descubra o que acontece quando os sobreviventes se 
+        deparam com os vilões mais desafiadores que o mundo já viu.</h7>
+
+        <br> 
+        <br>
+        <center>
+    <h8> ✧ Abaixo veremos os vilões de cada temporada! ✧ </h8>
+</center>
+<br>
+
+<hr>
+<p> <b> Temporada 1 - </b> Na primeira temporada de "The Walking Dead", os sobreviventes são confrontados não apenas 
+    com a ameaça constante dos zumbis, mas também com os desafios internos que surgem em meio ao caos 
+    pós-apocalíptico. À medida que lutam para encontrar segurança e recursos, eles se deparam com 
+    dilemas morais e conflitos pessoais que testam sua humanidade e resiliência.
+    <br>Além da luta física contra os mortos-vivos, os sobreviventes precisam lidar com questões emocionais 
+    e psicológicas enquanto enfrentam perdas devastadoras, tomam decisões difíceis sobre quem confiar 
+    e lutam para manter sua sanidade em um mundo transformado pela morte.
+</p>
+<center>
+<img src="https://ew.com/thmb/49UVDQd8Dt-Pwa0iaYeShmTFUK4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/The-Walking-Dead-090622_3-bc6095d2fcee4a52b71dfc2f21ec3551.jpg"width="400px" height="auto">
+</center> 
+<hr>
+
+<p> <b> Temporada 2 -</b> Na segunda temporada, os antagonistas variam ao longo dos episódios. Inicialmente, o principal antagonista é 
+    <br> Shane Walsh, que se torna cada vez mais instável e obssecado por Rick e Lori, criando tensão dentro do grupo. Posteriormente, o 
+    <br> grupo encontra-se em conflito com o fazendeiro Hershel Greene e seus filhos, que inicialmente não permitem que o grupo permaneça 
+    <br> em sua fazenda. Além disso, eles enfrentam ameaças externas, como o grupo de bandidos liderados por Dave e Tony, que tentam 
+    <br> roubar suprimentos e sequestrar membros do grupo.</p>
+<center>
+    <img src="https://walkingdeadbr.com/wp-content/uploads/2011/12/Shane-Walsh-The-Walking-Dead.jpg"width="400px" height="auto">
+    </center> 
+<hr>
+
+<p> <b> Temporada 3 -</b> Na terceira temporada de "The Walking Dead", o principal vilão é o Governador. Ele é o líder autocrático da cidade de Woodbury e representa uma ameaça significativa para os protagonistas do grupo de 
+    sobreviventes liderado por Rick Grimes. O Governador é manipulador, brutal e determinado a manter seu poder a qualquer custo, mesmo que isso signifique recorrer à violência e à manipulação para alcançar seus objetivos. Sua introdução na série traz 
+    consigo uma atmosfera de tensão e perigo, marcada por confrontos intensos e dilemas morais para os protagonistas.</p>
+
+<center>
+    <img src="https://thegeekstation.wordpress.com/wp-content/uploads/2013/07/governor.jpg?w=630" width="400px" height="auto">
+    </center> 
+    <hr>
+
+    <p> <b> Temporada 4 -</b> 
+        Na quarta temporada de "The Walking Dead", o principal antagonista é o personagem conhecido como Joe e seu grupo de sobreviventes, 
+        chamados de Os Retalhadores (The Claimers em inglês). Eles representam uma ameaça imediata para Rick Grimes e seu grupo, 
+        especialmente após um confronto violento e traumático que ocorre entre eles. Joe é um líder carismático, mas implacável, 
+        que impõe suas próprias regras brutais de sobrevivência, o que coloca os protagonistas em perigo iminente. Sua introdução 
+        na série traz consigo uma nova dinâmica de ameaça, destacando os perigos apresentados por outros sobreviventes humanos 
+        no mundo pós-apocalíptico.</p>
+<center>
+    <img src="https://cdn.ome.lt/c80xDHdjL09XvrrziIda0MWfyoc=/837x0/smart/uploads/conteudo/fotos/lista_reivindicadores.jpg" width="400px" height="auto">
+    </center> 
+    <hr>
+    <p> <b> Temporada 5 -</b> 
+        Gareth, líder de Terminus, e seu grupo de sobreviventes canibais desempenham um papel 
+        como antagonistas menores na série. Eles são introduzidos na segunda metade da quarta 
+        temporada e representam uma ameaça temporária para os sobreviventes. Apesar de sua 
+        presença assustadora e das atrocidades que cometem, sua influência é limitada a um 
+        arco narrativo específico, não alcançando a mesma importância ou impacto prolongado 
+        que alguns dos outros vilões principais da série.
+    </p>
+<center>
+    <img src="https://static.wikia.nocookie.net/villains/images/3/3c/The_Terminus_Sanctuary.jpg/revision/latest?cb=20140404032549" width="400px" height="auto">
+    </center> 
+<hr>
+    <p> <b> Temporada 6 -</b> 
+        Os Lobos, este grupo de bandidos que se tornaram selvagens é introduzido na temporada 5 como uma 
+        ameaça móvel e imprevisível para os sobreviventes. Eles não têm um líder específico, mas 
+        representam uma ameaça significativa.Na quinta temporada de "The Walking Dead", os Lobos 
+        são apresentados como uma ameaça móvel e imprevisível para os sobreviventes. Esse grupo 
+        de bandidos selvagens não tem um líder específico, tornando-os ainda mais perigosos. 
+        Eles representam uma força desorganizada que realiza ataques violentos e caóticos 
+        contra comunidades e indivíduos. Sua falta de estrutura hierárquica os torna uma ameaça 
+        difícil de ser contida ou negociada. Os Lobos exigem respostas rápidas e decisivas dos 
+        sobreviventes para proteger suas vidas e comunidades.
+    </p>
+
+<center>
+    <img src="https://uploads-observatoriodocinema.seox.com.br/2021/05/Benedict-Samuel-in-The-Walking-Dead.jpg" width="400px" height="auto">
+    </center> 
+<hr>
+
+    <p> <b> Temporada 7 -</b> 
+        Na sexta temporada de "The Walking Dead", o principal antagonista é Negan, 
+        líder carismático e brutal do grupo conhecido como Os Salvadores. Sua 
+        introdução no final da temporada causa um grande impacto com sua presença 
+        ameaçadora. A ameaça representada por Negan e os Salvadores se torna o 
+        foco principal da próxima temporada, definindo um novo e perigoso 
+        capítulo na luta pela sobrevivência dos protagonistas.</p>
+
+<center>
+    <img src="https://c4.wallpaperflare.com/wallpaper/854/951/697/negan-depth-of-field-headlights-head-lights-standing-hd-wallpaper-preview.jpg" width="400px" height="auto">
+    </center> 
+    <hr>
+
+    <p> <b> Temporada 8 -</b> 
+        Na oitava temporada de "The Walking Dead", os principais antagonistas continuam sendo os Salvadores, liderados 
+        por Negan. O conflito entre os Salvadores e as outras comunidades, lideradas por Rick Grimes, atinge o ápice, 
+        culminando em uma guerra total. A temporada é marcada por batalhas intensas, estratégias elaboradas e momentos 
+        de grande tensão, enquanto os sobreviventes lutam pela liberdade e sobrevivência em um mundo dominado pelo caos 
+        e pela violência.</p>
+
+<center>
+    <img src="https://static.wikia.nocookie.net/twd/images/6/65/AMC_716_Saviors.png/revision/latest?cb=20170808044127&path-prefix=pt-br" width="400px" height="auto">
+    </center> 
+    <hr>
+
+    <p> <b> Temporada 9 -</b> 
+        Os Sussurradores, liderados por Alpha e Beta, são uma das ameaças mais significativas enfrentadas pelas comunidades na série "The Walking Dead". 
+        Eles introduzem um novo nível de perigo ao se misturarem entre os zumbis, usando as peles dos mortos para se camuflarem e se infiltrarem nas 
+        comunidades. A liderança implacável de Alpha e a brutalidade de Beta tornam os Sussurradores uma força a ser temida, pois desafiam as 
+        estruturas sociais estabelecidas pelas outras comunidades. Sua introdução na temporada 9 marca uma mudança fundamental no equilíbrio 
+        de poder no mundo pós-apocalíptico, levando a confrontos intensos e conflitos mortais com os sobreviventes.</p>
+
+<center>
+    <img src="https://geekdama.com/wp-content/uploads/2019/04/the-walking-dead-s09e16-imagem-extra-21-beta-alpha.jpg" width="400px" height="auto">
+    </center> 
+    <hr>
+
+    <p> <b> Temporada 10 -</b> Na décima temporada de "The Walking Dead", os principais 
+        antagonistas são os Sussurradores, continuando a ameaça representada por Alpha 
+        e Beta, líderes do grupo. No entanto, além dos Sussurradores, surge uma nova 
+        ameaça na forma dos Sussurradores Renegados, liderados por Gamma após sua 
+        deserção do grupo principal. Esses renegados representam uma ameaça interna 
+        às próprias fileiras dos Sussurradores, minando a estabilidade e a coesão do 
+        grupo. Ao mesmo tempo, os sobreviventes enfrentam conflitos internos e lutas 
+        pelo poder dentro de suas próprias comunidades, criando tensões adicionais e 
+        desafios para a sobrevivência em um mundo pós-apocalíptico cada vez mais 
+        complexo e perigoso.</p>
+
+<center>
+    <img src="https://geekdama.com/wp-content/uploads/2019/10/the-walking-dead-s10e03-gamma-sussurrador-cena-final.jpg" width="400px" height="auto">
+    </center> 
+    <hr>
+
+    <p> <b> Temporada 11 -</b> Na décima primeira temporada de "The Walking Dead", os sobreviventes enfrentam 
+        uma variedade de desafios e antagonistas, mas um dos principais é o grupo conhecido como Os Ceifadores. 
+        Os Ceifadores são uma ameaça misteriosa e altamente organizada que ataca as comunidades de sobreviventes 
+        de Alexandria, Hilltop e Reino. Eles são implacáveis, usando táticas brutais e letais para alcançar seus 
+        objetivos. Além dos Ceifadores, os sobreviventes também lidam com questões internas, como conflitos de 
+        liderança, divisões ideológicas e a crescente ameaça dos zumbis. A décima primeira temporada explora o 
+        enfrentamento desses desafios enquanto os personagens lutam para encontrar segurança, unidade e 
+        esperança em meio ao caos e à incerteza.</p>
+
+<center>
+    <img src="https://i.ytimg.com/vi/HxOx1ho0sDI/maxresdefault.jpg" width="400px" height="auto">
+    </center> 
+    <hr>
+
+
+        <div class="poll-container">
+            <h2 class="poll-question" style="color: whitesmoke;">Qual é seu vilão favorito de The Walking Dead?</h2>
+            <div class="poll-options">
+                <div class="poll-option">
+                    <input type="radio" name="villain" value="Governador">
+                    <label for="villain" style="color: whitesmoke;"> ⋆ Governador</label>
+                </div>
+                <div class="poll-option">
+                    <input type="radio" name="villain" value="Negan">
+                    <label for="villain" style="color: whitesmoke;"> ⋆ Negan</label>
+                </div>
+                <div class="poll-option">
+                    <input type="radio" name="villain" value="Alpha">
+                    <label for="villain" style="color: whitesmoke;"> ⋆ Alpha e Beta </label>
+                </div>
+                <div class="poll-option">
+                    <input type="radio" name="villain" value="Beta">
+                    <label for="villain" style="color: whitesmoke;"> ⋆ Os ceifadores </label>
+                </div>
+                <div class="poll-option">
+                    <input type="radio" name="villain" value="Os lobos">
+                    <label for="villain" style="color: whitesmoke;"> ⋆ Os lobos </label>
+                </div>
+                <div class="poll-option">
+                    <input type="radio" name="villain" value="Gareth">
+                    <label for="villain" style="color: whitesmoke;"> ⋆ Gareth  </label>
+                </div>
+                <div class="poll-option">
+                    <input type="radio" name="villain" value="Gamma">
+                    <label for="villain" style="color: whitesmoke;"> ⋆ Gamma </label>
+                </div>
+                <div class="poll-option">
+                    <input type="radio" name="villain" value="Os retalhadores">
+                    <label for="villain" style="color: whitesmoke;"> ⋆ Os retalhadores </label>
+                </div>
+                <div class="poll-option">
+                    <input type="radio" name="villain" value="Shane">
+                    <label for="villain" style="color: whitesmoke;"> ⋆ Shane  </label>
+                </div>
+            </div>
+            <button class="pergunta" onclick="submitVote()">Votar</button>
+        </div>
+        <script>
+            function submitVote() {
+                var selectedOption = document.querySelector('input[name="villain"]:checked');
+                if (selectedOption) {
+                    alert("Seu voto para vilão favorito foi para " + selectedOption.value);
+                    // Aqui você pode enviar os dados do voto para um servidor para processamento adicional
+                } else {
+                    alert("Por favor, selecione uma opção antes de votar.");
+                }
+            }
+        </script>
+
+
+<br>
+<br>
+
+
+
+
+<nav a>
+    <center><br><button onclick="scrollToTop()" style="position:fixed; bottom:20px; right:20px; background-color: #1C1C1C;; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;"><a href="#topo"> Voltar ao Topo </a></button>
+    </nav a>
+
+</body>
+</html>
