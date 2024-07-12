@@ -1,0 +1,73 @@
+/* Estilo para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para os links da navegação */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilo para os links da navegação ao passar o mouse */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para as seções */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo para os quadrados de texto */
+.square {
+    width: 70%; /* Largura maior */
+    max-width: 600px; /* Largura máxima */
+    background-color: #444;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+    padding: 20px;
+    box-sizing: border-box; /* Incluir padding na largura total */
+}
+
+/* Estilo para a imagem ao lado */
+.section-image {
+    max-width: 30%; /* Largura menor */
+    max-height: 200px;
+    margin-left: 20px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
