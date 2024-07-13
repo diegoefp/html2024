@@ -1,0 +1,40 @@
+body {
+    background-color:#003b6f;
+    }
+    @font-face {
+        font-family: 'Lulo Clean W01 One Bold';
+        src: url();
+    }
+
+    h7{
+        font-size: 110px; 
+    }
+
+    h1{
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         color: white;
+    }
+
+    p{
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    button{
+        font-size: 20px;
+        background-color: #5699d3;
+        border-color: rgb(255, 255, 255);
+        margin-right: 10px;
+        border-radius: 30px;
+        position: center;
+    }
+
+    footer{
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    a{
+        color: black
+    }
